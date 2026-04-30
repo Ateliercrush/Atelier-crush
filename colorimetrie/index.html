@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Colorimétrie — Atelier Crush</title>
+    <meta name="description" content="Découvrez l'animation colorimétrie d'Atelier Crush : analyse IA des couleurs naturelles, fiche personnalisée et porte-clé tissu aux couleurs de votre saison.">
+    <meta property="og:title" content="Atelier Colorimétrie — Atelier Crush">
+    <meta property="og:description" content="L'invité repart avec son profil colorimétrique personnalisé et un porte-clé tissu aux couleurs qui lui correspondent.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://atelier-crush.com/colorimetrie">
+    <link rel="canonical" href="https://atelier-crush.com/colorimetrie">
+    <link rel="icon" type="image/webp" href="/images/logo.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --black: #202223;
+            --dark: #141414;
+            --white: #ffffff;
+            --off-white: #fafafa;
+            --pink: #E46DBA;
+            --pink-light: #f0a5d4;
+            --pink-dark: #c94da0;
+            --grey-text: #6D7175;
+            --grey-light: #E2E2E2;
+            --grey-border: rgba(32, 34, 35, 0.15);
+            --font-heading: 'Bodoni Moda', Georgia, serif;
+            --font-body: 'Cabin', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--black);
+            background: var(--white);
+            line-height: 1.7;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+        button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.12s; }
+        .reveal-delay-2 { transition-delay: 0.24s; }
+        .reveal-delay-3 { transition-delay: 0.36s; }
+        .reveal-delay-4 { transition-delay: 0.48s; }
+
+        h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; letter-spacing: -0.04em; }
+        h1 { font-size: clamp(3rem, 6vw, 5rem); line-height: 1.05; }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
+        h3 { font-size: clamp(1.3rem, 2.2vw, 1.75rem); line-height: 1.3; }
+
+        .section-label {
+            font-family: var(--font-body);
+            font-size: 13px; font-weight: 700;
+            letter-spacing: 0.15em; text-transform: uppercase;
+            color: var(--pink); margin-bottom: 0.75rem;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 5rem 0; }
+
+        /* NAV */
+        .announcement-bar {
+            background: var(--dark); color: var(--white);
+            text-align: center; padding: 10px 1rem;
+            font-size: 12px; letter-spacing: 0.03em;
+        }
+        nav {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--grey-border);
+            padding: 0 2rem;
+        }
+        .nav-inner {
+            max-width: 1200px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 64px;
+        }
+        .nav-logo {
+            font-family: var(--font-heading); font-size: 1.4rem;
+            font-weight: 500; letter-spacing: -0.03em; color: var(--black);
+        }
+        .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+        .nav-links a { font-size: 14px; font-weight: 500; color: var(--black); }
+        .nav-links a:hover { color: var(--pink); }
+        .nav-cta {
+            background: var(--black); color: var(--white);
+            padding: 0.55rem 1.25rem; border-radius: 2px;
+            font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+            transition: background 0.3s ease;
+        }
+        .nav-cta:hover { background: var(--pink); color: var(--white); }
+
+        /* BTNS */
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            font-family: var(--font-body); font-size: 13px; font-weight: 700;
+            letter-spacing: 0.08em; text-transform: uppercase;
+            padding: 1rem 2rem; border-radius: 2px;
+            transition: all 0.3s ease; cursor: pointer; border: none;
+        }
+        .btn svg { width: 16px; height: 16px; }
+        .btn-primary { background: var(--black); color: var(--white); }
+        .btn-primary:hover { background: var(--pink); }
+        .btn-pink { background: var(--pink); color: var(--white); }
+        .btn-pink:hover { background: var(--pink-dark); }
+        .btn-outline { background: transparent; color: var(--black); border: 1.5px solid var(--black); }
+        .btn-outline:hover { background: var(--black); color: var(--white); }
+
+        /* HERO */
+        .hero-colorimetrie {
+            padding: 6rem 0 4rem;
+            background: var(--off-white);
+            border-bottom: 1px solid var(--grey-border);
+        }
+        .hero-colorimetrie .container {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 5rem; align-items: center;
+        }
+        .hero-badge {
+            display: inline-block; font-size: 11px; font-weight: 700;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--white); background: var(--pink);
+            padding: 0.3rem 0.8rem; border-radius: 2px; margin-bottom: 1.25rem;
+        }
+        .hero-colorimetrie h1 { margin-bottom: 1.25rem; }
+        .hero-colorimetrie p {
+            font-size: 18px; color: var(--grey-text);
+            line-height: 1.75; margin-bottom: 2rem;
+        }
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .hero-visual {
+            border-radius: 4px; overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+        }
+        .hero-visual img { width: 100%; height: auto; }
+
+        /* ÉTAPES */
+        .etapes { background: var(--white); }
+        .etapes-header { text-align: center; max-width: 640px; margin: 0 auto 4rem; }
+        .etapes-header h2 { margin-top: 0.5rem; margin-bottom: 1rem; }
+        .etapes-header p { color: var(--grey-text); font-size: 17px; }
+        .etapes-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+        }
+        .etape-item { text-align: center; }
+        .etape-number {
+            width: 56px; height: 56px; border-radius: 50%;
+            background: var(--pink); color: var(--white);
+            font-family: var(--font-heading); font-size: 1.5rem;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1.25rem;
+        }
+        .etape-item h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .etape-item p { color: var(--grey-text); font-size: 15px; line-height: 1.65; }
+
+        /* SOUVENIR */
+        .souvenir { background: var(--off-white); }
+        .souvenir .container {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 5rem; align-items: center;
+        }
+        .souvenir-text h2 { margin-bottom: 1rem; }
+        .souvenir-text p { color: var(--grey-text); font-size: 17px; line-height: 1.75; margin-bottom: 1.5rem; }
+        .souvenir-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
+        .souvenir-list li {
+            display: flex; align-items: flex-start; gap: 0.75rem;
+            font-size: 16px; color: var(--black);
+        }
+        .souvenir-list li::before {
+            content: '✦'; color: var(--pink); font-size: 12px;
+            margin-top: 5px; flex-shrink: 0;
+        }
+        .souvenir-visual {
+            aspect-ratio: 4/3; background: var(--grey-light);
+            border-radius: 4px; overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--grey-text); font-style: italic; font-size: 14px;
+        }
+
+        /* FORMAT */
+        .format { background: var(--white); }
+        .format-header { text-align: center; max-width: 600px; margin: 0 auto 4rem; }
+        .format-header h2 { margin-top: 0.5rem; margin-bottom: 1rem; }
+        .format-header p { color: var(--grey-text); font-size: 17px; }
+        .format-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .format-card {
+            border: 1px solid var(--grey-border); border-radius: 4px;
+            padding: 2.5rem 2rem; text-align: center;
+        }
+        .format-card-icon {
+            width: 52px; height: 52px; background: #fdf0f8;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1.25rem;
+        }
+        .format-card-icon svg { width: 24px; height: 24px; color: var(--pink); }
+        .format-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .format-card p { color: var(--grey-text); font-size: 15px; line-height: 1.65; }
+
+        /* EVENEMENTS */
+        .evenements { background: var(--off-white); }
+        .evenements-header { text-align: center; max-width: 600px; margin: 0 auto 3rem; }
+        .evenements-header h2 { margin-top: 0.5rem; margin-bottom: 1rem; }
+        .tags-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+        .tag {
+            background: var(--white); border: 1.5px solid var(--grey-border);
+            border-radius: 100px; padding: 0.5rem 1.25rem;
+            font-size: 14px; font-weight: 500; color: var(--black);
+        }
+
+        /* OFFRE */
+        .offre {
+            background: #fdf0f8;
+            border-top: 1px solid rgba(228, 109, 186, 0.2);
+            border-bottom: 1px solid rgba(228, 109, 186, 0.2);
+        }
+        .offre .container { text-align: center; max-width: 680px; }
+        .offre h2 { margin-top: 0.5rem; margin-bottom: 1rem; }
+        .offre p { color: var(--grey-text); font-size: 17px; line-height: 1.75; margin-bottom: 2rem; }
+
+        /* LOGOS */
+        .logos { background: var(--white); padding: 3rem 0; }
+        .logos-label {
+            text-align: center; font-size: 13px; font-weight: 700;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--grey-text); margin-bottom: 2rem;
+        }
+        .logos-row {
+            display: flex; align-items: center; justify-content: center;
+            gap: 3rem; flex-wrap: wrap;
+        }
+        .logos-row img { height: 32px; width: auto; opacity: 0.5; filter: grayscale(1); }
+
+        /* CTA FINAL */
+        .cta-final {
+            background: var(--dark); color: var(--white); text-align: center;
+        }
+        .cta-final h2 { color: var(--white); margin-top: 0.5rem; margin-bottom: 1rem; }
+        .cta-final p { color: rgba(255,255,255,0.7); font-size: 17px; line-height: 1.75; margin-bottom: 2rem; }
+        .cta-final .btn-pink { font-size: 14px; padding: 1.1rem 2.5rem; }
+
+        /* FOOTER */
+        footer {
+            background: var(--dark); color: rgba(255,255,255,0.5);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 2rem; text-align: center; font-size: 13px;
+        }
+        footer a { color: rgba(255,255,255,0.5); }
+        footer a:hover { color: var(--white); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-colorimetrie .container { grid-template-columns: 1fr; gap: 3rem; }
+            .hero-visual { max-width: 420px; margin: 0 auto; }
+            .etapes-grid { grid-template-columns: repeat(2, 1fr); }
+            .souvenir .container { grid-template-columns: 1fr; gap: 3rem; }
+            .format-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .nav-links { display: none; }
+        }
+        @media (max-width: 600px) {
+            .etapes-grid { grid-template-columns: 1fr; }
+            section { padding: 3.5rem 0; }
+            .hero-colorimetrie { padding: 4rem 0 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="announcement-bar">
+    Animation disponible partout en France &nbsp;·&nbsp; Découvrez notre atelier bijoux sur mesure
+</div>
+
+<nav>
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">Atelier Crush</a>
+        <ul class="nav-links">
+            <li><a href="/#events">Nos animations</a></li>
+            <li><a href="/#process">Comment ça marche</a></li>
+            <li><a href="/#clients">Ils nous font confiance</a></li>
+            <li><a href="/#contact" class="nav-cta">Demander un devis</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-colorimetrie">
+    <div class="container">
+        <div class="hero-text reveal">
+            <span class="hero-badge">Nouveau</span>
+            <h1>L'animation colorimétrie</h1>
+            <p>L'invité prend une photo, notre outil IA analyse ses couleurs naturelles et génère sa fiche colorimétrique personnalisée. Il repart avec son profil et un porte-clé tissu aux couleurs qui lui correspondent.</p>
+            <div class="hero-actions">
+                <a href="/#contact" class="btn btn-pink">
+                    Demander un devis
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="/#contact" class="btn btn-outline">Nous contacter</a>
+            </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-2">
+            <img src="/images/colorimetrie.png" alt="Exemple de fiche colorimétrique Atelier Crush">
+        </div>
+    </div>
+</section>
+
+<!-- ÉTAPES -->
+<section class="etapes section">
+    <div class="container">
+        <div class="etapes-header">
+            <p class="section-label reveal">Comment ça marche</p>
+            <h2 class="reveal reveal-delay-1">En 4 étapes simples</h2>
+            <p class="reveal reveal-delay-2">Une expérience fluide et mémorable pour chaque invité.</p>
+        </div>
+        <div class="etapes-grid">
+            <div class="etape-item reveal">
+                <div class="etape-number">1</div>
+                <h3>La photo</h3>
+                <p>L'invité prend une photo à la lumière naturelle. Notre système capture les nuances exactes de son teint, de ses yeux et de ses cheveux.</p>
+            </div>
+            <div class="etape-item reveal reveal-delay-1">
+                <div class="etape-number">2</div>
+                <h3>L'analyse IA</h3>
+                <p>Notre outil analyse les couleurs naturelles en quelques secondes et identifie la saison colorimétrique : printemps, été, automne ou hiver.</p>
+            </div>
+            <div class="etape-item reveal reveal-delay-2">
+                <div class="etape-number">3</div>
+                <h3>La fiche personnalisée</h3>
+                <p>Une fiche colorimétrique est générée avec sa palette de couleurs idéales, ses couleurs à éviter et ses conseils personnalisés.</p>
+            </div>
+            <div class="etape-item reveal reveal-delay-3">
+                <div class="etape-number">4</div>
+                <h3>Le souvenir</h3>
+                <p>L'invité repart avec sa fiche imprimée et un porte-clé tissu confectionné aux couleurs exactes de sa saison.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOUVENIR -->
+<section class="souvenir section">
+    <div class="container">
+        <div class="souvenir-text reveal">
+            <p class="section-label">Le souvenir</p>
+            <h2>Un porte-clé aux couleurs de votre saison</h2>
+            <p>Chaque invité repart avec un souvenir concret et personnalisé : un porte-clé tissu fabriqué avec les couleurs exactes qui lui correspondent. Un objet utile qu'il gardera longtemps.</p>
+            <ul class="souvenir-list">
+                <li>Porte-clé tissu fait main, aux couleurs de la saison colorimétrique</li>
+                <li>Fiche colorimétrique imprimée avec la palette complète</li>
+                <li>Conseils personnalisés sur les couleurs à porter et à éviter</li>
+                <li>Souvenir unique de l'événement</li>
+            </ul>
+            <a href="/#contact" class="btn btn-pink">
+                Obtenir un devis
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+        </div>
+        <div class="souvenir-visual reveal reveal-delay-2">
+            Visuel à venir
+        </div>
+    </div>
+</section>
+
+<!-- FORMAT -->
+<section class="format section">
+    <div class="container">
+        <div class="format-header">
+            <p class="section-label reveal">Flexibilité</p>
+            <h2 class="reveal reveal-delay-1">Une animation qui s'adapte</h2>
+            <p class="reveal reveal-delay-2">La colorimétrie peut être proposée seule ou combinée à notre atelier bijoux.</p>
+        </div>
+        <div class="format-grid">
+            <div class="format-card reveal">
+                <div class="format-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3>Animation principale</h3>
+                <p>La colorimétrie comme expérience centrale de votre événement. Chaque invité passe environ 10-15 minutes pour une expérience complète.</p>
+            </div>
+            <div class="format-card reveal reveal-delay-1">
+                <div class="format-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>En complément bijoux</h3>
+                <p>Combinez avec notre atelier de création de bijoux pour une expérience double : les invités repartent avec leur bijou ET leur profil colorimétrique.</p>
+            </div>
+            <div class="format-card reveal reveal-delay-2">
+                <div class="format-card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3>Sur mesure</h3>
+                <p>On adapte le format à votre événement : nombre d'invités, durée, espace disponible. On s'occupe de tout le matériel et de l'installation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ÉVÉNEMENTS -->
+<section class="evenements section">
+    <div class="container">
+        <div class="evenements-header">
+            <p class="section-label reveal">Pour qui</p>
+            <h2 class="reveal reveal-delay-1">Toutes les occasions</h2>
+        </div>
+        <div class="tags-grid reveal reveal-delay-2">
+            <span class="tag">Corporate & Team building</span>
+            <span class="tag">Séminaires</span>
+            <span class="tag">Bat Mitzva</span>
+            <span class="tag">Mariages</span>
+            <span class="tag">Anniversaires</span>
+            <span class="tag">EVJF</span>
+            <span class="tag">Baby shower</span>
+            <span class="tag">Lancement de marque</span>
+            <span class="tag">Événements beauté & mode</span>
+            <span class="tag">Incentives</span>
+        </div>
+    </div>
+</section>
+
+<!-- OFFRE -->
+<section class="offre section">
+    <div class="container">
+        <p class="section-label reveal">Offre de lancement</p>
+        <h2 class="reveal reveal-delay-1">Soyez parmi les premiers</h2>
+        <p class="reveal reveal-delay-2">La colorimétrie est notre toute dernière animation. Contactez-nous pour bénéficier d'un tarif de lancement et être parmi les premiers événements à proposer cette expérience unique à vos invités.</p>
+        <a href="/#contact" class="btn btn-pink reveal reveal-delay-3">
+            Profiter de l'offre de lancement
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+    </div>
+</section>
+
+<!-- LOGOS -->
+<section class="logos">
+    <div class="container">
+        <p class="logos-label">Ils nous font déjà confiance</p>
+        <div class="logos-row">
+            <img src="/images/logo-benefit.png" alt="Benefit">
+            <img src="/images/logo-ca.jpg" alt="C&A">
+            <img src="/images/logo-kiabi.png" alt="Kiabi">
+            <img src="/images/logo-matahari.png" alt="Matahari">
+            <img src="/images/logo-frederic.png" alt="Frédéric M.">
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final section">
+    <div class="container">
+        <p class="section-label" style="color: rgba(255,255,255,0.5);">On en parle ?</p>
+        <h2 class="reveal">Prête à offrir une expérience<br><em>vraiment</em> mémorable ?</h2>
+        <p class="reveal reveal-delay-1">Dites-nous en plus sur votre événement, on vous répond sous 24h avec un devis personnalisé.</p>
+        <a href="/#contact" class="btn btn-pink reveal reveal-delay-2">
+            Demander un devis gratuit
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Atelier Crush &nbsp;·&nbsp; <a href="/">Retour à l'accueil</a></p>
+</footer>
+
+<script>
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
