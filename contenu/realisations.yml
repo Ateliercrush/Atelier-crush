@@ -41,7 +41,8 @@ projets:
     description: Atelier Crush a accompagné American Vintage pour son évènement de rentrée
     photo: /photos/IMG-20260909-WA0011.jpg
     accueil: true
-  - client: Redken
+  - client: L'oréal
+    logo: /photos/L'oreal.png
     type: Événement de marque
     categorie: Événements de marque
     resume: Un atelier bijoux intégré à l'événement de la marque.
@@ -52,7 +53,6 @@ projets:
       - /photos/redken-table-2.jpg
       - /photos/redken-coeur-lumineux.jpg
       - /photos/redken-produits-et-charms.jpg
-      - /photos/redken-invites.jpg
       - /photos/redken-invites-2.jpg
       - /photos/redken-creation.jpg
       - /photos/redken-creation-2.jpg
