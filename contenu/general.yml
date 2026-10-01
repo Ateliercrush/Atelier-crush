@@ -12,20 +12,19 @@ menu:
     lien: /evenements-prives/
   - texte: Nos réalisations
     lien: /realisations/
+  - texte: Agences
+    lien: /agence
 bouton_devis: Demander un devis
 references:
   - nom: Benefit
     logo: /photos/logos/benefit.png
   - nom: Redken
-    logo: ""
   - nom: American Vintage
-    logo: ""
   - nom: C&A
     logo: /photos/logos/c-and-a.jpg
   - nom: Eden Gallery
     logo: /photos/logos/eden-gallery.png
   - nom: Bonobo
-    logo: ""
   - nom: Peggy Sage
     logo: /photos/logos/peggy.png
 footer:
