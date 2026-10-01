@@ -1,18 +1,23 @@
 seo:
   titre: Animation événementielle pour entreprises et marques | Atelier Crush
-  description: "Lancements produit, soirées clients, activations retail, séminaires : des animations participatives sur mesure aux couleurs de votre marque. Marque blanche possible."
+  description: "Lancements produit, soirées clients, activations retail,
+    séminaires : des animations participatives sur mesure aux couleurs de votre
+    marque. Marque blanche possible."
 hero:
   surtitre: Entreprises & marques
   titre: Des animations sur mesure pour vos événements.
-  texte: "Lancements, soirées clients, retail, collaborateurs ou séminaires : Atelier Crush imagine des expériences participatives adaptées à votre public et à votre marque."
+  texte: "Lancements, soirées clients, retail, collaborateurs ou séminaires :
+    Atelier Crush imagine des expériences participatives adaptées à votre public
+    et à votre marque."
   bouton: Demander un devis
-  photo: /photos/redken-invites-creation.jpg
+  photo: /photos/redken-coeur-lumineux.jpg
 formats:
   surtitre: Pour tous vos événements
   liste:
     - icone: etincelle
       titre: Lancements de produit
-      texte: Faites entrer votre produit ou votre univers directement dans l'expérience.
+      texte: Faites entrer votre produit ou votre univers directement dans
+        l'expérience.
     - icone: verre
       titre: Soirées clients & VIP
       texte: Une attention personnelle que vos invités emportent avec eux.
@@ -21,7 +26,8 @@ formats:
       texte: Une animation qui attire, engage et prolonge le temps passé en magasin.
     - icone: valise
       titre: Séminaires & team building
-      texte: Une expérience créative qui permet aux équipes de se retrouver autour d'un moment plus informel.
+      texte: Une expérience créative qui permet aux équipes de se retrouver autour
+        d'un moment plus informel.
     - icone: personnes
       titre: Événements collaborateurs
       texte: Chacun repart avec un cadeau choisi et personnalisé.
@@ -42,17 +48,21 @@ marque:
 marque_blanche:
   surtitre: Format agence / marque blanche
   titre: Votre événement reste le vôtre.
-  texte: |
-    Nous pouvons intervenir sous notre nom ou nous intégrer totalement à votre dispositif.
+  texte: >
+    Nous pouvons intervenir sous notre nom ou nous intégrer totalement à votre
+    dispositif.
 
-    Tenues adaptées à votre événement, présence discrète ou fonctionnement en marque blanche : nous nous adaptons aux besoins de votre projet.
+
+    Tenues adaptées à votre événement, présence discrète ou fonctionnement en
+    marque blanche : nous nous adaptons aux besoins de votre projet.
   photo: /photos/eden-dubai-salon.jpg
 references_titre: Ils nous font confiance
 process:
   titre: De l'idée au jour J, on s'occupe de l'atelier.
   liste:
     - titre: Le brief
-      texte: Vous nous indiquez la date, le lieu, le nombre d'invités et l'univers de l'événement.
+      texte: Vous nous indiquez la date, le lieu, le nombre d'invités et l'univers de
+        l'événement.
     - titre: La proposition
       texte: Nous imaginons un atelier et une sélection adaptés au projet.
     - titre: Le jour J
