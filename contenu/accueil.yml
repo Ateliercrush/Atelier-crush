@@ -1,14 +1,19 @@
 seo:
-  titre: Atelier Crush | Animations événementielles personnalisées pour marques et agences
-  description: "L'animation que vos invités emportent avec eux : ateliers bijoux de sac, bracelets, colliers et colorimétrie pour vos lancements, soirées clients et événements. Paris, France et international."
+  titre: Atelier Crush | Animations événementielles personnalisées pour marques et
+    agences
+  description: "L'animation que vos invités emportent avec eux : ateliers bijoux
+    de sac, bracelets, colliers et colorimétrie pour vos lancements, soirées
+    clients et événements. Paris, France et international."
 hero:
   surtitre: Animations événementielles pour marques, entreprises & agences
   titre: L'animation que vos invités *emportent* avec eux.
-  texte: |
+  texte: >
     Des expériences personnalisées pour vos événements.
-    Vos invités participent, créent ou découvrent quelque chose qui leur ressemble, et repartent avec leur propre cadeau.
+
+    Vos invités participent, créent ou découvrent quelque chose qui leur
+    ressemble, et repartent avec leur propre cadeau.
   bouton: Parlez-nous de votre événement
-  photo: /photos/bijou-de-sac-sac-monogramme.jpg
+  photo: /photos/redken-creation.jpg
 preuves:
   chiffres:
     - nombre: + 50
@@ -23,24 +28,32 @@ pourquoi:
   liste:
     - icone: personnes
       titre: Une animation
-      texte: Vos invités participent vraiment à l'événement. Ils choisissent, échangent, créent et prennent part à une expérience.
+      texte: Vos invités participent vraiment à l'événement. Ils choisissent,
+        échangent, créent et prennent part à une expérience.
     - icone: cadeau
       titre: Un cadeau personnel
-      texte: Chacun repart avec quelque chose qu'il a choisi et qui lui ressemble vraiment.
+      texte: Chacun repart avec quelque chose qu'il a choisi et qui lui ressemble
+        vraiment.
     - icone: coeur
       titre: Un souvenir
-      texte: "L'expérience continue après la soirée : l'objet reste, se porte et rappelle l'événement."
+      texte: "L'expérience continue après la soirée : l'objet reste, se porte et
+        rappelle l'événement."
     - icone: etincelle
       titre: Clé en main
-      texte: Notre équipe apporte le matériel, installe l'atelier et l'anime pendant votre événement. Vous profitez, on s'occupe du reste.
+      texte: Notre équipe apporte le matériel, installe l'atelier et l'anime pendant
+        votre événement. Vous profitez, on s'occupe du reste.
 signature:
   surtitre: Notre signature
   titre: Le bijou de sac personnalisé
   accroche: Le grigri que chacun compose à son image.
-  texte: |
-    Vos invités choisissent parmi une large sélection de charms, perles, pompons et breloques. Notre équipe les accompagne dans leur composition et réalise l'assemblage si nécessaire.
+  texte: >
+    Vos invités choisissent parmi une large sélection de charms, perles, pompons
+    et breloques. Notre équipe les accompagne dans leur composition et réalise
+    l'assemblage si nécessaire.
 
-    Quelques minutes plus tard, chacun repart avec son propre bijou de sac, prêt à accrocher.
+
+    Quelques minutes plus tard, chacun repart avec son propre bijou de sac, prêt
+    à accrocher.
   points:
     - icone: personnes
       texte: De 5 à 200 participants
@@ -58,12 +71,14 @@ autres:
   surtitre: Découvrez aussi nos autres expériences
   ateliers:
     - titre: Bracelets & colliers personnalisés
-      texte: "Chaînes, perles, pierres, pendentifs et charms : chaque invité compose un bijou qu'il a vraiment envie de porter."
+      texte: "Chaînes, perles, pierres, pendentifs et charms : chaque invité compose
+        un bijou qu'il a vraiment envie de porter."
       bouton: Découvrir
       lien: /bracelets-colliers/
       photo: /photos/bracelets-presentoirs.jpg
     - titre: Colorimétrie
-      texte: Une photo, une analyse personnalisée, une fiche couleurs imprimée et un porte-clé assorti à la palette de l'invité.
+      texte: Une photo, une analyse personnalisée, une fiche couleurs imprimée et un
+        porte-clé assorti à la palette de l'invité.
       bouton: Découvrir
       lien: /colorimetrie/
       photo: /photos/colorimetrie-fiche.png
@@ -73,7 +88,9 @@ realisations:
   bouton: Voir toutes nos réalisations
 cta:
   titre: Parlons de votre prochain événement.
-  texte: |
+  texte: >
     Une idée, un brief, un lancement, une soirée ?
-    On imagine avec vous l'atelier qui s'intègrera naturellement à votre événement.
+
+    On imagine avec vous l'atelier qui s'intègrera naturellement à votre
+    événement.
   bouton: Demander un devis
