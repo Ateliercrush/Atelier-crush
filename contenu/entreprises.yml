@@ -44,9 +44,9 @@ marque:
     - Produit intégré lorsque le format le permet
     - Supports personnalisés
     - Marque blanche possible
-  photo: /photos/eden-saint-tropez-3.jpg
+  photo: /photos/benefit-stand-bad-gal-bounce.jpg
 marque_blanche:
-  surtitre: Format agence / marque blanche
+  surtitre: "Format agence "
   titre: Votre événement reste le vôtre.
   texte: >
     Nous pouvons intervenir sous notre nom ou nous intégrer totalement à votre
