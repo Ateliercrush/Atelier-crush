@@ -1,0 +1,78 @@
+---
+layout: base.njk
+cle: entreprises
+permalink: /entreprises/
+---
+{%- set p = c.entreprises -%}
+{%- set devisParams = "?profil=marque-entreprise" -%}
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__texte">
+      <p class="surtitre">{{ p.hero.surtitre }}</p>
+      <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
+      <div class="hero__intro">{{ p.hero.texte | paras | safe }}</div>
+      <a class="btn" href="/devis/{{ devisParams }}">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+    </div>
+    <div class="hero__media">{% photo p.hero.photo, "Atelier Crush lors d'un événement de marque", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.formats.surtitre }}</p>
+    <ul class="atouts atouts--3">
+      {%- for a in p.formats.liste %}
+      <li><svg class="ic ic--l"><use href="#i-{{ a.icone }}"/></svg><h3>{{ a.titre }}</h3><p>{{ a.texte }}</p></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--creme">
+  <div class="wrap">
+    <div class="split">
+      <div class="split__media">{% photo p.marque.photo, "Atelier aux couleurs d'une marque", "", "(min-width: 900px) 50vw, 100vw" %}</div>
+      <div class="split__texte">
+        <p class="surtitre">{{ p.marque.surtitre }}</p>
+        <ul class="points">
+          {%- for i in p.marque.liste %}<li><svg class="ic"><use href="#i-check"/></svg>{{ i }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split split--inverse split--rose">
+      <div class="split__media">{% photo p.marque_blanche.photo, "Atelier Crush intégré au dispositif d'une agence", "", "(min-width: 900px) 50vw, 100vw" %}</div>
+      <div class="split__texte">
+        <p class="surtitre">{{ p.marque_blanche.surtitre }}</p>
+        <h2 class="titre-l">{{ p.marque_blanche.titre | inline | safe }}</h2>
+        <div class="prose">{{ p.marque_blanche.texte | paras | safe }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bande-refs">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.references_titre }}</p>
+    {%- set logosNoms = c.general.references | noms %}
+    {% include "logos.njk" %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="titre-l centre">{{ p.process.titre | inline | safe }}</h2>
+    <ol class="process">
+      {%- for e in p.process.liste %}
+      <li><span class="etapes__num">{{ loop.index | pad }}</span><h3>{{ e.titre }}</h3><p>{{ e.texte }}</p></li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+{%- set cta = p.cta %}
+{% include "cta.njk" %}

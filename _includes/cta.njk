@@ -1,0 +1,9 @@
+<section class="cta-bande">
+  <div class="wrap cta-bande__in">
+    <div>
+      <h2 class="cta-bande__titre">{{ cta.titre | inline | safe }}</h2>
+      {%- if cta.texte %}<div class="cta-bande__texte">{{ cta.texte | paras | safe }}</div>{% endif %}
+    </div>
+    <a class="btn btn--blanc" href="/devis/{{ devisParams }}">{{ cta.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+  </div>
+</section>

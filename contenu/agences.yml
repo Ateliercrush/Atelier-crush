@@ -1,0 +1,47 @@
+seo:
+  titre: Animation pour agences événementielles et de communication | Atelier Crush
+  description: "Une animation pour votre prochain brief ? Bijoux de sac, bijoux personnalisés et colorimétrie : personnalisable, de 5 à 200 participants, France et international, marque blanche possible."
+hero:
+  surtitre: Pour les agences événementielles & de communication
+  titre: Une animation pour votre prochain brief ?
+  texte: |
+    Atelier Crush imagine des animations personnalisées pour les événements de vos clients.
+
+    Bijoux de sac, bijoux personnalisés et colorimétrie : une expérience participative et un cadeau que chaque invité emporte avec lui.
+  bouton: Parlez-nous de votre brief
+  photo: /photos/bijou-de-sac-hublot.jpg
+arguments:
+  - icone: palette
+    titre: Personnalisable
+    texte: Univers, couleurs, logo, produit ou message.
+  - icone: personnes
+    titre: De 5 à 200 participants
+    texte: Du petit événement à la grande activation.
+  - icone: globe
+    titre: France & international
+    texte: Nous nous déplaçons selon votre projet.
+  - icone: calques
+    titre: Marque blanche possible
+    texte: Nous nous intégrons à votre dispositif et à celui de votre client.
+references:
+  titre: Déjà aux côtés de
+  noms:
+    - Benefit
+    - American Vintage
+    - Redken
+    - C&A
+    - Eden Gallery
+exemples:
+  - titre: Lancement produit
+    texte: Une expérience créée autour du produit et de l'univers de votre client.
+    photo: /photos/benefit-perles.jpg
+  - titre: Soirée clients
+    texte: Une animation participative et un cadeau personnel.
+    photo: /photos/eden-dubai-invites.jpg
+  - titre: Activation retail
+    texte: Une animation qui attire, engage et crée du trafic autour du dispositif.
+    photo: /photos/activation-boutique.jpg
+cta:
+  titre: Vous avez un brief en cours ?
+  texte: Envoyez-nous quelques informations et échangeons sur ce qu'on peut imaginer pour votre client.
+  bouton: Parlez-nous de votre brief

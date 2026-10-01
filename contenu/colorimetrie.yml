@@ -1,0 +1,56 @@
+seo:
+  titre: Animation colorimétrie pour vos événements | Atelier Crush
+  description: "Une photo, une analyse par algorithme, une fiche couleurs imprimée et un porte-clé assorti : l'animation colorimétrie personnalisable aux couleurs de votre marque."
+hero:
+  badge: Nouveauté
+  titre: Colorimétrie
+  texte: |
+    Une expérience originale et personnalisée : une photo, une analyse par algorithme et chacun découvre les couleurs qui lui correspondent.
+    Et surtout, chacun repart avec son résultat.
+  bouton: Demander un devis
+  photo: ""
+etapes:
+  surtitre: Comment ça marche ?
+  titre: Une expérience en quatre étapes.
+  liste:
+    - titre: La photo
+      texte: Nous réalisons un portrait de l'invité.
+      photo: ""
+    - titre: L'analyse
+      texte: Notre outil analyse la photo et détermine sa saison colorimétrique.
+      photo: ""
+    - titre: La fiche personnalisée
+      texte: |
+        Une fiche est générée avec sa palette et les couleurs qui lui correspondent.
+        Elle est imprimée directement pendant l'événement.
+      photo: /photos/colorimetrie-fiche.png
+    - titre: Le souvenir
+      texte: L'invité repart avec sa fiche ainsi qu'un petit porte-clé aux couleurs de sa palette.
+      photo: ""
+personnalisation:
+  surtitre: Aux couleurs de votre événement
+  intro: "La fiche remise aux invités peut être adaptée à votre événement :"
+  liste:
+    - Logo de votre marque
+    - Identité graphique
+    - Nom de l'événement
+    - Message personnalisé
+pourquoi:
+  titre: Pourquoi la colorimétrie ?
+  liste:
+    - icone: personnes
+      titre: Individuelle
+      texte: Chaque résultat est propre à l'invité.
+    - icone: horloge
+      titre: Rapide
+      texte: Une expérience qui s'intègre facilement dans une soirée ou une activation.
+    - icone: palette
+      titre: Personnalisable
+      texte: L'environnement et les supports peuvent reprendre votre identité.
+    - icone: coeur
+      titre: Mémorable
+      texte: L'invité repart avec une information utile et un souvenir physique.
+cta:
+  titre: Une animation qui fait toujours parler d'elle.
+  bouton: Parlez-nous de votre événement
+  photo: ""

@@ -1,0 +1,85 @@
+---
+layout: base.njk
+cle: bijouxDeSac
+permalink: /bijoux-de-sac/
+---
+{%- set p = c.bijouxDeSac -%}
+{%- set devisParams = "?atelier=bijoux-de-sac" -%}
+<section class="hero hero--inverse">
+  <div class="wrap hero__grid">
+    <div class="hero__media">{% photo p.hero.photo, "Atelier bijoux de sac Atelier Crush", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</div>
+    <div class="hero__texte">
+      <p class="surtitre">{{ p.hero.surtitre }}</p>
+      <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
+      <div class="hero__intro">{{ p.hero.texte | paras | safe }}</div>
+      <a class="btn" href="/devis/{{ devisParams }}">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.etapes.surtitre }}</p>
+    <h2 class="titre-l centre">{{ p.etapes.titre | inline | safe }}</h2>
+    <ol class="etapes etapes--3">
+      {%- for e in p.etapes.liste %}
+      <li>
+        <div class="etapes__media">{% photo e.photo, e.titre, "", "(min-width: 900px) 30vw, 100vw" %}</div>
+        <span class="etapes__num">{{ loop.index | pad }}</span>
+        <h3>{{ e.titre }}</h3>
+        <div>{{ e.texte | paras | safe }}</div>
+      </li>
+      {%- endfor %}
+    </ol>
+    <div class="encart">
+      <h3 class="encart__titre">{{ p.infos.titre }}</h3>
+      <ul class="points points--grille">
+        {%- for i in p.infos.liste %}<li><svg class="ic"><use href="#i-{{ i.icone }}"/></svg>{{ i.texte }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--creme">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.personnalisation.surtitre }}</p>
+    <h2 class="titre-l centre">{{ p.personnalisation.titre | inline | safe }}</h2>
+    <p class="centre intro">{{ p.personnalisation.intro }}</p>
+    <ul class="cartes cartes--4">
+      {%- for x in p.personnalisation.liste %}
+      <li class="carte">
+        <div class="carte__media">{% photo x.photo, x.titre, "", "(min-width: 900px) 25vw, 50vw" %}</div>
+        <h3 class="carte__client">{{ x.titre }}</h3>
+        <p class="carte__resume">{{ x.texte }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="centre"><a class="btn" href="/devis/{{ devisParams }}">{{ p.personnalisation.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split split--rose">
+      <div class="split__media">{% photo p.cas_client.photo, p.cas_client.titre, "", "(min-width: 900px) 50vw, 100vw" %}</div>
+      <div class="split__texte">
+        <p class="surtitre">{{ p.cas_client.surtitre }}</p>
+        <h2 class="titre-l">{{ p.cas_client.titre | inline | safe }}</h2>
+        <div class="prose">{{ p.cas_client.texte | paras | safe }}</div>
+        <a class="btn btn--contour" href="/realisations/">{{ p.cas_client.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap centre">
+    <p class="surtitre surtitre--centre">{{ p.usages.titre }}</p>
+    <ul class="pastilles">
+      {%- for u in p.usages.liste %}<li>{{ u }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+{%- set cta = p.cta %}
+{% include "cta.njk" %}

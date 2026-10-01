@@ -1,0 +1,71 @@
+seo:
+  titre: Demander un devis | Atelier Crush
+  description: "Parlez-nous de votre événement : date, lieu, nombre d'invités. Nous revenons vers vous avec une proposition d'atelier adaptée."
+titre: Parlez-nous de votre événement.
+texte: |
+  Une date, un lieu, un nombre d'invités ?
+  Donnez-nous les premières informations et nous revenons vers vous avec une proposition adaptée.
+vous_etes:
+  label: Vous êtes
+  options:
+    - Agence événementielle / communication
+    - Marque / entreprise
+    - Particulier
+    - Autre
+atelier:
+  label: Quel atelier vous intéresse ?
+  options:
+    - Bijoux de sac
+    - Bracelets & colliers
+    - Colorimétrie
+    - Plusieurs ateliers
+    - Je souhaite être conseillé
+evenement:
+  label: Votre événement
+  choisir: Sélectionner
+  options:
+    - Lancement de produit
+    - Soirée clients / VIP
+    - Activation en boutique
+    - Séminaire / team building
+    - Événement collaborateurs
+    - Mariage
+    - Bar / Bat Mitzvah
+    - Autre
+date:
+  label: Date de l'événement
+lieu:
+  label: Lieu
+  exemple: Ville / pays
+invites:
+  label: Nombre d'invités
+  exemple: Nombre approximatif
+personnalisation:
+  label: Souhaitez-vous une personnalisation particulière ?
+  options:
+    - Couleurs / univers de marque
+    - Logo
+    - Produit
+    - Message / pièce spéciale
+    - À définir ensemble
+message:
+  label: Parlez-nous de votre événement
+  exemple: "Quelques lignes suffisent : contexte, ambiance, idée, contraintes…"
+coordonnees:
+  titre: Vos coordonnées
+  prenom: Prénom
+  nom: Nom
+  entreprise: Entreprise / agence
+  email: Email
+  telephone: Téléphone
+bouton: Envoyer ma demande
+mention: Nous revenons vers vous rapidement pour échanger sur votre projet.
+erreur: "L'envoi n'a pas fonctionné. Réessayez ou écrivez-nous à contact@atelier-crush.com."
+merci:
+  titre: Merci !
+  texte: |
+    Votre demande a bien été envoyée.
+    Nous allons regarder votre projet et revenir vers vous pour en discuter.
+
+    En attendant, vous pouvez découvrir nos dernières réalisations sur Instagram.
+  bouton: Voir Instagram

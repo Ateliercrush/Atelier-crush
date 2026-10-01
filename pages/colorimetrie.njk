@@ -1,0 +1,64 @@
+---
+layout: base.njk
+cle: colorimetrie
+permalink: /colorimetrie/
+---
+{%- set p = c.colorimetrie -%}
+{%- set devisParams = "?atelier=colorimetrie" -%}
+<section class="hero hero--banniere">
+  <div class="hero__bandeau">{% photo p.hero.photo, "Animation colorimétrie Atelier Crush", "hero__img", "100vw", true %}</div>
+  <div class="wrap hero__sous">
+    <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}{% if p.hero.badge %} <span class="badge">{{ p.hero.badge }}</span>{% endif %}</h1>
+    <div class="hero__intro">{{ p.hero.texte | paras | safe }}</div>
+    <a class="btn" href="/devis/{{ devisParams }}">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.etapes.surtitre }}</p>
+    <h2 class="titre-l centre">{{ p.etapes.titre | inline | safe }}</h2>
+    <ol class="etapes etapes--4">
+      {%- for e in p.etapes.liste %}
+      <li>
+        <span class="etapes__num">{{ loop.index | pad }}</span>
+        <div class="etapes__media etapes__media--portrait">{% photo e.photo, e.titre, "", "(min-width: 900px) 22vw, 50vw" %}</div>
+        <h3>{{ e.titre }}</h3>
+        <div>{{ e.texte | paras | safe }}</div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section--rose">
+  <div class="wrap duo-texte">
+    <div>
+      <p class="surtitre">{{ p.personnalisation.surtitre }}</p>
+      <p class="intro">{{ p.personnalisation.intro }}</p>
+      <ul class="points">
+        {%- for i in p.personnalisation.liste %}<li><svg class="ic"><use href="#i-check"/></svg>{{ i }}</li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="titre-m">{{ p.pourquoi.titre }}</h2>
+      <ul class="atouts atouts--2">
+        {%- for a in p.pourquoi.liste %}
+        <li><svg class="ic ic--l"><use href="#i-{{ a.icone }}"/></svg><h3>{{ a.titre }}</h3><p>{{ a.texte }}</p></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="split__media">{% photo p.cta.photo, "Porte-clés aux couleurs de la palette de l'invité", "", "(min-width: 900px) 50vw, 100vw" %}</div>
+      <div class="split__texte">
+        <h2 class="titre-l">{{ p.cta.titre | inline | safe }}</h2>
+        <a class="btn" href="/devis/{{ devisParams }}">{{ p.cta.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>

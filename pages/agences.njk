@@ -1,0 +1,53 @@
+---
+layout: base.njk
+cle: agences
+permalink: /agences/
+---
+{%- set p = c.agences -%}
+{%- set devisParams = "?profil=agence" -%}
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__texte">
+      <p class="surtitre">{{ p.hero.surtitre }}</p>
+      <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
+      <div class="hero__intro">{{ p.hero.texte | paras | safe }}</div>
+      <a class="btn" href="/devis/{{ devisParams }}">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+    </div>
+    <div class="hero__media">{% photo p.hero.photo, "Bijou de sac Atelier Crush", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</div>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap">
+    <ul class="atouts atouts--4 atouts--centre">
+      {%- for a in p.arguments %}
+      <li><svg class="ic ic--l"><use href="#i-{{ a.icone }}"/></svg><h3>{{ a.titre }}</h3><p>{{ a.texte }}</p></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="bande-refs">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.references.titre }}</p>
+    {%- set logosNoms = p.references.noms %}
+    {% include "logos.njk" %}
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap">
+    <div class="cartes cartes--3">
+      {%- for x in p.exemples %}
+      <div class="carte">
+        <div class="carte__media">{% photo x.photo, x.titre, "", "(min-width: 900px) 33vw, 100vw" %}</div>
+        <h2 class="carte__client">{{ x.titre }}</h2>
+        <p class="carte__resume">{{ x.texte }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{%- set cta = p.cta %}
+{% include "cta.njk" %}

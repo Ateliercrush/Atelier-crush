@@ -1,0 +1,51 @@
+seo:
+  titre: Animation mariage, Bar et Bat Mitzvah | Atelier Crush
+  description: "Un moment à partager, un cadeau qu'on garde : un atelier bijoux pendant votre mariage, Bar ou Bat Mitzvah, et chaque invité repart avec sa propre création."
+hero:
+  surtitre: Événements privés
+  titre: Un moment à partager, un cadeau qu'on garde.
+  texte: "Mariage, Bar ou Bat Mitzvah : Atelier Crush installe une animation créative pendant votre fête et chaque invité repart avec sa propre création."
+  bouton: Demander un devis
+  photo: /photos/fete-privee.jpg
+occasions:
+  - titre: Mariages
+    texte: |
+      Pendant le cocktail ou la soirée, vos invités composent leur création et repartent avec un cadeau qu'ils ont réellement choisi.
+
+      L'atelier peut reprendre les couleurs et l'univers de votre mariage.
+    bouton: Découvrir
+    lien: /realisations/#evenements-prives
+    photo: ""
+  - titre: Bar & Bat Mitzvah
+    texte: |
+      Bracelets, colliers ou bijoux de sac : une animation qui plaît aux jeunes comme aux adultes.
+
+      Chaque invité choisit son propre bijou, le personnalise et repart avec un souvenir de la fête.
+    bouton: Découvrir
+    lien: /realisations/#evenements-prives
+    photo: /photos/fete-privee-table.jpg
+autres:
+  titre: Et aussi…
+  liste:
+    - Anniversaires
+    - EVJF
+    - Baby showers
+    - Fêtes familiales
+    - Événements privés
+  photo: /photos/colliers-presentoirs-jardin.jpg
+sur_mesure:
+  surtitre: Pensé pour votre fête
+  liste:
+    - icone: palette
+      texte: Couleurs adaptées à votre thème
+    - icone: personnes
+      texte: Sélection choisie selon vos invités
+    - icone: etincelle
+      texte: Pièces personnalisées possibles
+    - icone: lieu
+      texte: Installation adaptée au lieu
+    - icone: coeur
+      texte: Animation assurée par notre équipe
+cta:
+  titre: Votre fête. Leurs créations. Un souvenir pour chacun.
+  bouton: Parlez-nous de votre événement

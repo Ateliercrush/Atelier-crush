@@ -1,0 +1,61 @@
+seo:
+  titre: Atelier bracelets et colliers personnalisés pour vos événements | Atelier Crush
+  description: "Animation bijoux pour mariages, Bar et Bat Mitzvah et événements : chaque invité compose son bracelet ou son collier et repart avec. De 5 à 200 participants."
+hero:
+  surtitre: Atelier bijoux
+  titre: Bracelets & colliers personnalisés
+  texte: |
+    Des bijoux uniques, créés pendant votre événement.
+    Vos invités choisissent leurs chaînes, perles, pierres, pendentifs et charms puis composent un bijou qui leur ressemble.
+  bouton: Demander un devis
+  photo: /photos/colliers-presentoirs-exterieur.jpg
+galerie:
+  - /photos/bracelets-presentoirs.jpg
+  - /photos/colliers-invites.jpg
+  - /photos/charms-pierres.jpg
+concept:
+  titre: Le bijou qu'ils auraient choisi eux-mêmes.
+  texte: |
+    Un cadeau est toujours plus personnel lorsqu'on peut le choisir.
+
+    L'invité compose son bracelet ou son collier selon ses goûts. Notre équipe l'accompagne et réalise l'assemblage.
+
+    À la fin, chacun repart avec un bijou unique et un souvenir personnel de votre événement.
+etapes:
+  titre: Comment ça marche ?
+  liste:
+    - icone: coeur
+      titre: Je choisis
+      texte: "Chaîne, perles, pierres, pendentifs ou charms : l'invité sélectionne ce qui lui plaît."
+    - icone: etincelle
+      titre: Je compose
+      texte: Il imagine son bijou avec l'aide de notre équipe.
+    - icone: cadeau
+      titre: Je repars avec
+      texte: Le bijou est assemblé sur place et remis immédiatement à l'invité.
+adaptation:
+  titre: Une expérience qui s'adapte à votre événement
+  liste:
+    - icone: palette
+      texte: Sélection des couleurs selon votre thème
+    - icone: etincelle
+      texte: Choix des charms adapté au public
+    - icone: lieu
+      texte: Installation intégrée au décor
+    - icone: coeur
+      texte: Accompagnement par notre équipe
+    - icone: personnes
+      texte: De 5 à 200 participants
+ideal:
+  titre: Particulièrement adapté à
+  liste:
+    - Bar Mitzvah
+    - Bat Mitzvah
+    - Mariages
+    - Anniversaires
+    - Soirées VIP
+    - Événements privés
+cta:
+  titre: Un bijou qui leur ressemble, pour un moment qu'ils n'oublient pas.
+  bouton: Demander un devis
+  photo: /photos/colliers-presentoirs-2.jpg

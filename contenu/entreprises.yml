@@ -1,0 +1,64 @@
+seo:
+  titre: Animation événementielle pour entreprises et marques | Atelier Crush
+  description: "Lancements produit, soirées clients, activations retail, séminaires : des animations participatives sur mesure aux couleurs de votre marque. Marque blanche possible."
+hero:
+  surtitre: Entreprises & marques
+  titre: Des animations sur mesure pour vos événements.
+  texte: "Lancements, soirées clients, retail, collaborateurs ou séminaires : Atelier Crush imagine des expériences participatives adaptées à votre public et à votre marque."
+  bouton: Demander un devis
+  photo: /photos/redken-invites-creation.jpg
+formats:
+  surtitre: Pour tous vos événements
+  liste:
+    - icone: etincelle
+      titre: Lancements de produit
+      texte: Faites entrer votre produit ou votre univers directement dans l'expérience.
+    - icone: verre
+      titre: Soirées clients & VIP
+      texte: Une attention personnelle que vos invités emportent avec eux.
+    - icone: boutique
+      titre: Activations en boutique
+      texte: Une animation qui attire, engage et prolonge le temps passé en magasin.
+    - icone: valise
+      titre: Séminaires & team building
+      texte: Une expérience créative qui permet aux équipes de se retrouver autour d'un moment plus informel.
+    - icone: personnes
+      titre: Événements collaborateurs
+      texte: Chacun repart avec un cadeau choisi et personnalisé.
+    - icone: cadeau
+      titre: Incentives
+      texte: Une animation légère et mémorable qui s'intègre facilement au programme.
+marque:
+  surtitre: Votre marque au cœur de l'expérience
+  liste:
+    - Couleurs de votre identité
+    - Sélection adaptée à votre événement
+    - Charms sur mesure
+    - Logo ou message
+    - Produit intégré lorsque le format le permet
+    - Supports personnalisés
+    - Marque blanche possible
+  photo: /photos/eden-saint-tropez-3.jpg
+marque_blanche:
+  surtitre: Format agence / marque blanche
+  titre: Votre événement reste le vôtre.
+  texte: |
+    Nous pouvons intervenir sous notre nom ou nous intégrer totalement à votre dispositif.
+
+    Tenues adaptées à votre événement, présence discrète ou fonctionnement en marque blanche : nous nous adaptons aux besoins de votre projet.
+  photo: /photos/eden-dubai-salon.jpg
+references_titre: Ils nous font confiance
+process:
+  titre: De l'idée au jour J, on s'occupe de l'atelier.
+  liste:
+    - titre: Le brief
+      texte: Vous nous indiquez la date, le lieu, le nombre d'invités et l'univers de l'événement.
+    - titre: La proposition
+      texte: Nous imaginons un atelier et une sélection adaptés au projet.
+    - titre: Le jour J
+      texte: Notre équipe apporte le matériel et anime l'expérience.
+    - titre: Le souvenir
+      texte: Chaque participant repart avec sa création.
+cta:
+  titre: Vous avez un événement en préparation ?
+  bouton: Parlez-nous de votre brief

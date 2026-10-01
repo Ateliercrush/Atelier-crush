@@ -1,0 +1,39 @@
+logo: /photos/logo-atelier-crush.png
+menu:
+  - texte: Bijoux de sac
+    lien: /bijoux-de-sac/
+  - texte: Bracelets & colliers
+    lien: /bracelets-colliers/
+  - texte: Colorimétrie
+    lien: /colorimetrie/
+  - texte: Entreprises
+    lien: /entreprises/
+  - texte: Événements privés
+    lien: /evenements-prives/
+  - texte: Nos réalisations
+    lien: /realisations/
+bouton_devis: Demander un devis
+references:
+  - nom: Benefit
+    logo: /photos/logos/benefit.png
+  - nom: Redken
+    logo: ""
+  - nom: American Vintage
+    logo: ""
+  - nom: C&A
+    logo: /photos/logos/c-and-a.jpg
+  - nom: Eden Gallery
+    logo: /photos/logos/eden-gallery.png
+  - nom: Bonobo
+    logo: ""
+  - nom: Peggy Sage
+    logo: /photos/logos/peggy.png
+footer:
+  accroche: Des animations personnalisées que vos invités emportent avec eux.
+  titre_liens: Découvrir
+  titre_contact: Nous contacter
+  email: contact@atelier-crush.com
+  instagram: "@atelier_crush"
+  lien_instagram: https://www.instagram.com/atelier_crush/
+  cta_texte: Une question, un brief, un événement ?
+  cta_bouton: Parlez-nous de votre projet

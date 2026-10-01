@@ -1,0 +1,89 @@
+---
+layout: base.njk
+cle: devis
+permalink: /devis/
+---
+{%- set p = c.devis -%}
+<section class="section devis">
+  <div class="wrap wrap--etroit">
+    <div class="devis__entete centre">
+      <h1 class="titre-xl">{{ p.titre | inline | safe }}</h1>
+      <div class="hero__intro hero__intro--centre">{{ p.texte | paras | safe }}</div>
+    </div>
+
+    <form class="form" id="form-devis" action="https://formspree.io/f/mjgjwnzp" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="Nouvelle demande de devis (site Atelier Crush)">
+      <input type="text" name="_gotcha" class="cache" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <fieldset class="champ">
+        <legend>{{ p.vous_etes.label }} <span class="req">*</span></legend>
+        <div class="choix">
+          {%- for o in p.vous_etes.options %}
+          <label class="choix__item"><input type="radio" name="Vous êtes" value="{{ o }}" data-cle="{{ o | cle }}" required><span>{{ o }}</span></label>
+          {%- endfor %}
+        </div>
+      </fieldset>
+
+      <fieldset class="champ">
+        <legend>{{ p.atelier.label }} <span class="req">*</span></legend>
+        <div class="choix">
+          {%- for o in p.atelier.options %}
+          <label class="choix__item"><input type="radio" name="Atelier" value="{{ o }}" data-cle="{{ o | cle }}" required><span>{{ o }}</span></label>
+          {%- endfor %}
+        </div>
+      </fieldset>
+
+      <div class="champ">
+        <label for="f-evenement">{{ p.evenement.label }} <span class="req">*</span></label>
+        <select id="f-evenement" name="Événement" required>
+          <option value="">{{ p.evenement.choisir }}</option>
+          {%- for o in p.evenement.options %}<option>{{ o }}</option>{% endfor %}
+        </select>
+      </div>
+
+      <div class="ligne3">
+        <div class="champ"><label for="f-date">{{ p.date.label }}</label><input id="f-date" type="date" name="Date"></div>
+        <div class="champ"><label for="f-lieu">{{ p.lieu.label }}</label><input id="f-lieu" type="text" name="Lieu" placeholder="{{ p.lieu.exemple }}"></div>
+        <div class="champ"><label for="f-invites">{{ p.invites.label }}</label><input id="f-invites" type="text" inputmode="numeric" name="Nombre d'invités" placeholder="{{ p.invites.exemple }}"></div>
+      </div>
+
+      <fieldset class="champ">
+        <legend>{{ p.personnalisation.label }}</legend>
+        <div class="choix">
+          {%- for o in p.personnalisation.options %}
+          <label class="choix__item"><input type="checkbox" name="Personnalisation[]" value="{{ o }}"><span>{{ o }}</span></label>
+          {%- endfor %}
+        </div>
+      </fieldset>
+
+      <div class="champ">
+        <label for="f-message">{{ p.message.label }}</label>
+        <textarea id="f-message" name="Message" rows="5" placeholder="{{ p.message.exemple }}"></textarea>
+      </div>
+
+      <fieldset class="champ">
+        <legend>{{ p.coordonnees.titre }}</legend>
+        <div class="ligne2">
+          <div class="champ"><label for="f-prenom">{{ p.coordonnees.prenom }} <span class="req">*</span></label><input id="f-prenom" name="Prénom" autocomplete="given-name" required></div>
+          <div class="champ"><label for="f-nom">{{ p.coordonnees.nom }} <span class="req">*</span></label><input id="f-nom" name="Nom" autocomplete="family-name" required></div>
+          <div class="champ"><label for="f-entreprise">{{ p.coordonnees.entreprise }}</label><input id="f-entreprise" name="Entreprise" autocomplete="organization"></div>
+          <div class="champ"><label for="f-email">{{ p.coordonnees.email }} <span class="req">*</span></label><input id="f-email" type="email" name="email" autocomplete="email" required></div>
+          <div class="champ"><label for="f-tel">{{ p.coordonnees.telephone }}</label><input id="f-tel" type="tel" name="Téléphone" autocomplete="tel"></div>
+        </div>
+      </fieldset>
+
+      <p class="form__erreur" role="alert" hidden>{{ p.erreur }}</p>
+      <div class="centre">
+        <button class="btn btn--l" type="submit">{{ p.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></button>
+        <p class="form__mention">{{ p.mention }}</p>
+      </div>
+    </form>
+
+    <div class="merci" id="merci" hidden tabindex="-1">
+      <svg class="ic ic--xl"><use href="#i-coeur"/></svg>
+      <h2 class="titre-l">{{ p.merci.titre }}</h2>
+      <div class="prose">{{ p.merci.texte | paras | safe }}</div>
+      <a class="btn" href="{{ c.general.footer.lien_instagram }}" target="_blank" rel="noopener">{{ p.merci.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+    </div>
+  </div>
+</section>

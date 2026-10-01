@@ -1,0 +1,120 @@
+seo:
+  titre: Nos réalisations | Atelier Crush
+  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez les ateliers imaginés par Atelier Crush pour les marques, les entreprises et les événements privés."
+hero:
+  surtitre: Nos réalisations
+  titre: Chaque événement donne naissance à un atelier différent.
+  texte: "Marques, entreprises, agences et événements privés : découvrez quelques projets imaginés par Atelier Crush."
+filtre_tout: Tout
+projets:
+  - client: Benefit
+    logo: /photos/logos/benefit.png
+    type: Lancement produit · Bad Gal Bounce
+    categorie: Lancements produit
+    resume: Un atelier bijoux de sac imaginé autour de l'univers du nouveau mascara.
+    description: |
+      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara Bad Gal Bounce.
+
+      Sélection de pièces en cohérence avec l'univers Benefit et possibilité d'intégrer directement le produit dans la création.
+    photo: /photos/benefit-stand-bad-gal-bounce.jpg
+    galerie:
+      - /photos/benefit-bac-bad-gal-bounce.jpg
+      - /photos/benefit-soiree.jpg
+      - /photos/benefit-stand-2.jpg
+      - /photos/benefit-perles.jpg
+      - /photos/benefit-table.jpg
+      - /photos/benefit-presentoir.jpg
+      - /photos/benefit-plateaux.jpg
+      - /photos/choix-des-charms-mains.jpg
+    accueil: true
+  - client: American Vintage
+    logo: ""
+    type: Activation retail · Fête des mères
+    categorie: Retail
+    resume: Une activation dans plus de 10 boutiques en Europe.
+    description: |
+      Atelier Crush a accompagné American Vintage dans plus de 10 boutiques en Europe à l'occasion de la fête des mères.
+
+      Une sélection colorée et printanière pensée pour l'activation.
+    photo: ""
+    galerie: []
+    accueil: true
+  - client: Redken
+    logo: ""
+    type: Événement de marque
+    categorie: Événements de marque
+    resume: Un atelier bijoux intégré à l'événement de la marque.
+    description: Un atelier bijoux intégré à l'événement de la marque.
+    photo: /photos/redken-atelier.jpg
+    galerie:
+      - /photos/redken-table.jpg
+      - /photos/redken-table-2.jpg
+      - /photos/redken-coeur-lumineux.jpg
+      - /photos/redken-produits-et-charms.jpg
+      - /photos/redken-invites.jpg
+      - /photos/redken-invites-2.jpg
+      - /photos/redken-creation.jpg
+      - /photos/redken-creation-2.jpg
+      - /photos/redken-invites-creation.jpg
+    accueil: false
+  - client: Eden Gallery
+    logo: /photos/logos/eden-gallery.png
+    type: Événement de marque
+    categorie: Événements de marque
+    resume: Un atelier bijoux installé au cœur de la galerie.
+    description: Un atelier bijoux installé au cœur de la galerie d'art.
+    photo: /photos/eden-saint-tropez.jpg
+    galerie:
+      - /photos/eden-saint-tropez-table.jpg
+      - /photos/eden-saint-tropez-galerie.jpg
+      - /photos/eden-saint-tropez-creation.jpg
+      - /photos/eden-saint-tropez-2.jpg
+      - /photos/eden-saint-tropez-hotes.jpg
+      - /photos/eden-plateaux-rouges.jpg
+      - /photos/eden-plateaux-rouges-2.jpg
+      - /photos/eden-charm-sur-mesure.jpg
+      - /photos/eden-dubai-table.jpg
+      - /photos/eden-dubai.jpg
+      - /photos/eden-dubai-invites.jpg
+      - /photos/eden-dubai-salon.jpg
+    accueil: true
+  - client: C&A
+    logo: /photos/logos/c-and-a.jpg
+    type: Événement collaborateurs
+    categorie: Collaborateurs
+    resume: Une expérience créative pensée pour les équipes.
+    description: Une expérience bijoux pensée pour les collaborateurs de la marque.
+    photo: /photos/c-and-a.jpg
+    galerie: []
+    accueil: true
+autres:
+  titre: Autres réalisations
+  liste:
+    - titre: Peggy Sage
+      categorie: Retail
+      photo: ""
+    - titre: Bonobo
+      categorie: Événements de marque
+      photo: ""
+    - titre: Événements privés
+      categorie: Événements privés
+      photo: /photos/fete-privee.jpg
+    - titre: Bar & Bat Mitzvah
+      categorie: Événements privés
+      photo: /photos/fete-privee-table.jpg
+    - titre: Mariages
+      categorie: Événements privés
+      photo: ""
+    - titre: Dubaï
+      categorie: ""
+      photo: /photos/eden-dubai.jpg
+    - titre: Londres
+      categorie: ""
+      photo: ""
+    - titre: Saint-Tropez
+      categorie: ""
+      photo: /photos/eden-saint-tropez-2.jpg
+bouton_projet: Voir le projet
+cta:
+  titre: Et pour votre prochain événement ?
+  bouton: Parlez-nous de votre projet

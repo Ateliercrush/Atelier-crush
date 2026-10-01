@@ -1,0 +1,24 @@
+---
+pagination:
+  data: fichiers
+  size: 1
+  alias: f
+fichiers:
+  - robots.txt
+  - sitemap.xml
+permalink: "/{{ f }}"
+eleventyExcludeFromCollections: true
+---
+{%- if f == "robots.txt" -%}
+User-agent: *
+Allow: /
+
+Sitemap: https://atelier-crush.com/sitemap.xml
+{%- else -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all %}{% if item.url and item.url != "/404.html" %}
+  <url><loc>https://atelier-crush.com{{ item.url }}</loc></url>
+{%- endif %}{% endfor %}
+</urlset>
+{%- endif -%}

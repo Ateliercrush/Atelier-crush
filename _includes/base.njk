@@ -1,0 +1,119 @@
+{%- set g = c.general -%}
+{%- set seo = c[cle].seo -%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ seo.titre }}</title>
+<meta name="description" content="{{ seo.description }}">
+<link rel="canonical" href="https://atelier-crush.com{{ page.url }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Atelier Crush">
+<meta property="og:title" content="{{ seo.titre }}">
+<meta property="og:description" content="{{ seo.description }}">
+<meta property="og:url" content="https://atelier-crush.com{{ page.url }}">
+<meta property="og:image" content="https://atelier-crush.com/photos/logo-atelier-crush.png">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="/photos/logo-atelier-crush.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+{%- if cle == "accueil" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Atelier Crush",
+  "description": {{ seo.description | json | safe }},
+  "url": "https://atelier-crush.com/",
+  "logo": "https://atelier-crush.com/photos/logo-atelier-crush.png",
+  "image": "https://atelier-crush.com/photos/logo-atelier-crush.png",
+  "email": {{ g.footer.email | json | safe }},
+  "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
+  "areaServed": ["France", "Royaume-Uni", "Émirats arabes unis"],
+  "sameAs": [{{ g.footer.lien_instagram | json | safe }}]
+}
+</script>
+{%- endif %}
+</head>
+<body class="page-{{ cle }}">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-personnes" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-cadeau" viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></symbol>
+    <symbol id="i-coeur" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-etincelle" viewBox="0 0 24 24"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8z"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.84-.44-1.13-.29-.29-.44-.65-.44-1.13a1.64 1.64 0 0 1 1.67-1.67h2c3.05 0 5.56-2.5 5.56-5.55C21.97 6.01 17.46 2 12 2z"/></symbol>
+    <symbol id="i-etiquette" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-horloge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-calendrier" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="i-lieu" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-boutique" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-valise" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-verre" viewBox="0 0 24 24"><path d="M5 3h14l-7 9z"/><line x1="12" y1="12" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></symbol>
+    <symbol id="i-calques" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-fleche" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="header">
+  <div class="header__in">
+    <a class="header__logo" href="/" aria-label="Atelier Crush, accueil">
+      <img src="{{ g.logo }}" alt="Atelier Crush" width="340" height="138">
+    </a>
+    <nav class="nav" id="nav" aria-label="Menu principal">
+      <ul>
+        {%- for m in g.menu %}
+        <li><a href="{{ m.lien }}"{% if page.url == m.lien %} aria-current="page"{% endif %}>{{ m.texte }}</a></li>
+        {%- endfor %}
+      </ul>
+      <a class="btn btn--sm nav__devis" href="/devis/">{{ g.bouton_devis }}</a>
+    </nav>
+    <a class="btn btn--sm header__devis" href="/devis/">{{ g.bouton_devis }}</a>
+    <button class="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="contenu">
+{{ content | safe }}
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__marque">
+      <img src="{{ g.logo }}" alt="Atelier Crush" width="170" height="69" loading="lazy">
+      <p>{{ g.footer.accroche }}</p>
+    </div>
+    <div>
+      <p class="footer__titre">{{ g.footer.titre_liens }}</p>
+      <ul class="footer__liens">
+        {%- for m in g.menu %}<li><a href="{{ m.lien }}">{{ m.texte }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <p class="footer__titre">{{ g.footer.titre_contact }}</p>
+      <ul class="footer__liens">
+        <li><a href="mailto:{{ g.footer.email }}"><svg class="ic ic--sm"><use href="#i-mail"/></svg>{{ g.footer.email }}</a></li>
+        <li><a href="{{ g.footer.lien_instagram }}" target="_blank" rel="noopener"><svg class="ic ic--sm"><use href="#i-instagram"/></svg>{{ g.footer.instagram }}</a></li>
+      </ul>
+    </div>
+    <div class="footer__cta">
+      <p class="footer__cta-texte">{{ g.footer.cta_texte }}</p>
+      <a class="btn" href="/devis/">{{ g.footer.cta_bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+    </div>
+  </div>
+  <div class="wrap footer__bas">© Atelier Crush · Paris</div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

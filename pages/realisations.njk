@@ -1,0 +1,63 @@
+---
+layout: base.njk
+cle: realisations
+permalink: /realisations/
+---
+{%- set p = c.realisations -%}
+{%- set filtres = ["Lancements produit", "Retail", "Événements de marque", "Collaborateurs", "Événements privés"] -%}
+<section class="hero hero--simple">
+  <div class="wrap centre">
+    <p class="surtitre surtitre--centre">{{ p.hero.surtitre }}</p>
+    <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
+    <div class="hero__intro hero__intro--centre">{{ p.hero.texte | paras | safe }}</div>
+  </div>
+</section>
+
+<section class="section section--serree" data-filtrable>
+  <div class="wrap">
+    <div class="filtres" role="group" aria-label="Filtrer les réalisations">
+      <button type="button" class="filtre" data-filtre="" aria-pressed="true">{{ p.filtre_tout }}</button>
+      {%- for f in filtres %}
+      <button type="button" class="filtre" data-filtre="{{ f | cle }}" aria-pressed="false">{{ f }}</button>
+      {%- endfor %}
+    </div>
+
+    <div class="cartes cartes--3">
+      {%- for r in p.projets %}
+      <article class="carte" id="{{ r.client | cle }}" data-cat="{{ r.categorie | cle }}">
+        <div class="carte__media">{% photo r.photo, r.client + ", " + r.type, "", "(min-width: 900px) 33vw, 100vw" %}</div>
+        <div class="carte__entete">
+          {%- if r.logo %}{% photo r.logo, r.client, "carte__logo", "120px", false, [240] %}{% endif %}
+          <h2 class="carte__client">{{ r.client }}</h2>
+        </div>
+        <p class="carte__type">{{ r.type }}</p>
+        <div class="carte__resume">{{ r.description | paras | safe }}</div>
+        {%- if r.galerie and r.galerie.length %}
+        <button type="button" class="lien" data-galerie="{{ r.client | cle }}">{{ p.bouton_projet }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></button>
+        <template id="galerie-{{ r.client | cle }}">
+          {%- for g in r.galerie %}{% photo g, r.client, "", "90vw" %}{% endfor %}
+        </template>
+        {%- endif %}
+      </article>
+      {%- endfor %}
+    </div>
+
+    <h2 class="titre-m autres-titre">{{ p.autres.titre }}</h2>
+    <ul class="vignettes">
+      {%- for a in p.autres.liste %}
+      <li data-cat="{{ a.categorie | cle }}">
+        {% photo a.photo, a.titre, "", "(min-width: 900px) 25vw, 50vw" %}
+        <span>{{ a.titre }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<dialog class="visionneuse" aria-label="Photos du projet">
+  <button type="button" class="visionneuse__fermer" aria-label="Fermer">×</button>
+  <div class="visionneuse__photos"></div>
+</dialog>
+
+{%- set cta = p.cta %}{% set devisParams = "" %}
+{% include "cta.njk" %}

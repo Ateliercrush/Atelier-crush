@@ -1,0 +1,6 @@
+<ul class="logos">
+  {%- for nom in logosNoms %}
+  {%- set r = nom | logoDe(c.general.references) %}
+  <li>{% if r.logo %}{% photo r.logo, r.nom, "logos__img", "160px", false, [320] %}{% else %}<span class="logos__nom">{{ r.nom }}</span>{% endif %}</li>
+  {%- endfor %}
+</ul>

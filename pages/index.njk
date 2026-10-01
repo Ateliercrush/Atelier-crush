@@ -1,0 +1,103 @@
+---
+layout: base.njk
+cle: accueil
+permalink: /
+---
+{%- set p = c.accueil -%}
+<section class="hero hero--accueil">
+  <div class="wrap hero__grid">
+    <div class="hero__texte">
+      <p class="surtitre">{{ p.hero.surtitre }}</p>
+      <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
+      <div class="hero__intro">{{ p.hero.texte | paras | safe }}</div>
+      <a class="btn" href="/devis/">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+      <ul class="preuves">
+        {%- for ch in p.preuves.chiffres %}
+        <li><strong>{{ ch.nombre }}</strong><span>{{ ch.texte }}</span></li>
+        {%- endfor %}
+        <li class="preuves__lieux"><span>{{ p.preuves.destinations }}</span></li>
+      </ul>
+    </div>
+    <div class="hero__media">{% photo p.hero.photo, "Bijou de sac Atelier Crush accroché à un sac", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</div>
+  </div>
+</section>
+
+<section class="bande-refs">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.references_titre }}</p>
+    {%- set logosNoms = c.general.references | noms %}
+    {% include "logos.njk" %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.pourquoi.surtitre }}</p>
+    <h2 class="titre-l centre">{{ p.pourquoi.titre | inline | safe }}</h2>
+    <ul class="atouts atouts--4">
+      {%- for a in p.pourquoi.liste %}
+      <li><svg class="ic ic--l"><use href="#i-{{ a.icone }}"/></svg><h3>{{ a.titre }}</h3><p>{{ a.texte }}</p></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap">
+    <div class="split split--rose">
+      <div class="split__media">{% photo p.signature.photo, "Sélection de charms pour l'atelier bijoux de sac", "", "(min-width: 900px) 50vw, 100vw" %}</div>
+      <div class="split__texte">
+        <p class="surtitre">{{ p.signature.surtitre }}</p>
+        <h2 class="titre-l">{{ p.signature.titre | inline | safe }}</h2>
+        <p class="accroche">{{ p.signature.accroche }}</p>
+        <div class="prose">{{ p.signature.texte | paras | safe }}</div>
+        <ul class="points">
+          {%- for pt in p.signature.points %}
+          <li><svg class="ic"><use href="#i-{{ pt.icone }}"/></svg>{{ pt.texte }}</li>
+          {%- endfor %}
+        </ul>
+        <a class="btn" href="/bijoux-de-sac/">{{ p.signature.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap">
+    <p class="surtitre">{{ p.autres.surtitre }}</p>
+    <div class="duo">
+      {%- for a in p.autres.ateliers %}
+      <a class="mini" href="{{ a.lien }}">
+        <div class="mini__media">{% photo a.photo, a.titre, "", "(min-width: 900px) 20vw, 40vw" %}</div>
+        <div class="mini__texte">
+          <h3 class="titre-s">{{ a.titre }}</h3>
+          <p>{{ a.texte }}</p>
+          <span class="lien">{{ a.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></span>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap">
+    <p class="surtitre">{{ p.realisations.surtitre }}</p>
+    <h2 class="titre-m">{{ p.realisations.titre | inline | safe }}</h2>
+    <div class="cartes cartes--4">
+      {%- for r in c.realisations.projets %}{% if r.accueil %}
+      <a class="carte" href="/realisations/#{{ r.client | cle }}">
+        <div class="carte__media">{% photo r.photo, r.client + ", " + r.type, "", "(min-width: 900px) 25vw, 50vw" %}</div>
+        <p class="carte__client">{{ r.client }}</p>
+        <p class="carte__type">{{ r.type }}</p>
+        <p class="carte__resume">{{ r.resume }}</p>
+        <span class="lien">{{ c.realisations.bouton_projet }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></span>
+      </a>
+      {%- endif %}{% endfor %}
+    </div>
+    <p class="centre"><a class="btn btn--contour" href="/realisations/">{{ p.realisations.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a></p>
+  </div>
+</section>
+
+{%- set cta = p.cta %}{% set devisParams = "" %}
+{% include "cta.njk" %}

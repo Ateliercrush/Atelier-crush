@@ -1,0 +1,68 @@
+---
+layout: base.njk
+cle: braceletsColliers
+permalink: /bracelets-colliers/
+---
+{%- set p = c.braceletsColliers -%}
+{%- set devisParams = "?atelier=bracelets-colliers" -%}
+<section class="hero hero--inverse">
+  <div class="wrap hero__grid">
+    <div class="hero__media">{% photo p.hero.photo, "Atelier bracelets et colliers Atelier Crush", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</div>
+    <div class="hero__texte">
+      <p class="surtitre">{{ p.hero.surtitre }}</p>
+      <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
+      <div class="hero__intro">{{ p.hero.texte | paras | safe }}</div>
+      <a class="btn" href="/devis/{{ devisParams }}">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap">
+    <div class="galerie3">
+      {%- for g in p.galerie %}<div>{% photo g, "Bracelets et colliers créés en atelier", "", "(min-width: 900px) 33vw, 100vw" %}</div>{% endfor %}
+    </div>
+    <div class="concept">
+      <h2 class="titre-l">{{ p.concept.titre | inline | safe }}</h2>
+      <div class="prose">{{ p.concept.texte | paras | safe }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--creme">
+  <div class="wrap">
+    <h2 class="titre-l centre">{{ p.etapes.titre | inline | safe }}</h2>
+    <ol class="atouts atouts--3">
+      {%- for e in p.etapes.liste %}
+      <li><svg class="ic ic--l"><use href="#i-{{ e.icone }}"/></svg><span class="etapes__num etapes__num--s">{{ loop.index | pad }}</span><h3>{{ e.titre }}</h3><p>{{ e.texte }}</p></li>
+      {%- endfor %}
+    </ol>
+    <div class="encart">
+      <h3 class="encart__titre">{{ p.adaptation.titre }}</h3>
+      <ul class="points points--grille">
+        {%- for i in p.adaptation.liste %}<li><svg class="ic"><use href="#i-{{ i.icone }}"/></svg>{{ i.texte }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap centre">
+    <p class="surtitre surtitre--centre">{{ p.ideal.titre }}</p>
+    <ul class="pastilles">
+      {%- for u in p.ideal.liste %}<li>{{ u }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap">
+    <div class="banniere">
+      {% photo p.cta.photo, "Assemblage d'un bijou pendant l'atelier", "banniere__img", "100vw" %}
+      <div class="banniere__carte">
+        <h2 class="titre-m">{{ p.cta.titre | inline | safe }}</h2>
+        <a class="btn" href="/devis/{{ devisParams }}">{{ p.cta.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>

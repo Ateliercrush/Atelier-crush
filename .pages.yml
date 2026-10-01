@@ -1,0 +1,1386 @@
+# Configuration de l'interface d'admin (Pages CMS, https://app.pagescms.org)
+media:
+  input: photos
+  output: /photos
+  extensions:
+    - jpg
+    - jpeg
+    - png
+    - webp
+    - svg
+content:
+  - name: general
+    label: Réglages généraux (menu, logos, pied de page)
+    type: file
+    path: contenu/general.yml
+    fields:
+      - name: logo
+        label: Logo Atelier Crush
+        type: image
+      - name: menu
+        label: Menu
+        type: object
+        list: true
+        fields:
+          - name: texte
+            label: Texte
+            type: string
+          - name: lien
+            label: Lien
+            type: string
+      - name: bouton_devis
+        label: Bouton du menu
+        type: string
+      - name: references
+        label: Logos clients
+        type: object
+        list: true
+        fields:
+          - name: nom
+            label: Nom de la marque
+            type: string
+          - name: logo
+            label: Logo (facultatif, sinon le nom s'affiche)
+            type: image
+      - name: footer
+        label: Pied de page
+        type: object
+        fields:
+          - name: accroche
+            label: Phrase sous le logo
+            type: string
+          - name: titre_liens
+            label: Titre des liens
+            type: string
+          - name: titre_contact
+            label: Titre contact
+            type: string
+          - name: email
+            label: Email
+            type: string
+          - name: instagram
+            label: Nom Instagram
+            type: string
+          - name: lien_instagram
+            label: Lien Instagram
+            type: string
+          - name: cta_texte
+            label: Phrase de l'encart rose
+            type: string
+          - name: cta_bouton
+            label: Bouton de l'encart rose
+            type: string
+  - name: accueil
+    label: 1 · Accueil
+    type: file
+    path: contenu/accueil.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: hero
+        label: Haut de page
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: preuves
+        label: Chiffres
+        type: object
+        fields:
+          - name: chiffres
+            label: Chiffres
+            type: object
+            list: true
+            fields:
+              - name: nombre
+                label: Nombre
+                type: string
+              - name: texte
+                label: Texte
+                type: string
+          - name: destinations
+            label: Destinations
+            type: string
+      - name: references_titre
+        label: Titre au-dessus des logos
+        type: string
+      - name: pourquoi
+        label: Pourquoi ça marche
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: liste
+            label: Arguments
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Icône
+                type: select
+                options:
+                  values:
+                    - coeur
+                    - cadeau
+                    - personnes
+                    - etincelle
+                    - palette
+                    - etiquette
+                    - globe
+                    - horloge
+                    - calendrier
+                    - lieu
+                    - photo
+                    - boutique
+                    - valise
+                    - verre
+                    - calques
+                    - message
+                    - check
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+      - name: signature
+        label: Offre signature (bijou de sac)
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: accroche
+            label: Accroche en italique
+            type: string
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: points
+            label: Points clés
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Icône
+                type: select
+                options:
+                  values:
+                    - coeur
+                    - cadeau
+                    - personnes
+                    - etincelle
+                    - palette
+                    - etiquette
+                    - globe
+                    - horloge
+                    - calendrier
+                    - lieu
+                    - photo
+                    - boutique
+                    - valise
+                    - verre
+                    - calques
+                    - message
+                    - check
+              - name: texte
+                label: Texte
+                type: string
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: autres
+        label: Autres ateliers
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: ateliers
+            label: Ateliers
+            type: object
+            list: true
+            fields:
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+              - name: bouton
+                label: Bouton
+                type: string
+              - name: lien
+                label: Lien
+                type: string
+              - name: photo
+                label: Photo
+                type: image
+      - name: realisations
+        label: Réalisations
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: bouton
+            label: Texte du bouton
+            type: string
+        description: Les projets affichés se choisissent dans « 7 · Réalisations » (case « Afficher sur l'accueil »).
+      - name: cta
+        label: Bandeau final
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+  - name: bijoux-de-sac
+    label: 2 · Bijoux de sac
+    type: file
+    path: contenu/bijoux-de-sac.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: hero
+        label: Haut de page
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: etapes
+        label: Les 3 étapes
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: liste
+            label: Étapes
+            type: object
+            list: true
+            fields:
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+                description: Laissez une ligne vide pour créer un nouveau paragraphe.
+              - name: photo
+                label: Photo
+                type: image
+      - name: infos
+        label: Informations pratiques
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: liste
+            label: Informations
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Icône
+                type: select
+                options:
+                  values:
+                    - coeur
+                    - cadeau
+                    - personnes
+                    - etincelle
+                    - palette
+                    - etiquette
+                    - globe
+                    - horloge
+                    - calendrier
+                    - lieu
+                    - photo
+                    - boutique
+                    - valise
+                    - verre
+                    - calques
+                    - message
+                    - check
+              - name: texte
+                label: Texte
+                type: string
+      - name: personnalisation
+        label: Sur mesure
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: intro
+            label: Introduction
+            type: string
+          - name: liste
+            label: Possibilités
+            type: object
+            list: true
+            fields:
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+              - name: photo
+                label: Photo
+                type: image
+          - name: bouton
+            label: Texte du bouton
+            type: string
+      - name: cas_client
+        label: Cas client
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: usages
+        label: Idéal pour
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: liste
+            label: Occasions
+            type: string
+            list: true
+      - name: cta
+        label: Bandeau final
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+  - name: bracelets-colliers
+    label: 3 · Bracelets & colliers
+    type: file
+    path: contenu/bracelets-colliers.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: hero
+        label: Haut de page
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: galerie
+        label: 3 photos sous le haut de page
+        type: image
+        list:
+          min: 3
+          max: 3
+      - name: concept
+        label: Le concept
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+      - name: etapes
+        label: Comment ça marche
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: liste
+            label: Étapes
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Icône
+                type: select
+                options:
+                  values:
+                    - coeur
+                    - cadeau
+                    - personnes
+                    - etincelle
+                    - palette
+                    - etiquette
+                    - globe
+                    - horloge
+                    - calendrier
+                    - lieu
+                    - photo
+                    - boutique
+                    - valise
+                    - verre
+                    - calques
+                    - message
+                    - check
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+      - name: adaptation
+        label: Adaptation
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: liste
+            label: Points
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Icône
+                type: select
+                options:
+                  values:
+                    - coeur
+                    - cadeau
+                    - personnes
+                    - etincelle
+                    - palette
+                    - etiquette
+                    - globe
+                    - horloge
+                    - calendrier
+                    - lieu
+                    - photo
+                    - boutique
+                    - valise
+                    - verre
+                    - calques
+                    - message
+                    - check
+              - name: texte
+                label: Texte
+                type: string
+      - name: ideal
+        label: Particulièrement adapté à
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: liste
+            label: Occasions
+            type: string
+            list: true
+      - name: cta
+        label: Bandeau final
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+  - name: colorimetrie
+    label: 4 · Colorimétrie
+    type: file
+    path: contenu/colorimetrie.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: hero
+        label: Haut de page
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+          - name: badge
+            label: Étiquette à côté du titre (ex. Nouveauté)
+            type: string
+      - name: etapes
+        label: Les 4 étapes
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: liste
+            label: Étapes
+            type: object
+            list: true
+            fields:
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+                description: Laissez une ligne vide pour créer un nouveau paragraphe.
+              - name: photo
+                label: Photo
+                type: image
+      - name: personnalisation
+        label: Personnalisation
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: intro
+            label: Introduction
+            type: string
+          - name: liste
+            label: Éléments
+            type: string
+            list: true
+      - name: pourquoi
+        label: Pourquoi la colorimétrie
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: liste
+            label: Arguments
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Icône
+                type: select
+                options:
+                  values:
+                    - coeur
+                    - cadeau
+                    - personnes
+                    - etincelle
+                    - palette
+                    - etiquette
+                    - globe
+                    - horloge
+                    - calendrier
+                    - lieu
+                    - photo
+                    - boutique
+                    - valise
+                    - verre
+                    - calques
+                    - message
+                    - check
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+      - name: cta
+        label: Bandeau final
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+  - name: entreprises
+    label: 5 · Entreprises
+    type: file
+    path: contenu/entreprises.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: hero
+        label: Haut de page
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: formats
+        label: Formats d'événements
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: liste
+            label: Formats
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Icône
+                type: select
+                options:
+                  values:
+                    - coeur
+                    - cadeau
+                    - personnes
+                    - etincelle
+                    - palette
+                    - etiquette
+                    - globe
+                    - horloge
+                    - calendrier
+                    - lieu
+                    - photo
+                    - boutique
+                    - valise
+                    - verre
+                    - calques
+                    - message
+                    - check
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+      - name: marque
+        label: Votre marque au cœur de l'expérience
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: liste
+            label: Points
+            type: string
+            list: true
+          - name: photo
+            label: Photo
+            type: image
+      - name: marque_blanche
+        label: Marque blanche
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: photo
+            label: Photo
+            type: image
+      - name: references_titre
+        label: Titre au-dessus des logos
+        type: string
+      - name: process
+        label: Déroulé
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: liste
+            label: Étapes
+            type: object
+            list: true
+            fields:
+              - name: titre
+                label: Titre
+                type: string
+              - name: texte
+                label: Texte
+                type: text
+      - name: cta
+        label: Bandeau final
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: bouton
+            label: Texte du bouton
+            type: string
+  - name: evenements-prives
+    label: 6 · Événements privés
+    type: file
+    path: contenu/evenements-prives.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: hero
+        label: Haut de page
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: occasions
+        label: Occasions
+        type: object
+        list: true
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Bouton
+            type: string
+          - name: lien
+            label: Lien
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: autres
+        label: Et aussi
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: liste
+            label: Occasions
+            type: string
+            list: true
+          - name: photo
+            label: Photo
+            type: image
+      - name: sur_mesure
+        label: Pensé pour votre fête
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: liste
+            label: Points
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Icône
+                type: select
+                options:
+                  values:
+                    - coeur
+                    - cadeau
+                    - personnes
+                    - etincelle
+                    - palette
+                    - etiquette
+                    - globe
+                    - horloge
+                    - calendrier
+                    - lieu
+                    - photo
+                    - boutique
+                    - valise
+                    - verre
+                    - calques
+                    - message
+                    - check
+              - name: texte
+                label: Texte
+                type: string
+      - name: cta
+        label: Bandeau final
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: bouton
+            label: Texte du bouton
+            type: string
+  - name: realisations
+    label: 7 · Réalisations
+    type: file
+    path: contenu/realisations.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: hero
+        label: Haut de page
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+      - name: filtre_tout
+        label: Texte du filtre « Tout »
+        type: string
+      - name: projets
+        label: Projets
+        type: object
+        list: true
+        fields:
+          - name: client
+            label: Client
+            type: string
+          - name: logo
+            label: Logo (facultatif)
+            type: image
+          - name: type
+            label: Type d'événement
+            type: string
+          - name: categorie
+            label: Catégorie (pour les filtres)
+            type: select
+            options:
+              values:
+                - Lancements produit
+                - Retail
+                - Événements de marque
+                - Collaborateurs
+                - Événements privés
+          - name: resume
+            label: Résumé court (accueil)
+            type: text
+          - name: description
+            label: Description (page Réalisations)
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: photo
+            label: Photo principale
+            type: image
+          - name: galerie
+            label: Galerie (affiche le bouton « Voir le projet »)
+            type: image
+            list: true
+          - name: accueil
+            label: Afficher sur l'accueil
+            type: boolean
+      - name: autres
+        label: Autres réalisations
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: liste
+            label: Vignettes
+            type: object
+            list: true
+            fields:
+              - name: titre
+                label: Nom
+                type: string
+              - name: categorie
+                label: Catégorie (facultatif)
+                type: select
+                options:
+                  values:
+                    - Lancements produit
+                    - Retail
+                    - Événements de marque
+                    - Collaborateurs
+                    - Événements privés
+              - name: photo
+                label: Photo
+                type: image
+      - name: bouton_projet
+        label: Texte du bouton « Voir le projet »
+        type: string
+      - name: cta
+        label: Bandeau final
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: bouton
+            label: Texte du bouton
+            type: string
+  - name: agences
+    label: 8 · Agences (page pour les campagnes email)
+    type: file
+    path: contenu/agences.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: hero
+        label: Haut de page
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+      - name: arguments
+        label: Arguments
+        type: object
+        list: true
+        fields:
+          - name: icone
+            label: Icône
+            type: select
+            options:
+              values:
+                - coeur
+                - cadeau
+                - personnes
+                - etincelle
+                - palette
+                - etiquette
+                - globe
+                - horloge
+                - calendrier
+                - lieu
+                - photo
+                - boutique
+                - valise
+                - verre
+                - calques
+                - message
+                - check
+          - name: titre
+            label: Titre
+            type: string
+          - name: texte
+            label: Texte
+            type: text
+      - name: references
+        label: Références
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: noms
+            label: Marques affichées
+            type: string
+            list: true
+            description: Écrivez le nom exactement comme dans Réglages généraux > Logos clients.
+      - name: exemples
+        label: Exemples
+        type: object
+        list: true
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: texte
+            label: Texte
+            type: text
+          - name: photo
+            label: Photo
+            type: image
+      - name: cta
+        label: Bandeau final
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Texte du bouton
+            type: string
+  - name: devis
+    label: 9 · Demander un devis
+    type: file
+    path: contenu/devis.yml
+    fields:
+      - name: seo
+        label: Référencement Google
+        type: object
+        fields:
+          - name: titre
+            label: Titre de l'onglet et de Google
+            type: string
+          - name: description
+            label: Description affichée sur Google
+            type: text
+      - name: titre
+        label: Titre
+        type: string
+        description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+      - name: texte
+        label: Texte
+        type: text
+        description: Laissez une ligne vide pour créer un nouveau paragraphe.
+      - name: vous_etes
+        label: Question « Vous êtes »
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+          - name: options
+            label: Choix
+            type: string
+            list: true
+      - name: atelier
+        label: Question « Atelier »
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+          - name: options
+            label: Choix
+            type: string
+            list: true
+      - name: evenement
+        label: Question « Événement »
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+          - name: choisir
+            label: Texte avant choix
+            type: string
+          - name: options
+            label: Choix
+            type: string
+            list: true
+      - name: date
+        label: Champ date
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+      - name: lieu
+        label: Champ lieu
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+          - name: exemple
+            label: Texte d'exemple
+            type: string
+      - name: invites
+        label: Champ invités
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+          - name: exemple
+            label: Texte d'exemple
+            type: string
+      - name: personnalisation
+        label: Question « Personnalisation »
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+          - name: options
+            label: Choix
+            type: string
+            list: true
+      - name: message
+        label: Champ message
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+          - name: exemple
+            label: Texte d'exemple
+            type: string
+      - name: coordonnees
+        label: Coordonnées
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: prenom
+            label: Prénom
+            type: string
+          - name: nom
+            label: Nom
+            type: string
+          - name: entreprise
+            label: Entreprise
+            type: string
+          - name: email
+            label: Email
+            type: string
+          - name: telephone
+            label: Téléphone
+            type: string
+      - name: bouton
+        label: Bouton d'envoi
+        type: string
+      - name: mention
+        label: Phrase sous le bouton
+        type: string
+      - name: erreur
+        label: Message si l'envoi échoue
+        type: string
+      - name: merci
+        label: Message de remerciement
+        type: object
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: texte
+            label: Texte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: bouton
+            label: Bouton
+            type: string

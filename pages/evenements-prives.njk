@@ -1,0 +1,52 @@
+---
+layout: base.njk
+cle: evenementsPrives
+permalink: /evenements-prives/
+---
+{%- set p = c.evenementsPrives -%}
+{%- set devisParams = "?profil=particulier" -%}
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__texte">
+      <p class="surtitre">{{ p.hero.surtitre }}</p>
+      <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
+      <div class="hero__intro">{{ p.hero.texte | paras | safe }}</div>
+      <a class="btn" href="/devis/{{ devisParams }}">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+    </div>
+    <div class="hero__media">{% photo p.hero.photo, "Atelier Crush pendant une fête", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</div>
+  </div>
+</section>
+
+<section class="section section--serree">
+  <div class="wrap">
+    <div class="cartes cartes--3">
+      {%- for o in p.occasions %}
+      <article class="carte carte--cadre">
+        <div class="carte__media">{% photo o.photo, o.titre, "", "(min-width: 900px) 33vw, 100vw" %}</div>
+        <h2 class="titre-s">{{ o.titre }}</h2>
+        <div class="carte__resume">{{ o.texte | paras | safe }}</div>
+        <a class="lien" href="{{ o.lien }}">{{ o.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
+      </article>
+      {%- endfor %}
+      <article class="carte carte--cadre">
+        <div class="carte__media">{% photo p.autres.photo, p.autres.titre, "", "(min-width: 900px) 33vw, 100vw" %}</div>
+        <h2 class="titre-s">{{ p.autres.titre }}</h2>
+        <ul class="pastilles pastilles--gauche">
+          {%- for a in p.autres.liste %}<li>{{ a }}</li>{% endfor %}
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--creme">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.sur_mesure.surtitre }}</p>
+    <ul class="points points--grille points--centre">
+      {%- for i in p.sur_mesure.liste %}<li><svg class="ic"><use href="#i-{{ i.icone }}"/></svg>{{ i.texte }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+{%- set cta = p.cta %}
+{% include "cta.njk" %}
