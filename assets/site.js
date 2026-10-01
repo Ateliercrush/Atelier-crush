@@ -66,27 +66,11 @@
 
   const form = document.getElementById("form-devis");
   if (form) {
-    const params = new URLSearchParams(location.search);
-    const precocher = (nom, cle) => {
-      if (!cle) return;
-      const r = [...form.querySelectorAll(`input[name="${nom}"]`)].find((i) => i.dataset.cle === cle || i.dataset.cle.startsWith(cle));
-      if (r) r.checked = true;
-    };
-    precocher("Vous êtes", params.get("profil"));
-    precocher("Atelier", params.get("atelier"));
-
     const erreur = form.querySelector(".form__erreur");
     const valider = () => {
       let premier = null;
       form.querySelectorAll(".invalide").forEach((el) => el.classList.remove("invalide"));
-      form.querySelectorAll("fieldset.champ").forEach((fs) => {
-        const radios = fs.querySelectorAll('input[type="radio"][required]');
-        if (radios.length && ![...radios].some((r) => r.checked)) {
-          fs.classList.add("invalide");
-          premier ||= radios[0];
-        }
-      });
-      form.querySelectorAll("input[required]:not([type=radio]), select[required]").forEach((el) => {
+      form.querySelectorAll("input[required], select[required]").forEach((el) => {
         if (!el.checkValidity()) {
           el.classList.add("invalide");
           premier ||= el;

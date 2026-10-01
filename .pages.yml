@@ -1255,30 +1255,28 @@ content:
         label: Texte
         type: text
         description: Laissez une ligne vide pour créer un nouveau paragraphe.
-      - name: vous_etes
-        label: Question « Vous êtes »
+      - name: nom
+        label: Champ nom
         type: object
         fields:
           - name: label
             label: Question
             type: string
-          - name: options
-            label: Choix
+          - name: exemple
+            label: Texte d'exemple
             type: string
-            list: true
-      - name: atelier
-        label: Question « Atelier »
+      - name: email
+        label: Champ e-mail
         type: object
         fields:
           - name: label
             label: Question
             type: string
-          - name: options
-            label: Choix
+          - name: exemple
+            label: Texte d'exemple
             type: string
-            list: true
       - name: evenement
-        label: Question « Événement »
+        label: Champ type d'événement
         type: object
         fields:
           - name: label
@@ -1298,8 +1296,8 @@ content:
           - name: label
             label: Question
             type: string
-      - name: lieu
-        label: Champ lieu
+      - name: participants
+        label: Champ participants
         type: object
         fields:
           - name: label
@@ -1308,27 +1306,6 @@ content:
           - name: exemple
             label: Texte d'exemple
             type: string
-      - name: invites
-        label: Champ invités
-        type: object
-        fields:
-          - name: label
-            label: Question
-            type: string
-          - name: exemple
-            label: Texte d'exemple
-            type: string
-      - name: personnalisation
-        label: Question « Personnalisation »
-        type: object
-        fields:
-          - name: label
-            label: Question
-            type: string
-          - name: options
-            label: Choix
-            type: string
-            list: true
       - name: message
         label: Champ message
         type: object
@@ -1339,33 +1316,8 @@ content:
           - name: exemple
             label: Texte d'exemple
             type: string
-      - name: coordonnees
-        label: Coordonnées
-        type: object
-        fields:
-          - name: titre
-            label: Titre
-            type: string
-          - name: prenom
-            label: Prénom
-            type: string
-          - name: nom
-            label: Nom
-            type: string
-          - name: entreprise
-            label: Entreprise
-            type: string
-          - name: email
-            label: Email
-            type: string
-          - name: telephone
-            label: Téléphone
-            type: string
       - name: bouton
         label: Bouton d'envoi
-        type: string
-      - name: mention
-        label: Phrase sous le bouton
         type: string
       - name: erreur
         label: Message si l'envoi échoue
