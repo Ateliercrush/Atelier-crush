@@ -36,7 +36,7 @@ projets:
   - client: American Vintage
     logo: /photos/AV logo.png
     type: Activation retail · Fête des mères
-    categorie: Retail
+    categorie: Collaborateurs
     resume: Une activation dans plus de 10 boutiques en Europe.
     description: Atelier Crush a accompagné American Vintage pour son évènement de rentrée
     photo: /photos/IMG-20260909-WA0011.jpg
@@ -86,7 +86,7 @@ autres:
   titre: Autres réalisations
   liste:
     - titre: Peggy Sage
-      categorie: Retail
+      categorie: Événements de marque
       photo: /photos/20251018_111841.jpg
     - titre: Bonobo
       categorie: Événements de marque

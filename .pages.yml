@@ -1059,7 +1059,6 @@ content:
             options:
               values:
                 - Lancements produit
-                - Retail
                 - Événements de marque
                 - Collaborateurs
                 - Événements privés
@@ -1101,7 +1100,6 @@ content:
                 options:
                   values:
                     - Lancements produit
-                    - Retail
                     - Événements de marque
                     - Collaborateurs
                     - Événements privés
