@@ -250,6 +250,7 @@ a.carte:hover .carte__media img { transform: scale(1.03); }
 .carte__resume { font-size: 15px; color: var(--gris); }
 .carte__resume p + p { margin-top: 8px; }
 .carte .lien { margin-top: 8px; }
+.carte.repere { outline: 2px solid var(--rose); outline-offset: 10px; border-radius: 6px; }
 .carte--cadre { background: var(--creme-2); border-radius: var(--r); padding: 14px 14px 24px; }
 .carte--cadre > :not(.carte__media) { padding: 0 8px; }
 @media (min-width: 600px) { .cartes--3, .cartes--4 { grid-template-columns: 1fr 1fr; } }

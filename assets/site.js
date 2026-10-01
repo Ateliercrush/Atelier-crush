@@ -31,19 +31,35 @@
       appliquer(b.dataset.filtre);
       history.replaceState(null, "", b.dataset.filtre ? "#" + b.dataset.filtre : location.pathname);
     }));
-    const h = decodeURIComponent(location.hash.slice(1));
-    if (h && boutons.some((b) => b.dataset.filtre === h)) appliquer(h);
+    const depuisAncre = () => {
+      const h = decodeURIComponent(location.hash.slice(1));
+      if (h && boutons.some((b) => b.dataset.filtre === h)) appliquer(h);
+    };
+    depuisAncre();
+    window.addEventListener("hashchange", depuisAncre);
   }
 
   const vis = document.querySelector(".visionneuse");
   if (vis) {
     const cible = vis.querySelector(".visionneuse__photos");
-    document.querySelectorAll("[data-galerie]").forEach((b) => b.addEventListener("click", () => {
-      const t = document.getElementById("galerie-" + b.dataset.galerie);
+    const ouvrir = (id) => {
+      const t = document.getElementById("galerie-" + id);
+      if (!t) return false;
       cible.replaceChildren(t.content.cloneNode(true));
       cible.querySelectorAll("img").forEach((i) => { i.loading = "eager"; });
       vis.showModal();
-    }));
+      return true;
+    };
+    document.querySelectorAll("[data-galerie]").forEach((b) => b.addEventListener("click", () => ouvrir(b.dataset.galerie)));
+    const depuisAncre = () => {
+      const id = decodeURIComponent(location.hash.slice(1));
+      document.querySelectorAll(".repere").forEach((e) => e.classList.remove("repere"));
+      if (id && ouvrir(id)) return;
+      if (vis.open) vis.close();
+      if (id) document.getElementById(id)?.classList.add("repere");
+    };
+    depuisAncre();
+    window.addEventListener("hashchange", depuisAncre);
     vis.querySelector(".visionneuse__fermer").addEventListener("click", () => vis.close());
     vis.addEventListener("click", (e) => { if (e.target === vis) vis.close(); });
   }

@@ -91,7 +91,9 @@ permalink: /
         <p class="carte__client">{{ r.client }}</p>
         <p class="carte__type">{{ r.type }}</p>
         <p class="carte__resume">{{ r.resume }}</p>
+        {%- if r.galerie and r.galerie.length %}
         <span class="lien">{{ c.realisations.bouton_projet }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></span>
+        {%- endif %}
       </a>
       {%- endif %}{% endfor %}
     </div>
