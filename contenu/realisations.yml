@@ -96,20 +96,27 @@ autres:
   liste:
     - titre: Peggy Sage
       categorie: Retail
+      photo: /photos/20251018_111841.jpg
     - titre: Bonobo
       categorie: Événements de marque
+      photo: /photos/20251106_163944.jpg
     - titre: Événements privés
       categorie: Événements privés
       photo: /photos/fete-privee.jpg
     - titre: Bar & Bat Mitzvah
       categorie: Événements privés
-      photo: /photos/fete-privee-table.jpg
+      photo: /photos/20250801_114142.jpg
     - titre: Mariages
       categorie: Événements privés
-    - titre: Dubaï
-      photo: /photos/eden-dubai.jpg
-    - titre: Londres
-    - titre: Saint-Tropez
+      photo: /photos/colliers-presentoirs-jardin.jpg
+    - titre: Eden Gallery Dubai
+      categorie: Événements de marque
+      photo: /photos/20260120_155451.jpg
+    - titre: Eden Gallery Londres
+      categorie: Événements de marque
+      photo: /photos/20251014_192033.jpg
+    - titre: Eden Gallery Saint-Tropez
+      categorie: Événements de marque
       photo: /photos/eden-saint-tropez-2.jpg
 bouton_projet: Voir le projet
 cta:
