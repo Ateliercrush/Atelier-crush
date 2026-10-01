@@ -26,8 +26,19 @@ content:
             label: Texte
             type: string
           - name: lien
-            label: Lien
+            label: Lien (vide si sous-menu)
             type: string
+          - name: sous_menu
+            label: Sous-menu (facultatif)
+            type: object
+            list: true
+            fields:
+              - name: texte
+                label: Texte
+                type: string
+              - name: lien
+                label: Lien
+                type: string
       - name: bouton_devis
         label: Bouton du menu
         type: string

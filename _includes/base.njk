@@ -74,7 +74,19 @@
     <nav class="nav" id="nav" aria-label="Menu principal">
       <ul>
         {%- for m in g.menu %}
+        {%- if m.sous_menu and m.sous_menu.length %}
+        {%- set actif = false %}{% for sm in m.sous_menu %}{% if page.url == sm.lien %}{% set actif = true %}{% endif %}{% endfor %}
+        <li class="nav__groupe">
+          <button type="button" class="nav__ouvrir{% if actif %} actif{% endif %}" aria-expanded="false" aria-controls="sous-{{ loop.index }}">{{ m.texte }} <svg class="ic ic--sm" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <ul class="nav__sous" id="sous-{{ loop.index }}">
+            {%- for sm in m.sous_menu %}
+            <li><a href="{{ sm.lien }}"{% if page.url == sm.lien %} aria-current="page"{% endif %}>{{ sm.texte }}</a></li>
+            {%- endfor %}
+          </ul>
+        </li>
+        {%- else %}
         <li><a href="{{ m.lien }}"{% if page.url == m.lien %} aria-current="page"{% endif %}>{{ m.texte }}</a></li>
+        {%- endif %}
         {%- endfor %}
       </ul>
       <a class="btn btn--sm nav__devis" href="/devis/">{{ g.bouton_devis }}</a>
@@ -97,7 +109,7 @@
     <div>
       <p class="footer__titre">{{ g.footer.titre_liens }}</p>
       <ul class="footer__liens">
-        {%- for m in g.menu %}<li><a href="{{ m.lien }}">{{ m.texte }}</a></li>{% endfor %}
+        {%- for m in g.menu %}{% if m.sous_menu and m.sous_menu.length %}{% for sm in m.sous_menu %}<li><a href="{{ sm.lien }}">{{ sm.texte }}</a></li>{% endfor %}{% else %}<li><a href="{{ m.lien }}">{{ m.texte }}</a></li>{% endif %}{% endfor %}
       </ul>
     </div>
     <div>

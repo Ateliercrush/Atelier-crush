@@ -18,6 +18,15 @@
     window.matchMedia("(min-width: 1080px)").addEventListener("change", fermer);
   }
 
+  document.querySelectorAll(".nav__ouvrir").forEach((b) => {
+    b.addEventListener("click", () => b.setAttribute("aria-expanded", String(b.getAttribute("aria-expanded") !== "true")));
+  });
+  document.addEventListener("click", (e) => {
+    document.querySelectorAll('.nav__ouvrir[aria-expanded="true"]').forEach((b) => {
+      if (!b.parentElement.contains(e.target)) b.setAttribute("aria-expanded", "false");
+    });
+  });
+
   const zone = document.querySelector("[data-filtrable]");
   if (zone) {
     const boutons = [...zone.querySelectorAll(".filtre")];
