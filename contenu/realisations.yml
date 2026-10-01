@@ -62,26 +62,21 @@ projets:
       - /photos/redken-creation-2.jpg
       - /photos/redken-invites-creation.jpg
     accueil: false
-  - client: Eden Gallery
-    logo: /photos/logos/eden-gallery.png
-    type: Événement de marque
+  - client: Fuze Tea
+    logo: /photos/fuzetea.png
+    type: Lancement d'une nouvelle gamme
     categorie: Événements de marque
-    resume: Un atelier bijoux installé au cœur de la galerie.
-    description: Un atelier bijoux installé au cœur de la galerie d'art.
-    photo: /photos/eden-saint-tropez.jpg
+    resume: Une animation pour enchanter les invités au coeur de Paris
+    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la
+      nouvelle gamme Fuze Tea, avec journalistes et influenceurs
+    photo: /photos/20260630_185726.jpg
     galerie:
-      - /photos/eden-saint-tropez-table.jpg
-      - /photos/eden-saint-tropez-galerie.jpg
-      - /photos/eden-saint-tropez-creation.jpg
-      - /photos/eden-saint-tropez-2.jpg
-      - /photos/eden-saint-tropez-hotes.jpg
-      - /photos/eden-plateaux-rouges.jpg
-      - /photos/eden-plateaux-rouges-2.jpg
-      - /photos/eden-charm-sur-mesure.jpg
-      - /photos/eden-dubai-table.jpg
-      - /photos/eden-dubai.jpg
-      - /photos/eden-dubai-invites.jpg
-      - /photos/eden-dubai-salon.jpg
+      - /photos/20260630_192855-0.jpg
+      - /photos/20260630_202411.jpg
+      - /photos/20260630_185722.jpg
+      - /photos/20260630_185848.jpg
+      - /photos/20260630_193223.jpg
+      - /photos/20260630_191250-0.jpg
     accueil: true
   - client: C&A
     logo: /photos/logos/c-and-a.jpg
