@@ -13,7 +13,7 @@ menu:
   - texte: Nos réalisations
     lien: /realisations/
   - texte: Agences
-    lien: /agence
+    lien: /agences
 bouton_devis: Demander un devis
 references:
   - nom: Benefit
