@@ -1,7 +1,6 @@
 logo: /photos/logo-atelier-crush.png
 menu:
   - texte: Nos ateliers
-    lien: ""
     sous_menu:
       - texte: Bijoux de sac
         lien: /bijoux-de-sac/
@@ -9,18 +8,14 @@ menu:
         lien: /bracelets-colliers/
       - texte: Colorimétrie
         lien: /colorimetrie/
-  - texte: Entreprises
-    lien: /entreprises/
-    sous_menu: []
-  - texte: Événements privés
-    lien: /evenements-prives/
-    sous_menu: []
   - texte: Nos réalisations
     lien: /realisations/
-    sous_menu: []
+  - texte: Entreprises
+    lien: /entreprises/
+  - texte: Événements privés
+    lien: /evenements-prives/
   - texte: Agences
     lien: /agences/
-    sous_menu: []
 bouton_devis: Demander un devis
 references:
   - nom: Benefit
