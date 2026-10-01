@@ -46,7 +46,8 @@ projets:
     type: Événement de marque
     categorie: Événements de marque
     resume: Un atelier bijoux intégré à l'événement de la marque.
-    description: Un atelier bijoux intégré à l'événement de la marque.
+    description: Un atelier bijoux intégré à l'événement de la marque Redken lors du
+      concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
     photo: /photos/redken-atelier.jpg
     galerie:
       - /photos/redken-table.jpg
