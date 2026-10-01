@@ -1,10 +1,13 @@
 seo:
   titre: Nos réalisations | Atelier Crush
-  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez les ateliers imaginés par Atelier Crush pour les marques, les entreprises et les événements privés."
+  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez
+    les ateliers imaginés par Atelier Crush pour les marques, les entreprises et
+    les événements privés."
 hero:
   surtitre: Nos réalisations
   titre: Chaque événement donne naissance à un atelier différent.
-  texte: "Marques, entreprises, agences et événements privés : découvrez quelques projets imaginés par Atelier Crush."
+  texte: "Marques, entreprises, agences et événements privés : découvrez quelques
+    projets imaginés par Atelier Crush."
 filtre_tout: Tout
 projets:
   - client: Benefit
@@ -12,10 +15,13 @@ projets:
     type: Lancement produit · Bad Gal Bounce
     categorie: Lancements produit
     resume: Un atelier bijoux de sac imaginé autour de l'univers du nouveau mascara.
-    description: |
-      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara Bad Gal Bounce.
+    description: >
+      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara
+      Bad Gal Bounce.
 
-      Sélection de pièces en cohérence avec l'univers Benefit et possibilité d'intégrer directement le produit dans la création.
+
+      Sélection de pièces en cohérence avec l'univers Benefit et possibilité
+      d'intégrer directement le produit dans la création.
     photo: /photos/benefit-stand-bad-gal-bounce.jpg
     galerie:
       - /photos/benefit-bac-bad-gal-bounce.jpg
@@ -28,19 +34,18 @@ projets:
       - /photos/choix-des-charms-mains.jpg
     accueil: true
   - client: American Vintage
-    logo: ""
+    logo: /photos/IMG-20260909-WA0011.jpg
     type: Activation retail · Fête des mères
     categorie: Retail
     resume: Une activation dans plus de 10 boutiques en Europe.
-    description: |
-      Atelier Crush a accompagné American Vintage dans plus de 10 boutiques en Europe à l'occasion de la fête des mères.
+    description: >
+      Atelier Crush a accompagné American Vintage dans plus de 10 boutiques en
+      Europe à l'occasion de la fête des mères.
+
 
       Une sélection colorée et printanière pensée pour l'activation.
-    photo: ""
-    galerie: []
     accueil: true
   - client: Redken
-    logo: ""
     type: Événement de marque
     categorie: Événements de marque
     resume: Un atelier bijoux intégré à l'événement de la marque.
@@ -85,17 +90,14 @@ projets:
     resume: Une expérience créative pensée pour les équipes.
     description: Une expérience bijoux pensée pour les collaborateurs de la marque.
     photo: /photos/c-and-a.jpg
-    galerie: []
     accueil: true
 autres:
   titre: Autres réalisations
   liste:
     - titre: Peggy Sage
       categorie: Retail
-      photo: ""
     - titre: Bonobo
       categorie: Événements de marque
-      photo: ""
     - titre: Événements privés
       categorie: Événements privés
       photo: /photos/fete-privee.jpg
@@ -104,15 +106,10 @@ autres:
       photo: /photos/fete-privee-table.jpg
     - titre: Mariages
       categorie: Événements privés
-      photo: ""
     - titre: Dubaï
-      categorie: ""
       photo: /photos/eden-dubai.jpg
     - titre: Londres
-      categorie: ""
-      photo: ""
     - titre: Saint-Tropez
-      categorie: ""
       photo: /photos/eden-saint-tropez-2.jpg
 bouton_projet: Voir le projet
 cta:
