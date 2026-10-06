@@ -1,13 +1,10 @@
 seo:
   titre: Nos réalisations | Atelier Crush
-  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez
-    les ateliers imaginés par Atelier Crush pour les marques, les entreprises et
-    les événements privés."
+  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez les ateliers imaginés par Atelier Crush pour les marques, les entreprises et les événements privés."
 hero:
   surtitre: Nos réalisations
   titre: Chaque événement donne naissance à un atelier différent.
-  texte: "Marques, entreprises, agences et événements privés : découvrez quelques
-    projets imaginés par Atelier Crush."
+  texte: "Marques, entreprises, agences et événements privés : découvrez quelques projets imaginés par Atelier Crush."
 filtre_tout: Tout
 projets:
   - client: Benefit
@@ -15,13 +12,10 @@ projets:
     type: Lancement produit · Bad Gal Bounce
     categorie: Lancements produit
     resume: Un atelier bijoux de sac imaginé autour de l'univers du nouveau mascara.
-    description: >
-      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara
-      Bad Gal Bounce.
+    description: |
+      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara Bad Gal Bounce.
 
-
-      Sélection de pièces en cohérence avec l'univers Benefit et possibilité
-      d'intégrer directement le produit dans la création.
+      Sélection de pièces en cohérence avec l'univers Benefit et possibilité d'intégrer directement le produit dans la création.
     photo: /photos/benefit/benefit-stand-bad-gal-bounce.jpg
     galerie:
       - /photos/benefit/benefit-bac-bad-gal-bounce.jpg
@@ -52,8 +46,7 @@ projets:
     type: Événement de marque
     categorie: Événements de marque
     resume: Un atelier bijoux intégré à l'événement de la marque.
-    description: Un atelier bijoux intégré à l'événement de la marque Redken lors du
-      concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
+    description: Un atelier bijoux intégré à l'événement de la marque Redken lors du concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
     photo: /photos/sabrina-carpenter/redken-atelier.jpg
     galerie:
       - /photos/sabrina-carpenter/redken-creation-2.jpg
@@ -70,8 +63,7 @@ projets:
     type: Lancement d'une nouvelle gamme
     categorie: Événements de marque
     resume: Une animation pour enchanter les invités au coeur de Paris
-    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la
-      nouvelle gamme Fuze Tea, avec journalistes et influenceurs
+    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la nouvelle gamme Fuze Tea, avec journalistes et influenceurs
     photo: /photos/fuze-tea/20260630_185726.jpg
     galerie:
       - /photos/fuze-tea/20260630_192855-0.jpg
@@ -81,14 +73,41 @@ projets:
       - /photos/fuze-tea/20260630_193223.jpg
       - /photos/fuze-tea/20260630_191250-0.jpg
     accueil: true
-  - client: MorocconOil
+  - client: Moroccanoil
     type: Présentation nouvelle gamme
     categorie: Événements de marque
-    resume: Une expérience créative pensée pour les équipes.
-    description: Une expérience bijoux pensée pour la présentation de la nouvelle
-      collection à la presse
-    photo: /photos/c-and-a/c-and-a.jpg
+    resume: Une expérience bijoux pour la présentation de la nouvelle gamme à la presse.
+    description: Une expérience bijoux pensée pour la présentation de la nouvelle collection à la presse
+    photo: /photos/moroccan-oil/img-2205.jpg
     accueil: true
+    galerie:
+      - /photos/moroccan-oil/20251203_191345.jpg
+      - /photos/moroccan-oil/20251203_192410.jpg
+      - /photos/moroccan-oil/20251203_194307.jpg
+      - /photos/moroccan-oil/20251203_195139.jpg
+      - /photos/moroccan-oil/20251203_195141.jpg
+      - /photos/moroccan-oil/20251203_195311.jpg
+      - /photos/moroccan-oil/20251203_195623.jpg
+      - /photos/moroccan-oil/20251203_195702.jpg
+      - /photos/moroccan-oil/20251203_195703.jpg
+      - /photos/moroccan-oil/20251203_202536.jpg
+      - /photos/moroccan-oil/20251203_202537.jpg
+      - /photos/moroccan-oil/20251203_203644.jpg
+      - /photos/moroccan-oil/20251203_203715.jpg
+      - /photos/moroccan-oil/20251203_203718.jpg
+      - /photos/moroccan-oil/20251203_203719.jpg
+      - /photos/moroccan-oil/5105c0ea-27b2-40cb-b3df-184ffd8daac2.jpg
+      - /photos/moroccan-oil/img-2203.jpg
+      - /photos/moroccan-oil/img-2204.jpg
+      - /photos/moroccan-oil/img-2205.jpg
+      - /photos/moroccan-oil/img-2206.jpg
+      - /photos/moroccan-oil/img-2208.jpg
+      - /photos/moroccan-oil/img-2209.jpg
+      - /photos/moroccan-oil/img-2210.jpg
+      - /photos/moroccan-oil/img-2226.jpg
+      - /photos/moroccan-oil/img-2232.jpg
+      - /photos/moroccan-oil/img-2235.jpg
+      - /photos/moroccan-oil/img-2247.jpg
   - client: Eden Gallery Londres
     logo: /photos/Eden gallery.png
     type: Evènement Londres
@@ -160,37 +179,6 @@ autres:
         - /photos/eden-londres/img-0246.jpg
         - /photos/eden-londres/img-1217.jpg
         - /photos/eden-londres/img-1222.jpg
-    - titre: Moroccanoil
-      categorie: Événements de marque
-      photo: /photos/moroccan-oil/img-2205.jpg
-      galerie:
-        - /photos/moroccan-oil/20251203_191345.jpg
-        - /photos/moroccan-oil/20251203_192410.jpg
-        - /photos/moroccan-oil/20251203_194307.jpg
-        - /photos/moroccan-oil/20251203_195139.jpg
-        - /photos/moroccan-oil/20251203_195141.jpg
-        - /photos/moroccan-oil/20251203_195311.jpg
-        - /photos/moroccan-oil/20251203_195623.jpg
-        - /photos/moroccan-oil/20251203_195702.jpg
-        - /photos/moroccan-oil/20251203_195703.jpg
-        - /photos/moroccan-oil/20251203_202536.jpg
-        - /photos/moroccan-oil/20251203_202537.jpg
-        - /photos/moroccan-oil/20251203_203644.jpg
-        - /photos/moroccan-oil/20251203_203715.jpg
-        - /photos/moroccan-oil/20251203_203718.jpg
-        - /photos/moroccan-oil/20251203_203719.jpg
-        - /photos/moroccan-oil/5105c0ea-27b2-40cb-b3df-184ffd8daac2.jpg
-        - /photos/moroccan-oil/img-2203.jpg
-        - /photos/moroccan-oil/img-2204.jpg
-        - /photos/moroccan-oil/img-2205.jpg
-        - /photos/moroccan-oil/img-2206.jpg
-        - /photos/moroccan-oil/img-2208.jpg
-        - /photos/moroccan-oil/img-2209.jpg
-        - /photos/moroccan-oil/img-2210.jpg
-        - /photos/moroccan-oil/img-2226.jpg
-        - /photos/moroccan-oil/img-2232.jpg
-        - /photos/moroccan-oil/img-2235.jpg
-        - /photos/moroccan-oil/img-2247.jpg
     - titre: SodaStream
       categorie: Événements de marque
       photo: /photos/soda-stream/img-6616.jpg
