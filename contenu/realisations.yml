@@ -57,7 +57,7 @@ projets:
       - /photos/sabrina-carpenter/redken-invites-2.jpg
       - /photos/sabrina-carpenter/redken-creation.jpg
       - /photos/sabrina-carpenter/redken-invites-creation.jpg
-    accueil: false
+    accueil: true
   - client: Fuze Tea
     logo: /photos/logos/fuze-tea.png
     type: Lancement d'une nouvelle gamme

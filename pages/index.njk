@@ -84,10 +84,10 @@ permalink: /
   <div class="wrap">
     <p class="surtitre">{{ p.realisations.surtitre }}</p>
     <h2 class="titre-m">{{ p.realisations.titre | inline | safe }}</h2>
-    <div class="cartes cartes--4">
+    <div class="cartes cartes--3">
       {%- for r in c.realisations.projets %}{% if r.accueil %}
       <a class="carte" href="/realisations/#{{ r.client | cle }}">
-        <div class="carte__media">{% photo r.photo, r.client + ", " + r.type, "", "(min-width: 900px) 25vw, 50vw" %}</div>
+        <div class="carte__media">{% photo r.photo, r.client + ", " + r.type, "", "(min-width: 900px) 33vw, 100vw" %}</div>
         <p class="carte__client">{{ r.client }}</p>
         <p class="carte__type">{{ r.type }}</p>
         <p class="carte__resume">{{ r.resume }}</p>
