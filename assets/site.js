@@ -79,7 +79,7 @@
     const valider = () => {
       let premier = null;
       form.querySelectorAll(".invalide").forEach((el) => el.classList.remove("invalide"));
-      form.querySelectorAll("input[required], select[required]").forEach((el) => {
+      form.querySelectorAll("input[required], select[required], textarea[required]").forEach((el) => {
         if (!el.checkValidity()) {
           el.classList.add("invalide");
           premier ||= el;

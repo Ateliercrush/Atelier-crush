@@ -18,7 +18,7 @@ permalink: /devis/
         <div class="champ"><label for="f-email">{{ p.email.label }}</label><input id="f-email" type="email" name="email" autocomplete="email" placeholder="{{ p.email.exemple }}" required></div>
         <div class="champ">
           <label for="f-evenement">{{ p.evenement.label }}</label>
-          <select id="f-evenement" name="event_type" required>
+          <select id="f-evenement" name="event_type">
             <option value="" disabled selected>{{ p.evenement.choisir }}</option>
             {%- for o in p.evenement.options %}<option>{{ o }}</option>{% endfor %}
           </select>
@@ -26,7 +26,7 @@ permalink: /devis/
         <div class="champ"><label for="f-date">{{ p.date.label }}</label><input id="f-date" type="date" name="date"></div>
       </div>
       <div class="champ"><label for="f-participants">{{ p.participants.label }}</label><input id="f-participants" type="number" name="participants" min="1" placeholder="{{ p.participants.exemple }}"></div>
-      <div class="champ"><label for="f-message">{{ p.message.label }}</label><textarea id="f-message" name="message" rows="5" placeholder="{{ p.message.exemple }}"></textarea></div>
+      <div class="champ"><label for="f-message">{{ p.message.label }}</label><textarea id="f-message" name="message" rows="5" required placeholder="{{ p.message.exemple }}"></textarea></div>
       <p class="form__erreur" role="alert" hidden>{{ p.erreur }}</p>
       <div><button class="btn btn--l" type="submit">{{ p.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></button></div>
     </form>
