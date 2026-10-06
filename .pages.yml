@@ -1117,6 +1117,10 @@ content:
               - name: photo
                 label: Photo
                 type: image
+              - name: galerie
+                label: Galerie (photos affichées au clic)
+                type: image
+                list: true
       - name: bouton_projet
         label: Texte du bouton « Voir le projet »
         type: string

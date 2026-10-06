@@ -35,7 +35,7 @@ permalink: /realisations/
         {%- if r.galerie and r.galerie.length %}
         <button type="button" class="lien" data-galerie="{{ r.client | cle }}">{{ p.bouton_projet }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></button>
         <template id="galerie-{{ r.client | cle }}">
-          {%- for g in r.galerie %}{% photo g, r.client, "", "90vw" %}{% endfor %}
+          {%- for g in r.galerie %}{% photo g, r.client, "", "(min-width: 700px) 45vw, 90vw", false, [700, 1400] %}{% endfor %}
         </template>
         {%- endif %}
       </article>
@@ -46,8 +46,18 @@ permalink: /realisations/
     <ul class="vignettes">
       {%- for a in p.autres.liste %}
       <li data-cat="{{ a.categorie | cle }}">
-        {% photo a.photo, a.titre, "", "(min-width: 900px) 25vw, 50vw" %}
+        {%- if a.galerie and a.galerie.length %}
+        <button type="button" class="vignettes__lien" data-galerie="autre-{{ loop.index }}" aria-label="Voir les photos : {{ a.titre }}">
+          {% photo a.photo, a.titre, "", "(min-width: 900px) 25vw, 50vw", false, [400, 700] %}
+          <span>{{ a.titre }}</span>
+        </button>
+        <template id="galerie-autre-{{ loop.index }}">
+          {%- for g in a.galerie %}{% photo g, a.titre, "", "(min-width: 700px) 45vw, 90vw", false, [700, 1400] %}{% endfor %}
+        </template>
+        {%- else %}
+        {% photo a.photo, a.titre, "", "(min-width: 900px) 25vw, 50vw", false, [400, 700] %}
         <span>{{ a.titre }}</span>
+        {%- endif %}
       </li>
       {%- endfor %}
     </ul>
