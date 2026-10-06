@@ -1,10 +1,13 @@
 seo:
   titre: Nos réalisations | Atelier Crush
-  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez les ateliers imaginés par Atelier Crush pour les marques, les entreprises et les événements privés."
+  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez
+    les ateliers imaginés par Atelier Crush pour les marques, les entreprises et
+    les événements privés."
 hero:
   surtitre: Nos réalisations
   titre: Chaque événement donne naissance à un atelier différent.
-  texte: "Marques, entreprises, agences et événements privés : découvrez quelques projets imaginés par Atelier Crush."
+  texte: "Marques, entreprises, agences et événements privés : découvrez quelques
+    projets imaginés par Atelier Crush."
 filtre_tout: Tout
 projets:
   - client: Benefit
@@ -12,10 +15,13 @@ projets:
     type: Lancement produit · Bad Gal Bounce
     categorie: Lancements produit
     resume: Un atelier bijoux de sac imaginé autour de l'univers du nouveau mascara.
-    description: |
-      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara Bad Gal Bounce.
+    description: >
+      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara
+      Bad Gal Bounce.
 
-      Sélection de pièces en cohérence avec l'univers Benefit et possibilité d'intégrer directement le produit dans la création.
+
+      Sélection de pièces en cohérence avec l'univers Benefit et possibilité
+      d'intégrer directement le produit dans la création.
     photo: /photos/benefit/benefit-stand-bad-gal-bounce.jpg
     galerie:
       - /photos/benefit/benefit-bac-bad-gal-bounce.jpg
@@ -46,7 +52,8 @@ projets:
     type: Événement de marque
     categorie: Événements de marque
     resume: Un atelier bijoux intégré à l'événement de la marque.
-    description: Un atelier bijoux intégré à l'événement de la marque Redken lors du concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
+    description: Un atelier bijoux intégré à l'événement de la marque Redken lors du
+      concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
     photo: /photos/sabrina-carpenter/redken-atelier.jpg
     galerie:
       - /photos/sabrina-carpenter/redken-creation-2.jpg
@@ -63,7 +70,8 @@ projets:
     type: Lancement d'une nouvelle gamme
     categorie: Événements de marque
     resume: Une animation pour enchanter les invités au coeur de Paris
-    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la nouvelle gamme Fuze Tea, avec journalistes et influenceurs
+    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la
+      nouvelle gamme Fuze Tea, avec journalistes et influenceurs
     photo: /photos/fuze-tea/20260630_185726.jpg
     galerie:
       - /photos/fuze-tea/20260630_192855-0.jpg
@@ -76,10 +84,11 @@ projets:
   - client: Moroccanoil
     type: Présentation nouvelle gamme
     categorie: Événements de marque
-    resume: Une expérience bijoux pour la présentation de la nouvelle gamme à la presse.
-    description: Une expérience bijoux pensée pour la présentation de la nouvelle collection à la presse
+    resume: Une expérience bijoux pour la présentation de la nouvelle gamme à la
+      presse.
+    description: Une expérience bijoux pensée pour la présentation de la nouvelle
+      collection à la presse
     photo: /photos/moroccan-oil/img-2205.jpg
-    accueil: true
     galerie:
       - /photos/moroccan-oil/20251203_191345.jpg
       - /photos/moroccan-oil/20251203_192410.jpg
@@ -108,6 +117,7 @@ projets:
       - /photos/moroccan-oil/img-2232.jpg
       - /photos/moroccan-oil/img-2235.jpg
       - /photos/moroccan-oil/img-2247.jpg
+    accueil: true
   - client: Eden Gallery Londres
     logo: /photos/Eden gallery.png
     type: Evènement Londres
@@ -191,7 +201,6 @@ autres:
         - /photos/eden-st-trop/img_20250917_105510_487.jpg
     - titre: Alpro
       categorie: Événements de marque
-      photo: /photos/alpro/img-8606.jpg
       galerie:
         - /photos/alpro/d3949837-80d0-41df-b8df-186d18b5c23c.jpg
         - /photos/alpro/fc43625b-5e2d-46cc-acdf-57600b8d8ab8.jpg
@@ -257,7 +266,6 @@ autres:
         - /photos/sloggy/236ac5da-1b87-458e-bad7-fe691248cc7b.jpg
         - /photos/sloggy/ce5e2e62-7ccc-4b2e-bf8d-03d48ab3a77a.jpg
         - /photos/sloggy/eddb533f-bb47-4f85-9f1e-3b85f1005c98.jpg
-        - /photos/sloggy/img-20260623-wa0015.jpg
         - /photos/sloggy/img-2222.jpg
         - /photos/sloggy/img-9148.jpg
     - titre: Étrier
@@ -270,7 +278,6 @@ autres:
     - titre: C&A
       categorie: Collaborateurs
       photo: /photos/c-and-a/c-and-a.jpg
-      galerie: []
     - titre: Bat Mitzvah d'Elsa
       categorie: Événements privés
       photo: /photos/bm-elsa/img-4193.jpg
