@@ -1,10 +1,13 @@
 seo:
   titre: Nos réalisations | Atelier Crush
-  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez les ateliers imaginés par Atelier Crush pour les marques, les entreprises et les événements privés."
+  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez
+    les ateliers imaginés par Atelier Crush pour les marques, les entreprises et
+    les événements privés."
 hero:
   surtitre: Nos réalisations
   titre: Chaque événement donne naissance à un atelier différent.
-  texte: "Marques, entreprises, agences et événements privés : découvrez quelques projets imaginés par Atelier Crush."
+  texte: "Marques, entreprises, agences et événements privés : découvrez quelques
+    projets imaginés par Atelier Crush."
 filtre_tout: Tout
 projets:
   - client: Benefit
@@ -12,10 +15,13 @@ projets:
     type: Lancement produit · Bad Gal Bounce
     categorie: Lancements produit
     resume: Un atelier bijoux de sac imaginé autour de l'univers du nouveau mascara.
-    description: |
-      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara Bad Gal Bounce.
+    description: >
+      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara
+      Bad Gal Bounce.
 
-      Sélection de pièces en cohérence avec l'univers Benefit et possibilité d'intégrer directement le produit dans la création.
+
+      Sélection de pièces en cohérence avec l'univers Benefit et possibilité
+      d'intégrer directement le produit dans la création.
     photo: /photos/benefit/benefit-stand-bad-gal-bounce.jpg
     galerie:
       - /photos/benefit/benefit-bac-bad-gal-bounce.jpg
@@ -46,7 +52,8 @@ projets:
     type: Événement de marque
     categorie: Événements de marque
     resume: Un atelier bijoux intégré à l'événement de la marque.
-    description: Un atelier bijoux intégré à l'événement de la marque Redken lors du concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
+    description: Un atelier bijoux intégré à l'événement de la marque Redken lors du
+      concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
     photo: /photos/sabrina-carpenter/redken-atelier.jpg
     galerie:
       - /photos/sabrina-carpenter/redken-creation-2.jpg
@@ -63,7 +70,8 @@ projets:
     type: Lancement d'une nouvelle gamme
     categorie: Événements de marque
     resume: Une animation pour enchanter les invités au coeur de Paris
-    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la nouvelle gamme Fuze Tea, avec journalistes et influenceurs
+    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la
+      nouvelle gamme Fuze Tea, avec journalistes et influenceurs
     photo: /photos/fuze-tea/20260630_185726.jpg
     galerie:
       - /photos/fuze-tea/20260630_192855-0.jpg
@@ -74,10 +82,11 @@ projets:
       - /photos/fuze-tea/20260630_191250-0.jpg
     accueil: true
   - client: MorocconOil
-    type: Événement collaborateurs
-    categorie: Collaborateurs
+    type: Présentation nouvelle gamme
+    categorie: Événements de marque
     resume: Une expérience créative pensée pour les équipes.
-    description: Une expérience bijoux pensée pour la présentation de la nouvelle collection à la presse
+    description: Une expérience bijoux pensée pour la présentation de la nouvelle
+      collection à la presse
     photo: /photos/c-and-a/c-and-a.jpg
     accueil: true
   - client: Eden Gallery Londres
@@ -94,7 +103,7 @@ projets:
       - /photos/eden-londres/img-0153.jpg
       - /photos/eden-londres/img-0151.jpg
       - /photos/eden-londres/img-0235.jpg
-    accueil: false
+    accueil: true
 autres:
   titre: Autres réalisations
   liste:
