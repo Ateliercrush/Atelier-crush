@@ -22,58 +22,58 @@ projets:
 
       Sélection de pièces en cohérence avec l'univers Benefit et possibilité
       d'intégrer directement le produit dans la création.
-    photo: /photos/benefit-stand-bad-gal-bounce.jpg
+    photo: /photos/benefit/benefit-stand-bad-gal-bounce.jpg
     galerie:
-      - /photos/benefit-bac-bad-gal-bounce.jpg
-      - /photos/benefit-soiree.jpg
-      - /photos/benefit-stand-2.jpg
-      - /photos/benefit-perles.jpg
-      - /photos/benefit-table.jpg
-      - /photos/benefit-presentoir.jpg
-      - /photos/benefit-plateaux.jpg
-      - /photos/choix-des-charms-mains.jpg
+      - /photos/benefit/benefit-bac-bad-gal-bounce.jpg
+      - /photos/benefit/benefit-soiree.jpg
+      - /photos/benefit/benefit-stand-2.jpg
+      - /photos/benefit/benefit-perles.jpg
+      - /photos/benefit/benefit-table.jpg
+      - /photos/benefit/benefit-presentoir.jpg
+      - /photos/benefit/benefit-plateaux.jpg
+      - /photos/benefit/choix-des-charms-mains.jpg
     accueil: true
   - client: American Vintage
-    logo: /photos/AV logo.png
+    logo: /photos/logos/american-vintage.png
     type: Activation retail · Fête des mères
     categorie: Collaborateurs
     resume: Une activation dans plus de 10 boutiques en Europe.
     description: Atelier Crush a accompagné American Vintage pour son évènement de rentrée
-    photo: /photos/IMG-20260909-WA0011.jpg
+    photo: /photos/american-vintage/IMG-20260909-WA0011.jpg
     accueil: true
   - client: L'oréal
-    logo: /photos/L'oreal.png
+    logo: /photos/logos/loreal.png
     type: Événement de marque
     categorie: Événements de marque
     resume: Un atelier bijoux intégré à l'événement de la marque.
     description: Un atelier bijoux intégré à l'événement de la marque Redken lors du
       concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
-    photo: /photos/redken-atelier.jpg
+    photo: /photos/loreal-redken/redken-atelier.jpg
     galerie:
-      - /photos/redken-table.jpg
-      - /photos/redken-table-2.jpg
-      - /photos/redken-coeur-lumineux.jpg
-      - /photos/redken-produits-et-charms.jpg
-      - /photos/redken-invites-2.jpg
-      - /photos/redken-creation.jpg
-      - /photos/redken-creation-2.jpg
-      - /photos/redken-invites-creation.jpg
+      - /photos/loreal-redken/redken-table.jpg
+      - /photos/loreal-redken/redken-table-2.jpg
+      - /photos/loreal-redken/redken-coeur-lumineux.jpg
+      - /photos/loreal-redken/redken-produits-et-charms.jpg
+      - /photos/loreal-redken/redken-invites-2.jpg
+      - /photos/loreal-redken/redken-creation.jpg
+      - /photos/loreal-redken/redken-creation-2.jpg
+      - /photos/loreal-redken/redken-invites-creation.jpg
     accueil: false
   - client: Fuze Tea
-    logo: /photos/fuzetea.png
+    logo: /photos/logos/fuze-tea.png
     type: Lancement d'une nouvelle gamme
     categorie: Événements de marque
     resume: Une animation pour enchanter les invités au coeur de Paris
     description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la
       nouvelle gamme Fuze Tea, avec journalistes et influenceurs
-    photo: /photos/20260630_185726.jpg
+    photo: /photos/fuze-tea/20260630_185726.jpg
     galerie:
-      - /photos/20260630_192855-0.jpg
-      - /photos/20260630_202411.jpg
-      - /photos/20260630_185722.jpg
-      - /photos/20260630_185848.jpg
-      - /photos/20260630_193223.jpg
-      - /photos/20260630_191250-0.jpg
+      - /photos/fuze-tea/20260630_192855-0.jpg
+      - /photos/fuze-tea/20260630_202411.jpg
+      - /photos/fuze-tea/20260630_185722.jpg
+      - /photos/fuze-tea/20260630_185848.jpg
+      - /photos/fuze-tea/20260630_193223.jpg
+      - /photos/fuze-tea/20260630_191250-0.jpg
     accueil: true
   - client: C&A
     logo: /photos/logos/c-and-a.jpg
@@ -81,35 +81,35 @@ projets:
     categorie: Collaborateurs
     resume: Une expérience créative pensée pour les équipes.
     description: Une expérience bijoux pensée pour les collaborateurs de la marque.
-    photo: /photos/c-and-a.jpg
+    photo: /photos/c-and-a/c-and-a.jpg
     accueil: true
 autres:
   titre: Autres réalisations
   liste:
     - titre: Peggy Sage
       categorie: Événements de marque
-      photo: /photos/20251018_111841.jpg
+      photo: /photos/peggy-sage/20251018_111841.jpg
     - titre: Bonobo
       categorie: Événements de marque
-      photo: /photos/20251106_163944.jpg
+      photo: /photos/bonobo/20251106_163944.jpg
     - titre: Bar&Bat mitzvas
       categorie: Événements privés
-      photo: /photos/fete-privee.jpg
+      photo: /photos/evenements-prives/fete-privee.jpg
     - titre: Anniversaires
       categorie: Événements privés
-      photo: /photos/20250801_114142.jpg
+      photo: /photos/evenements-prives/20250801_114142.jpg
     - titre: Mariages
       categorie: Événements privés
-      photo: /photos/colliers-presentoirs-jardin.jpg
+      photo: /photos/bracelets-colliers/colliers-presentoirs-jardin.jpg
     - titre: Eden Gallery Dubai
       categorie: Événements de marque
-      photo: /photos/20260120_155451.jpg
+      photo: /photos/eden-gallery/20260120_155451.jpg
     - titre: Eden Gallery Londres
       categorie: Événements de marque
-      photo: /photos/20251014_192033.jpg
+      photo: /photos/eden-gallery/20251014_192033.jpg
     - titre: Eden Gallery Saint-Tropez
       categorie: Événements de marque
-      photo: /photos/eden-saint-tropez-2.jpg
+      photo: /photos/eden-gallery/eden-saint-tropez-2.jpg
 bouton_projet: Voir le projet
 cta:
   titre: Et pour votre prochain événement ?

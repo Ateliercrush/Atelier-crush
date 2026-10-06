@@ -13,7 +13,7 @@ hero:
     Vos invités participent, créent ou découvrent quelque chose qui leur
     ressemble, et repartent avec leur propre cadeau.
   bouton: Parlez-nous de votre événement
-  photo: /photos/redken-creation.jpg
+  photo: /photos/loreal-redken/redken-creation.jpg
 preuves:
   chiffres:
     - nombre: + 50
@@ -66,7 +66,7 @@ signature:
     - icone: globe
       texte: France & international
   bouton: Découvrir le bijou de sac
-  photo: /photos/20260120_155451.jpg
+  photo: /photos/eden-gallery/20260120_155451.jpg
 autres:
   surtitre: Découvrez aussi nos autres expériences
   ateliers:
@@ -75,13 +75,13 @@ autres:
         un bijou qu'il a vraiment envie de porter."
       bouton: Découvrir
       lien: /bracelets-colliers/
-      photo: /photos/bracelets-presentoirs.jpg
+      photo: /photos/bracelets-colliers/bracelets-presentoirs.jpg
     - titre: Colorimétrie
       texte: Une photo, une analyse personnalisée, une fiche couleurs imprimée et un
         porte-clé assorti à la palette de l'invité.
       bouton: Découvrir
       lien: /colorimetrie/
-      photo: /photos/colorimetrie-fiche.png
+      photo: /photos/colorimetrie/colorimetrie-fiche.png
 realisations:
   surtitre: Nos réalisations
   titre: Des événements sur mesure, aux couleurs de chaque marque.

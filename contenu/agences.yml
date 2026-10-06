@@ -9,7 +9,7 @@ hero:
 
     Bijoux de sac, bijoux personnalisés et colorimétrie : une expérience participative et un cadeau que chaque invité emporte avec lui.
   bouton: Parlez-nous de votre brief
-  photo: /photos/bijou-de-sac-hublot.jpg
+  photo: /photos/ateliers/bijou-de-sac-hublot.jpg
 arguments:
   - icone: palette
     titre: Personnalisable
@@ -34,13 +34,13 @@ references:
 exemples:
   - titre: Lancement produit
     texte: Une expérience créée autour du produit et de l'univers de votre client.
-    photo: /photos/benefit-perles.jpg
+    photo: /photos/benefit/benefit-perles.jpg
   - titre: Soirée clients
     texte: Une animation participative et un cadeau personnel.
-    photo: /photos/eden-dubai-invites.jpg
+    photo: /photos/eden-gallery/eden-dubai-invites.jpg
   - titre: Activation retail
     texte: Une animation qui attire, engage et crée du trafic autour du dispositif.
-    photo: /photos/activation-boutique.jpg
+    photo: /photos/ateliers/activation-boutique.jpg
 cta:
   titre: Vous avez un brief en cours ?
   texte: Envoyez-nous quelques informations et échangeons sur ce qu'on peut imaginer pour votre client.

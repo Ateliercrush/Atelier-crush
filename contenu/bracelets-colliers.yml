@@ -8,11 +8,11 @@ hero:
     Des bijoux uniques, créés pendant votre événement.
     Vos invités choisissent leurs chaînes, perles, pierres, pendentifs et charms puis composent un bijou qui leur ressemble.
   bouton: Demander un devis
-  photo: /photos/colliers-presentoirs-exterieur.jpg
+  photo: /photos/bracelets-colliers/colliers-presentoirs-exterieur.jpg
 galerie:
-  - /photos/bracelets-presentoirs.jpg
-  - /photos/colliers-invites.jpg
-  - /photos/charms-pierres.jpg
+  - /photos/bracelets-colliers/bracelets-presentoirs.jpg
+  - /photos/bracelets-colliers/colliers-invites.jpg
+  - /photos/bracelets-colliers/charms-pierres.jpg
 concept:
   titre: Le bijou qu'ils auraient choisi eux-mêmes.
   texte: |
@@ -58,4 +58,4 @@ ideal:
 cta:
   titre: Un bijou qui leur ressemble, pour un moment qu'ils n'oublient pas.
   bouton: Demander un devis
-  photo: /photos/colliers-presentoirs-2.jpg
+  photo: /photos/bracelets-colliers/colliers-presentoirs-2.jpg

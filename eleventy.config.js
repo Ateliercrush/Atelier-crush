@@ -89,7 +89,6 @@ export default function (cfg) {
 
   cfg.addPassthroughCopy("assets");
   cfg.addPassthroughCopy({ "photos/logo-atelier-crush.png": "photos/logo-atelier-crush.png" });
-  cfg.addPassthroughCopy({ "photos/colorimetrie-fiche.png": "photos/colorimetrie-fiche.png" });
   cfg.addWatchTarget("contenu/");
   cfg.addWatchTarget("assets/");
 

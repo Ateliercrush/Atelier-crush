@@ -23,7 +23,7 @@ etapes:
       texte: |
         Une fiche est générée avec sa palette et les couleurs qui lui correspondent.
         Elle est imprimée directement pendant l'événement.
-      photo: /photos/colorimetrie-fiche.png
+      photo: /photos/colorimetrie/colorimetrie-fiche.png
     - titre: Le souvenir
       texte: L'invité repart avec sa fiche ainsi qu'un petit porte-clé aux couleurs de sa palette.
       photo: ""

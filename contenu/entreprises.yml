@@ -10,7 +10,7 @@ hero:
     Atelier Crush imagine des expériences participatives adaptées à votre public
     et à votre marque."
   bouton: Demander un devis
-  photo: /photos/redken-coeur-lumineux.jpg
+  photo: /photos/loreal-redken/redken-coeur-lumineux.jpg
 formats:
   surtitre: Pour tous vos événements
   liste:
@@ -44,7 +44,7 @@ marque:
     - Produit intégré lorsque le format le permet
     - Supports personnalisés
     - Marque blanche possible
-  photo: /photos/benefit-stand-bad-gal-bounce.jpg
+  photo: /photos/benefit/benefit-stand-bad-gal-bounce.jpg
 marque_blanche:
   surtitre: "Format agence "
   titre: Votre événement reste le vôtre.
@@ -55,7 +55,7 @@ marque_blanche:
 
     Tenues adaptées à votre événement, présence discrète ou fonctionnement en
     marque blanche : nous nous adaptons aux besoins de votre projet.
-  photo: /photos/eden-dubai-salon.jpg
+  photo: /photos/eden-gallery/eden-dubai-salon.jpg
 references_titre: Ils nous font confiance
 process:
   titre: De l'idée au jour J, on s'occupe de l'atelier.

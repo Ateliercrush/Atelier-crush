@@ -8,20 +8,20 @@ hero:
     Une animation participative où chaque invité compose son propre grigri parmi une large sélection de pièces.
     Coloré, chic, décalé ou minimal : chacun crée celui qui lui ressemble.
   bouton: Demander un devis
-  photo: /photos/charms-plateau-fleurs.jpg
+  photo: /photos/ateliers/charms-plateau-fleurs.jpg
 etapes:
   surtitre: Comment ça marche ?
   titre: Une expérience en trois étapes.
   liste:
     - titre: Je choisis
       texte: L'invité découvre la sélection de charms, perles, pompons et breloques et choisit les pièces qui lui plaisent.
-      photo: /photos/choix-des-charms-mains.jpg
+      photo: /photos/benefit/choix-des-charms-mains.jpg
     - titre: Je compose
       texte: Il imagine son bijou de sac. Notre équipe l'accompagne dans sa sélection et réalise l'assemblage si besoin.
-      photo: /photos/atelier-assemblage.jpg
+      photo: /photos/ateliers/atelier-assemblage.jpg
     - titre: Je repars avec
       texte: Quelques minutes plus tard, son bijou est prêt. Il repart avec une création personnelle, directement utilisable.
-      photo: /photos/invitee-bijou-de-sac.jpg
+      photo: /photos/ateliers/invitee-bijou-de-sac.jpg
 infos:
   titre: Informations pratiques
   liste:
@@ -42,16 +42,16 @@ personnalisation:
   liste:
     - titre: Les couleurs
       texte: Nous sélectionnons les pièces en cohérence avec votre univers, votre charte ou votre produit.
-      photo: /photos/eden-plateaux-rouges.jpg
+      photo: /photos/eden-gallery/eden-plateaux-rouges.jpg
     - titre: Le thème
       texte: "Lancement, collection, saison, fête, destination : la sélection peut être construite autour de votre événement."
-      photo: /photos/eden-dubai-table.jpg
+      photo: /photos/eden-gallery/eden-dubai-table.jpg
     - titre: Les pièces sur mesure
       texte: "Logo, produit, message ou symbole : des pièces spécifiques peuvent être produites lorsque les délais le permettent."
-      photo: /photos/eden-charm-sur-mesure.jpg
+      photo: /photos/eden-gallery/eden-charm-sur-mesure.jpg
     - titre: Votre produit
       texte: Selon le projet, le produit de la marque peut lui-même devenir une partie de la création.
-      photo: /photos/redken-produits-et-charms.jpg
+      photo: /photos/loreal-redken/redken-produits-et-charms.jpg
   bouton: Parlez-nous de votre projet
 cas_client:
   surtitre: Cas client
@@ -63,7 +63,7 @@ cas_client:
 
     Résultat : chacun repart avec le produit du lancement et une création personnelle associée à l'événement.
   bouton: Découvrir nos réalisations
-  photo: /photos/benefit-stand-bad-gal-bounce.jpg
+  photo: /photos/benefit/benefit-stand-bad-gal-bounce.jpg
 usages:
   titre: Idéal pour
   liste:

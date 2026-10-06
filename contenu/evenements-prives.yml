@@ -10,7 +10,7 @@ hero:
     créative pendant votre fête et chaque invité repart avec sa propre
     création."
   bouton: Demander un devis
-  photo: /photos/sanstitre-981 (2).jpg
+  photo: /photos/evenements-prives/sans-titre-981.jpg
 occasions:
   - titre: Mariages
     texte: >
@@ -21,7 +21,7 @@ occasions:
       L'atelier peut reprendre les couleurs et l'univers de votre mariage.
     bouton: Découvrir
     lien: /realisations/#evenements-prives
-    photo: /photos/colliers-presentoirs-jardin.jpg
+    photo: /photos/bracelets-colliers/colliers-presentoirs-jardin.jpg
   - titre: Bar & Bat Mitzvah
     texte: >
       Bracelets, colliers ou bijoux de sac : une animation qui plaît aux jeunes
@@ -32,7 +32,7 @@ occasions:
       souvenir de la fête.
     bouton: Découvrir
     lien: /realisations/#evenements-prives
-    photo: /photos/20260226_111149-2.jpg
+    photo: /photos/a-trier/20260226_111149-2.jpg
 autres:
   titre: Et aussi…
   liste:
@@ -41,7 +41,7 @@ autres:
     - Baby showers
     - Fêtes familiales
     - Événements privés
-  photo: /photos/colliers-presentoirs-jardin.jpg
+  photo: /photos/bracelets-colliers/colliers-presentoirs-jardin.jpg
 sur_mesure:
   surtitre: Pensé pour votre fête
   liste:
