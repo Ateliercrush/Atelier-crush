@@ -1,8 +1,9 @@
 seo:
   titre: Demander un devis | Atelier Crush
-  description: "Parlez-nous de votre événement : type d'événement, date, nombre de participants. Nous vous répondons sous 72 heures."
-titre: Parlez-nous de votre événement.
-texte: Nous vous répondrons sous 72 heures.
+  description: "Parlez-nous de votre événement : type d'événement, date, nombre de
+    participants. Nous vous répondons sous 24 heures."
+titre: Parlez-nous de votre événement
+texte: Nous vous répondrons au plus vite
 nom:
   label: Nom
   exemple: Votre nom
@@ -29,7 +30,8 @@ message:
   label: Message
   exemple: Décrivez votre projet, vos envies, le contexte de l'événement...
 bouton: Envoyer
-erreur: "L'envoi n'a pas fonctionné. Réessayez ou écrivez-nous à contact@atelier-crush.com."
+erreur: L'envoi n'a pas fonctionné. Réessayez ou écrivez-nous à
+  contact@atelier-crush.com.
 merci:
   titre: Merci !
   texte: |
