@@ -24,7 +24,7 @@ function placeholder(cls) {
 
 function photo(src, alt = "", cls = "", sizes = "100vw", eager = false, widths = [480, 800, 1200, 1800]) {
   if (!src) return placeholder(cls);
-  const file = path.join(".", decodeURI(String(src)).replace(/^\/+/, ""));
+  const file = path.join(".", decodeURI(String(src)).replace(/\\/g, "/").replace(/^\/+/, ""));
   if (!fs.existsSync(file)) {
     console.warn(`[photo] introuvable : ${src}`);
     return placeholder(cls);
