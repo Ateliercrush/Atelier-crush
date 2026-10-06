@@ -143,42 +143,6 @@ autres:
         - /photos/dior/20260316_160955.jpg
         - /photos/dior/e2523f92-3d24-43f2-a2e6-ebca14b83cb4.jpg
         - /photos/dior/ee408368-0b74-4b52-ba7b-3b73ea469955.jpg
-    - titre: Eden Gallery Londres
-      categorie: Événements de marque
-      photo: /photos/eden-londres/eden-charm-sur-mesure.jpg
-      galerie:
-        - /photos/eden-londres/20251014_192033.jpg
-        - /photos/eden-londres/20251016_192646.jpg
-        - /photos/eden-londres/20251016_195801-0.jpg
-        - /photos/eden-londres/20251016_201955.jpg
-        - /photos/eden-londres/20251017_205317.jpg
-        - /photos/eden-londres/eden-charm-sur-mesure.jpg
-        - /photos/eden-londres/eden-plateaux-rouges-2.jpg
-        - /photos/eden-londres/eden-plateaux-rouges.jpg
-        - /photos/eden-londres/img-0069.jpg
-        - /photos/eden-londres/img-0071.jpg
-        - /photos/eden-londres/img-0072.jpg
-        - /photos/eden-londres/img-0074.jpg
-        - /photos/eden-londres/img-0076.jpg
-        - /photos/eden-londres/img-0077.jpg
-        - /photos/eden-londres/img-0078.jpg
-        - /photos/eden-londres/img-0091.jpg
-        - /photos/eden-londres/img-0148.jpg
-        - /photos/eden-londres/img-0149.jpg
-        - /photos/eden-londres/img-0150.jpg
-        - /photos/eden-londres/img-0151.jpg
-        - /photos/eden-londres/img-0152.jpg
-        - /photos/eden-londres/img-0153.jpg
-        - /photos/eden-londres/img-0173.jpg
-        - /photos/eden-londres/img-0222.jpg
-        - /photos/eden-londres/img-0231.jpg
-        - /photos/eden-londres/img-0235.jpg
-        - /photos/eden-londres/img-0238.jpg
-        - /photos/eden-londres/img-0239.jpg
-        - /photos/eden-londres/img-0244.jpg
-        - /photos/eden-londres/img-0246.jpg
-        - /photos/eden-londres/img-1217.jpg
-        - /photos/eden-londres/img-1222.jpg
     - titre: SodaStream
       categorie: Événements de marque
       photo: /photos/soda-stream/img-6616.jpg
@@ -303,6 +267,10 @@ autres:
         - /photos/etrier/21531310-7030-482a-af67-c846de4f3ad6.jpg
         - /photos/etrier/5bab901f-6406-4ffc-a74a-0958edbb9ff4.jpg
         - /photos/etrier/7db73c18-f29c-4fdc-9220-6be54a551c12.jpg
+    - titre: C&A
+      categorie: Collaborateurs
+      photo: /photos/c-and-a/c-and-a.jpg
+      galerie: []
     - titre: Bat Mitzvah d'Elsa
       categorie: Événements privés
       photo: /photos/bm-elsa/img-4193.jpg
