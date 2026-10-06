@@ -48,16 +48,16 @@ projets:
     resume: Un atelier bijoux intégré à l'événement de la marque.
     description: Un atelier bijoux intégré à l'événement de la marque Redken lors du
       concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
-    photo: /photos/loreal-redken/redken-atelier.jpg
+    photo: /photos/sabrina-carpenter/redken-atelier.jpg
     galerie:
-      - /photos/loreal-redken/redken-table.jpg
-      - /photos/loreal-redken/redken-table-2.jpg
-      - /photos/loreal-redken/redken-coeur-lumineux.jpg
-      - /photos/loreal-redken/redken-produits-et-charms.jpg
-      - /photos/loreal-redken/redken-invites-2.jpg
-      - /photos/loreal-redken/redken-creation.jpg
-      - /photos/loreal-redken/redken-creation-2.jpg
-      - /photos/loreal-redken/redken-invites-creation.jpg
+      - /photos/sabrina-carpenter/redken-table.jpg
+      - /photos/sabrina-carpenter/redken-table-2.jpg
+      - /photos/sabrina-carpenter/redken-coeur-lumineux.jpg
+      - /photos/sabrina-carpenter/redken-produits-et-charms.jpg
+      - /photos/sabrina-carpenter/redken-invites-2.jpg
+      - /photos/sabrina-carpenter/redken-creation.jpg
+      - /photos/sabrina-carpenter/redken-creation-2.jpg
+      - /photos/sabrina-carpenter/redken-invites-creation.jpg
     accueil: false
   - client: Fuze Tea
     logo: /photos/logos/fuze-tea.png
@@ -91,7 +91,7 @@ autres:
       photo: /photos/peggy-sage/20251018_111841.jpg
     - titre: Bonobo
       categorie: Événements de marque
-      photo: /photos/bonobo/20251106_163944.jpg
+      photo: /photos/bonobo-cache-cache-breal/20251106_163944.jpg
     - titre: Bar&Bat mitzvas
       categorie: Événements privés
       photo: /photos/evenements-prives/fete-privee.jpg
@@ -103,13 +103,13 @@ autres:
       photo: /photos/bracelets-colliers/colliers-presentoirs-jardin.jpg
     - titre: Eden Gallery Dubai
       categorie: Événements de marque
-      photo: /photos/eden-gallery/20260120_155451.jpg
+      photo: /photos/eden-dubai/20260120_155451.jpg
     - titre: Eden Gallery Londres
       categorie: Événements de marque
-      photo: /photos/eden-gallery/20251014_192033.jpg
+      photo: /photos/eden-londres/20251014_192033.jpg
     - titre: Eden Gallery Saint-Tropez
       categorie: Événements de marque
-      photo: /photos/eden-gallery/eden-saint-tropez-2.jpg
+      photo: /photos/eden-st-trop/eden-saint-tropez-2.jpg
 bouton_projet: Voir le projet
 cta:
   titre: Et pour votre prochain événement ?

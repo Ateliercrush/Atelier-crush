@@ -42,16 +42,16 @@ personnalisation:
   liste:
     - titre: Les couleurs
       texte: Nous sélectionnons les pièces en cohérence avec votre univers, votre charte ou votre produit.
-      photo: /photos/eden-gallery/eden-plateaux-rouges.jpg
+      photo: /photos/eden-londres/eden-plateaux-rouges.jpg
     - titre: Le thème
       texte: "Lancement, collection, saison, fête, destination : la sélection peut être construite autour de votre événement."
-      photo: /photos/eden-gallery/eden-dubai-table.jpg
+      photo: /photos/eden-dubai/eden-dubai-table.jpg
     - titre: Les pièces sur mesure
       texte: "Logo, produit, message ou symbole : des pièces spécifiques peuvent être produites lorsque les délais le permettent."
-      photo: /photos/eden-gallery/eden-charm-sur-mesure.jpg
+      photo: /photos/eden-londres/eden-charm-sur-mesure.jpg
     - titre: Votre produit
       texte: Selon le projet, le produit de la marque peut lui-même devenir une partie de la création.
-      photo: /photos/loreal-redken/redken-produits-et-charms.jpg
+      photo: /photos/sabrina-carpenter/redken-produits-et-charms.jpg
   bouton: Parlez-nous de votre projet
 cas_client:
   surtitre: Cas client
