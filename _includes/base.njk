@@ -129,8 +129,11 @@
   <div class="wrap footer__bas">© Atelier Crush · Paris</div>
 </footer>
 <dialog class="visionneuse" aria-label="Photos">
+  <p class="visionneuse__compteur" aria-live="polite"></p>
   <button type="button" class="visionneuse__fermer" aria-label="Fermer">×</button>
+  <button type="button" class="visionneuse__nav visionneuse__prec" aria-label="Photo précédente"><svg class="ic"><use href="#i-fleche"/></svg></button>
   <div class="visionneuse__photos"></div>
+  <button type="button" class="visionneuse__nav visionneuse__suiv" aria-label="Photo suivante"><svg class="ic"><use href="#i-fleche"/></svg></button>
 </dialog>
 <script src="/assets/site.js?v={{ version }}" defer></script>
 </body>

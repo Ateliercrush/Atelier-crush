@@ -352,12 +352,24 @@ a.carte:hover .carte__media img { transform: scale(1.03); }
 @media (min-width: 700px) { .vignettes { columns: 3; column-gap: 16px; } .vignettes li { margin-bottom: 16px; } }
 @media (min-width: 1000px) { .vignettes { columns: 4; column-gap: 18px; } .vignettes li { margin-bottom: 18px; } }
 
-.visionneuse { width: min(1100px, 94vw); max-height: 90vh; border: 0; border-radius: var(--r); padding: 48px 16px 16px; background: var(--creme); }
-.visionneuse::backdrop { background: rgba(20, 20, 20, 0.7); }
-.visionneuse__fermer { position: absolute; top: 8px; right: 12px; font-size: 32px; line-height: 1; width: 40px; height: 40px; }
-.visionneuse__photos { display: grid; gap: 12px; }
-.visionneuse__photos img { width: 100%; border-radius: 10px; }
-@media (min-width: 700px) { .visionneuse__photos { grid-template-columns: 1fr 1fr; } }
+.visionneuse { width: 100vw; height: 100vh; max-width: 100vw; max-height: 100vh; margin: 0; border: 0; padding: 56px 12px 24px; background: rgba(20, 16, 18, 0.94); color: #fff; }
+.visionneuse[open] { display: flex; align-items: center; justify-content: center; }
+.visionneuse::backdrop { background: rgba(20, 16, 18, 0.6); }
+.visionneuse__photos { flex: 1; height: 100%; display: flex; align-items: center; justify-content: center; min-width: 0; }
+.visionneuse__photos img { max-width: 100%; max-height: calc(100vh - 100px); width: auto; height: auto; object-fit: contain; border-radius: 10px; }
+.visionneuse__fermer { position: absolute; top: 10px; right: 14px; font-size: 34px; line-height: 1; width: 44px; height: 44px; color: #fff; }
+.visionneuse__compteur { position: absolute; top: 20px; left: 20px; margin: 0; font-size: 14px; letter-spacing: 0.08em; opacity: .85; }
+.visionneuse__nav { flex: none; width: 48px; height: 48px; border-radius: 50%; background: rgba(255, 255, 255, 0.14); display: grid; place-items: center; color: #fff; transition: background .2s; }
+.visionneuse__nav:hover { background: rgba(255, 255, 255, 0.28); }
+.visionneuse__nav .ic { stroke: #fff; width: 22px; height: 22px; }
+.visionneuse__prec .ic { transform: rotate(180deg); }
+.visionneuse--unique .visionneuse__nav, .visionneuse--unique .visionneuse__compteur { display: none; }
+@media (max-width: 699px) {
+  .visionneuse__nav { position: absolute; bottom: 18px; }
+  .visionneuse__prec { left: calc(50% - 60px); }
+  .visionneuse__suiv { right: calc(50% - 60px); }
+  .visionneuse__photos img { max-height: calc(100vh - 160px); }
+}
 
 /* Bande CTA */
 .cta-bande { background: var(--rose-fonce); color: #fff; padding: 56px 0; }
@@ -464,9 +476,6 @@ a.carte:hover .carte__media img { transform: scale(1.03); }
 
 /* Photos agrandissables */
 .agrandir { display: block; width: 100%; cursor: zoom-in; border-radius: inherit; }
-.visionneuse--seule { width: auto; max-width: 94vw; padding: 48px 12px 12px; }
-.visionneuse--seule .visionneuse__photos { grid-template-columns: 1fr; }
-.visionneuse--seule .visionneuse__photos img { width: auto; max-width: 100%; max-height: 82vh; margin: 0 auto; object-fit: contain; }
 
 /* Envoi du formulaire et lien WhatsApp */
 .form__envoi { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }

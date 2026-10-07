@@ -51,25 +51,59 @@
   const vis = document.querySelector(".visionneuse");
   if (vis) {
     const cible = vis.querySelector(".visionneuse__photos");
-    const ouvrir = (id) => {
-      const t = document.getElementById("galerie-" + id);
-      if (!t) return false;
-      vis.classList.remove("visionneuse--seule");
-      cible.replaceChildren(t.content.cloneNode(true));
-      cible.querySelectorAll("img").forEach((i) => { i.loading = "eager"; });
-      vis.showModal();
-      return true;
-    };
-    document.querySelectorAll(".agrandir").forEach((b) => b.addEventListener("click", () => {
-      const img = b.querySelector("img");
-      if (!img) return;
-      const grande = img.cloneNode(true);
+    const compteur = vis.querySelector(".visionneuse__compteur");
+    const precedent = vis.querySelector(".visionneuse__prec");
+    const suivant = vis.querySelector(".visionneuse__suiv");
+    let diapos = [];
+    let rang = 0;
+    const montrer = () => {
+      const grande = diapos[rang].cloneNode(true);
       grande.removeAttribute("class");
       grande.sizes = "90vw";
       grande.loading = "eager";
-      vis.classList.add("visionneuse--seule");
       cible.replaceChildren(grande);
-      vis.showModal();
+      compteur.textContent = `${rang + 1} / ${diapos.length}`;
+      // précharge la photo suivante pour un défilement sans attente
+      const apres = diapos[(rang + 1) % diapos.length];
+      if (apres && apres !== diapos[rang]) { const p = apres.cloneNode(true); p.sizes = "90vw"; p.loading = "eager"; }
+    };
+    const diaporama = (images, depart = 0) => {
+      if (!images.length) return false;
+      diapos = images;
+      rang = depart;
+      vis.classList.toggle("visionneuse--unique", images.length < 2);
+      montrer();
+      if (!vis.open) vis.showModal();
+      return true;
+    };
+    const aller = (pas) => {
+      if (diapos.length < 2) return;
+      rang = (rang + pas + diapos.length) % diapos.length;
+      montrer();
+    };
+    precedent.addEventListener("click", () => aller(-1));
+    suivant.addEventListener("click", () => aller(1));
+    vis.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") aller(1);
+      if (e.key === "ArrowLeft") aller(-1);
+    });
+    let debutX = null;
+    vis.addEventListener("touchstart", (e) => { debutX = e.touches[0].clientX; }, { passive: true });
+    vis.addEventListener("touchend", (e) => {
+      if (debutX === null) return;
+      const dx = e.changedTouches[0].clientX - debutX;
+      if (Math.abs(dx) > 50) aller(dx < 0 ? 1 : -1);
+      debutX = null;
+    });
+    const ouvrir = (id) => {
+      const t = document.getElementById("galerie-" + id);
+      if (!t) return false;
+      return diaporama([...t.content.querySelectorAll("img")]);
+    };
+    document.querySelectorAll(".agrandir").forEach((b) => b.addEventListener("click", () => {
+      const groupe = b.closest("ul, .galerie3") || b.parentElement;
+      const images = [...groupe.querySelectorAll(".agrandir img")];
+      diaporama(images, Math.max(0, images.indexOf(b.querySelector("img"))));
     }));
     document.querySelectorAll("[data-galerie]").forEach((b) => b.addEventListener("click", () => ouvrir(b.dataset.galerie)));
     const depuisAncre = () => {
