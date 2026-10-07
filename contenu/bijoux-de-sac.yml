@@ -15,10 +15,10 @@ etapes:
   liste:
     - titre: Je choisis
       texte: L'invité découvre la sélection de charms, perles, pompons et breloques et choisit les pièces qui lui plaisent.
-      photo: /photos/benefit/choix-des-charms-mains.jpg
+      photo: /photos/sabrina-carpenter/redken-creation-2.jpg
     - titre: Je compose
       texte: Il imagine son bijou de sac. Notre équipe l'accompagne dans sa sélection et réalise l'assemblage si besoin.
-      photo: /photos/sloggy/20260623_201930.jpg
+      photo: /photos/sabrina-carpenter/redken-invites-creation.jpg
     - titre: Je repars avec
       texte: Quelques minutes plus tard, son bijou est prêt. Il repart avec une création personnelle, directement utilisable.
       photo: /photos/ateliers/invitee-bijou-de-sac.jpg
@@ -27,17 +27,32 @@ sacs:
   titre: Un bijou différent pour chaque invité.
   liste:
     - /photos/moroccan-oil/img-2232.jpg
+    - /photos/peggy-sage/img-0347.jpg
     - /photos/fuze-tea/20260630_192855-0.jpg
+    - /photos/bonobo-cache-cache-breal/img-1121.jpg
     - /photos/dior/20260316_153629.jpg
+    - /photos/moroccan-oil/20251203_195311.jpg
     - /photos/bonobo-cache-cache-breal/img-1171.jpg
+    - /photos/peggy-sage/img-0354.jpg
     - /photos/moroccan-oil/img-2235.jpg
+    - /photos/bonobo-cache-cache-breal/img-1132.jpg
     - /photos/peggy-sage/img-0350.jpg
+    - /photos/eden-dubai/20260122_155635.jpg
     - /photos/moroccan-oil/20251203_191345.jpg
+    - /photos/moroccan-oil/img-2247.jpg
     - /photos/eden-dubai/20260122_154724.jpg
+    - /photos/bonobo-cache-cache-breal/img-1125.jpg
     - /photos/dior/1fba55e9-95b9-4eaf-83bd-18ab6836bdce.jpg
+    - /photos/peggy-sage/img-0360.jpg
     - /photos/fuze-tea/20260630_205638.jpg
+    - /photos/eden-dubai/20260122_172356.jpg
     - /photos/moroccan-oil/20251203_195623.jpg
+    - /photos/dior/20260316_153657.jpg
     - /photos/dior/20260316_160039.jpg
+    - /photos/bonobo-cache-cache-breal/img-1147.jpg
+    - /photos/eden-londres/20251017_205317.jpg
+    - /photos/moroccan-oil/20251203_194307.jpg
+    - /photos/eden-londres/img-0246.jpg
 infos:
   titre: Informations pratiques
   liste:
