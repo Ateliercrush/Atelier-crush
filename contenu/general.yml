@@ -18,17 +18,50 @@ menu:
     lien: /agences/
 bouton_devis: Demander un devis
 references:
+  - nom: Dior
+  - nom: L'Oréal
+    logo: /photos/logos/loreal.png
   - nom: Benefit
     logo: /photos/logos/benefit.png
   - nom: Redken
+  - nom: Moroccanoil
   - nom: American Vintage
+    logo: /photos/logos/american-vintage.png
   - nom: C&A
     logo: /photos/logos/c-and-a.jpg
+  - nom: Kiabi
+    logo: /photos/logos/kiabi.png
+  - nom: Fuze Tea
+    logo: /photos/logos/fuze-tea.png
+  - nom: SodaStream
+  - nom: Alpro
+  - nom: Sloggi
+    logo: /photos/logos/sloggi.png
+  - nom: Frédérique Constant
+    logo: /photos/logos/frederic.png
   - nom: Eden Gallery
     logo: /photos/logos/eden-gallery.png
-  - nom: Bonobo
   - nom: Peggy Sage
     logo: /photos/logos/peggy.png
+  - nom: Spartoo
+    logo: /photos/logos/spartoo.png
+  - nom: Bonobo
+  - nom: Cache Cache
+  - nom: Bréal
+  - nom: Étrier
+    logo: /photos/logos/etrier.jpg
+  - nom: Publicis Conseil
+    logo: /photos/logos/publicis.png
+  - nom: Cover
+    logo: /photos/logos/cover.png
+  - nom: Matahari
+    logo: /photos/logos/matahari.png
+  - nom: Woô
+    logo: /photos/logos/woo.png
+  - nom: Zehnia
+    logo: /photos/logos/zehnia.jpg
+  - nom: Superplanner
+    logo: /photos/logos/superplanner.png
 footer:
   accroche: Des animations personnalisées que vos invités emportent avec eux.
   titre_liens: Découvrir
