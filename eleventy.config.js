@@ -59,6 +59,7 @@ function rempli(v) {
 
 export default function (cfg) {
   cfg.on("eleventy.directories", (d) => { OUT = d.output; });
+  cfg.addGlobalData("version", () => Date.now().toString(36));
   cfg.addGlobalData("c", () => {
     const data = {};
     for (const f of fs.readdirSync("contenu")) {
