@@ -473,3 +473,36 @@ a.carte:hover .carte__media img { transform: scale(1.03); }
 .lien-whatsapp { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--texte); }
 .lien-whatsapp .ic { color: #25A244; }
 .lien-whatsapp:hover { color: var(--rose-fonce); }
+
+/* Accueil : photo pleine largeur */
+.hero-plein { position: relative; min-height: 78vh; display: flex; align-items: flex-end; color: #fff; overflow: hidden; background: var(--noir); }
+.hero-plein__media { position: absolute; inset: 0; }
+.hero-plein__img, .hero-plein__media .ph { width: 100%; height: 100%; object-fit: cover; object-position: 60% center; }
+.hero-plein__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 16, 18, 0.05) 20%, rgba(20, 16, 18, 0.55) 55%, rgba(20, 16, 18, 0.82) 100%); }
+.hero-plein__texte { position: relative; z-index: 1; padding-top: 120px; padding-bottom: 44px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+.hero-plein__texte .surtitre { color: #fff; margin: 0; opacity: .92; }
+.hero-plein__texte .titre-xl { color: #fff; max-width: 760px; }
+.hero-plein__texte .titre-xl em { color: #F7A8D6; }
+.hero-plein__intro { font-size: 1.1rem; max-width: 520px; }
+.hero-plein .btn { background: #fff; color: var(--rose-fonce); border-color: #fff; }
+.hero-plein .btn:hover { background: var(--rose-fonce); color: #fff; border-color: var(--rose-fonce); }
+@media (min-width: 900px) {
+  .hero-plein { min-height: 86vh; align-items: center; }
+  .hero-plein__media::after { background: linear-gradient(90deg, rgba(20, 16, 18, 0.72) 0%, rgba(20, 16, 18, 0.35) 45%, rgba(20, 16, 18, 0) 75%); }
+  .hero-plein__texte { padding-top: 64px; padding-bottom: 64px; }
+}
+
+/* Bandeau chiffres + logos qui défilent */
+.preuves--bande { justify-content: center; border-top: 0; margin: 0 0 22px; padding-top: 0; }
+.preuves--bande li { align-items: center; text-align: center; }
+.defile { overflow: hidden; background: var(--rose-voile); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.defile__piste { display: flex; width: max-content; animation: defile 38s linear infinite; }
+.defile__piste:hover { animation-play-state: paused; }
+.defile .logos { flex-wrap: nowrap; justify-content: flex-start; padding-right: 52px; gap: 52px; }
+.defile .logos li { flex: none; }
+@keyframes defile { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .defile__piste { animation: none; width: auto; }
+  .defile__piste > div[aria-hidden] { display: none; }
+  .defile .logos { flex-wrap: wrap; justify-content: center; padding: 0 var(--gouttiere); }
+}
