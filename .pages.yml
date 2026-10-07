@@ -141,6 +141,16 @@ content:
           - name: destinations
             label: Destinations
             type: string
+      - name: bandeau
+        label: Grande photo sous les logos
+        type: object
+        fields:
+          - name: photo
+            label: Photo (horizontale)
+            type: image
+          - name: legende
+            label: Légende (facultatif)
+            type: string
       - name: references_titre
         label: Titre au-dessus des logos
         type: string

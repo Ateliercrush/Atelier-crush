@@ -35,6 +35,17 @@ permalink: /
   </div>
 </section>
 
+{%- if p.bandeau and p.bandeau.photo %}
+<section class="bandeau-photo">
+  <div class="wrap">
+    <figure class="bandeau-photo__cadre">
+      {% photo p.bandeau.photo, "Invités en pleine création autour d'un stand Atelier Crush", "", "(min-width: 1240px) 1200px, 100vw", false, [800, 1200, 1650] %}
+      {%- if p.bandeau.legende %}<figcaption>{{ p.bandeau.legende }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+{%- endif %}
+
 <section class="section section--serree">
   <div class="wrap">
     <p class="surtitre">{{ p.realisations.surtitre }}</p>

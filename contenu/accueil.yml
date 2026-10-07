@@ -14,6 +14,9 @@ preuves:
     - nombre: + 2 000
       texte: participants
   destinations: Paris, Londres, Dubaï, Saint-Tropez et partout où vous allez
+bandeau:
+  photo: /photos/eden-dubai/eden-dubai-salon-bandeau.jpg
+  legende: Eden Gallery, Dubaï
 references_titre: Ils nous ont fait confiance
 pourquoi:
   surtitre: Pourquoi ça marche ?
