@@ -503,10 +503,3 @@ a.carte:hover .carte__media img { transform: scale(1.03); }
   .defile__piste > div[aria-hidden] { display: none; }
   .defile .logos { flex-wrap: wrap; justify-content: center; padding: 0 var(--gouttiere); }
 }
-
-/* Bandeau photo de l'accueil */
-.bandeau-photo { padding: 40px 0 0; }
-.bandeau-photo__cadre { position: relative; margin: 0; border-radius: var(--r); overflow: hidden; }
-.bandeau-photo__cadre img, .bandeau-photo__cadre .ph { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-.bandeau-photo__cadre figcaption { position: absolute; left: 16px; bottom: 14px; padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, 0.9); font-size: 13px; font-weight: 600; color: var(--noir); }
-@media (min-width: 900px) { .bandeau-photo { padding-top: 64px; } .bandeau-photo__cadre img, .bandeau-photo__cadre .ph { aspect-ratio: 1650 / 909; } }
