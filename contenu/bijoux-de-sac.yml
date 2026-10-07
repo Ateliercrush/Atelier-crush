@@ -1,11 +1,15 @@
 seo:
   titre: Atelier bijoux de sac personnalisé pour vos événements | Atelier Crush
-  description: "Animation bijoux de sac : chaque invité compose son grigri parmi une large sélection de charms, perles et pompons. Personnalisable aux couleurs, au logo ou au produit de votre marque. De 5 à 200 participants."
+  description: "Animation bijoux de sac : chaque invité compose son grigri parmi
+    une large sélection de charms, perles et pompons. Personnalisable aux
+    couleurs, au logo ou au produit de votre marque. De 5 à 200 participants."
 hero:
   surtitre: Atelier signature
   titre: Le bijou de sac personnalisé
-  texte: |
-    Une animation participative où chaque invité compose son propre grigri parmi une large sélection de pièces.
+  texte: >
+    Une animation participative où chaque invité compose son propre grigri parmi
+    une large sélection de pièces.
+
     Coloré, chic, décalé ou minimal : chacun crée celui qui lui ressemble.
   bouton: Demander un devis
   photo: /photos/ateliers/bijou-de-sac-sac-monogramme.jpg
@@ -14,27 +18,31 @@ etapes:
   titre: Une expérience en trois étapes.
   liste:
     - titre: Je choisis
-      texte: L'invité découvre la sélection de charms, perles, pompons et breloques et choisit les pièces qui lui plaisent.
+      texte: L'invité découvre la sélection de charms, perles, pompons et breloques et
+        choisit les pièces qui lui plaisent.
       photo: /photos/sabrina-carpenter/redken-creation-2.jpg
     - titre: Je compose
-      texte: Il imagine son bijou de sac. Notre équipe l'accompagne dans sa sélection et réalise l'assemblage si besoin.
+      texte: Il imagine son bijou de sac. Notre équipe l'accompagne dans sa sélection
+        et réalise l'assemblage si besoin.
       photo: /photos/sabrina-carpenter/redken-invites-creation.jpg
     - titre: Je repars avec
-      texte: Quelques minutes plus tard, son bijou est prêt. Il repart avec une création personnelle, directement utilisable.
+      texte: Quelques minutes plus tard, son bijou est prêt. Il repart avec une
+        création personnelle, directement utilisable.
       photo: /photos/ateliers/invitee-bijou-de-sac.jpg
 sacs:
   surtitre: Ils sont repartis avec
   titre: Un bijou différent pour chaque invité.
   liste:
-    - /photos/moroccan-oil/img-2232.jpg
-    - /photos/peggy-sage/img-0347.jpg
+    - /photos/bonobo-cache-cache-breal/20251106_170628.jpg
     - /photos/fuze-tea/20260630_192855-0.jpg
+    - /photos/moroccan-oil/20251203_195311.jpg
+    - /photos/moroccan-oil/img-2232.jpg
+    - /photos/moroccan-oil/img-2235.jpg
+    - /photos/peggy-sage/img-0347.jpg
     - /photos/bonobo-cache-cache-breal/img-1121.jpg
     - /photos/dior/20260316_153629.jpg
-    - /photos/moroccan-oil/20251203_195311.jpg
     - /photos/bonobo-cache-cache-breal/img-1171.jpg
     - /photos/peggy-sage/img-0354.jpg
-    - /photos/moroccan-oil/img-2235.jpg
     - /photos/bonobo-cache-cache-breal/img-1132.jpg
     - /photos/peggy-sage/img-0350.jpg
     - /photos/eden-dubai/20260122_155635.jpg
@@ -48,11 +56,11 @@ sacs:
     - /photos/eden-dubai/20260122_172356.jpg
     - /photos/moroccan-oil/20251203_195623.jpg
     - /photos/dior/20260316_153657.jpg
-    - /photos/dior/20260316_160039.jpg
     - /photos/bonobo-cache-cache-breal/img-1147.jpg
     - /photos/eden-londres/20251017_205317.jpg
     - /photos/moroccan-oil/20251203_194307.jpg
     - /photos/eden-londres/img-0246.jpg
+    - /photos/dior/20260316_160039.jpg
 infos:
   titre: Informations pratiques
   liste:
@@ -72,27 +80,37 @@ personnalisation:
   intro: L'atelier peut être entièrement adapté à votre projet.
   liste:
     - titre: Les couleurs
-      texte: Nous sélectionnons les pièces en cohérence avec votre univers, votre charte ou votre produit.
+      texte: Nous sélectionnons les pièces en cohérence avec votre univers, votre
+        charte ou votre produit.
       photo: /photos/bonobo-cache-cache-breal/img-20251106-wa0001.jpg
     - titre: Le thème
-      texte: "Lancement, collection, saison, fête, destination : la sélection peut être construite autour de votre événement."
+      texte: "Lancement, collection, saison, fête, destination : la sélection peut
+        être construite autour de votre événement."
       photo: /photos/eden-dubai/eden-dubai-table.jpg
     - titre: Les pièces sur mesure
-      texte: "Logo, produit, message ou symbole : des pièces spécifiques peuvent être produites lorsque les délais le permettent."
+      texte: "Logo, produit, message ou symbole : des pièces spécifiques peuvent être
+        produites lorsque les délais le permettent."
       photo: /photos/eden-londres/eden-charm-sur-mesure.jpg
     - titre: Votre produit
-      texte: Selon le projet, le produit de la marque peut lui-même devenir une partie de la création.
+      texte: Selon le projet, le produit de la marque peut lui-même devenir une partie
+        de la création.
       photo: /photos/sabrina-carpenter/redken-produits-et-charms.jpg
   bouton: Parlez-nous de votre projet
 cas_client:
   surtitre: Cas client
   titre: Benefit · Bad Gal Bounce
-  texte: |
-    Pour le lancement du mascara Bad Gal Bounce, l'atelier a été pensé autour de l'univers Benefit.
+  texte: >
+    Pour le lancement du mascara Bad Gal Bounce, l'atelier a été pensé autour de
+    l'univers Benefit.
 
-    Couleurs, sélection des pièces et créations ont été intégrées au décor de la soirée. Le produit pouvait également accompagner directement la création de l'invité.
 
-    Résultat : chacun repart avec le produit du lancement et une création personnelle associée à l'événement.
+    Couleurs, sélection des pièces et créations ont été intégrées au décor de la
+    soirée. Le produit pouvait également accompagner directement la création de
+    l'invité.
+
+
+    Résultat : chacun repart avec le produit du lancement et une création
+    personnelle associée à l'événement.
   bouton: Découvrir nos réalisations
   photo: /photos/benefit/benefit-stand-bad-gal-bounce.jpg
 usages:
@@ -109,5 +127,6 @@ usages:
     - Bar & Bat Mitzvah
 cta:
   titre: Imaginons votre atelier.
-  texte: Chaque événement est différent. Racontez-nous le vôtre et nous vous proposerons une expérience adaptée.
+  texte: Chaque événement est différent. Racontez-nous le vôtre et nous vous
+    proposerons une expérience adaptée.
   bouton: Demander un devis
