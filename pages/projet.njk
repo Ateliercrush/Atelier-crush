@@ -1,0 +1,58 @@
+---
+layout: base.njk
+cle: realisations
+pagination:
+  data: c.realisations.projets
+  size: 1
+  alias: r
+  addAllPagesToCollections: true
+permalink: "/realisations/{{ r.client | cle }}/"
+eleventyComputed:
+  seoPage:
+    titre: "{{ r.client | safe }} · {{ r.type | safe }} | Atelier Crush"
+    description: "{{ r.resume | safe }}"
+---
+{%- set f = c.realisations.fiche -%}
+{%- set infos = r | infosFiche(f) -%}
+<section class="fiche">
+  <div class="wrap">
+    <p class="fiche__retour"><a href="/realisations/"><svg class="ic ic--sm fiche__retour-ic"><use href="#i-fleche"/></svg> {{ f.retour }}</a></p>
+    <div class="fiche__tete">
+      <div class="fiche__titre">
+        {%- if r.logo %}{% photo r.logo, r.client, "fiche__logo", "160px", false, [320] %}{% endif %}
+        <h1 class="titre-xl">{{ r.client }}</h1>
+        <p class="carte__type">{{ r.type }}</p>
+        {%- if r.resume | rempli %}<p class="intro fiche__resume">{{ r.resume }}</p>{% endif %}
+      </div>
+      {%- if infos.length %}
+      <dl class="fiche__infos" aria-label="{{ f.infos_titre }}">
+        {%- for i in infos %}<div><dt>{{ i[0] }}</dt><dd>{{ i[1] }}</dd></div>{% endfor %}
+      </dl>
+      {%- endif %}
+    </div>
+    <div class="fiche__photo">{% photo r.photo, r.client + ", " + r.type, "", "(min-width: 1240px) 1200px, 100vw", true %}</div>
+
+    <div class="fiche__corps">
+      {%- if r.contexte | rempli %}<div class="fiche__bloc"><h2 class="titre-s">{{ f.contexte }}</h2><div class="prose">{{ r.contexte | paras | safe }}</div></div>{% endif %}
+      {%- if r.dispositif | rempli %}<div class="fiche__bloc"><h2 class="titre-s">{{ f.dispositif }}</h2><div class="prose">{{ r.dispositif | paras | safe }}</div></div>{% endif %}
+      {%- if r.resultat | rempli %}<div class="fiche__bloc"><h2 class="titre-s">{{ f.resultat }}</h2><div class="prose">{{ r.resultat | paras | safe }}</div></div>{% endif %}
+    </div>
+
+    {%- if r.citation and (r.citation.texte | rempli) %}
+    <figure class="fiche__citation">
+      <blockquote>« {{ r.citation.texte }} »</blockquote>
+      {%- if r.citation.auteur | rempli %}<figcaption>{{ r.citation.auteur }}</figcaption>{% endif %}
+    </figure>
+    {%- endif %}
+
+    {%- if r.galerie and r.galerie.length %}
+    <h2 class="titre-m fiche__galerie-titre">{{ f.galerie }}</h2>
+    <ul class="vignettes vignettes--fiche">
+      {%- for g in r.galerie %}<li><button type="button" class="agrandir" aria-label="Agrandir la photo">{% photo g, r.client, "", "(min-width: 1000px) 33vw, (min-width: 700px) 50vw, 100vw", false, [500, 900, 1600] %}</button></li>{% endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</section>
+
+{%- set cta = { titre: f.cta_titre, bouton: f.cta_bouton } %}{% set devisParams = "" %}
+{% include "cta.njk" %}

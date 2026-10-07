@@ -4,7 +4,7 @@ cle: realisations
 permalink: /realisations/
 ---
 {%- set p = c.realisations -%}
-{%- set filtres = ["Lancements produit", "Événements de marque", "Collaborateurs", "Événements privés"] -%}
+{%- set filtres = ["Lancements produit", "Événements de marque", "Collaborateurs"] -%}
 <section class="hero hero--simple">
   <div class="wrap centre">
     <p class="surtitre surtitre--centre">{{ p.hero.surtitre }}</p>
@@ -25,49 +25,27 @@ permalink: /realisations/
     <div class="cartes cartes--3">
       {%- for r in p.projets %}
       <article class="carte" id="{{ r.client | cle }}" data-cat="{{ r.categorie | cle }}">
-        <div class="carte__media">{% photo r.photo, r.client + ", " + r.type, "", "(min-width: 900px) 33vw, 100vw" %}</div>
+        <a class="carte__media" href="/realisations/{{ r.client | cle }}/" tabindex="-1" aria-hidden="true">{% photo r.photo, r.client + ", " + r.type, "", "(min-width: 900px) 33vw, 100vw" %}</a>
         <div class="carte__entete">
           {%- if r.logo %}{% photo r.logo, r.client, "carte__logo", "120px", false, [240] %}{% endif %}
           <h2 class="carte__client">{{ r.client }}</h2>
         </div>
         <p class="carte__type">{{ r.type }}</p>
         <div class="carte__resume">{{ r.description | paras | safe }}</div>
-        {%- if r.galerie and r.galerie.length %}
-        <button type="button" class="lien" data-galerie="{{ r.client | cle }}">{{ p.bouton_projet }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></button>
-        <template id="galerie-{{ r.client | cle }}">
-          {%- for g in r.galerie %}{% photo g, r.client, "", "(min-width: 700px) 45vw, 90vw", false, [700, 1400] %}{% endfor %}
-        </template>
-        {%- endif %}
+        <a class="lien" href="/realisations/{{ r.client | cle }}/">{{ p.bouton_projet }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
       </article>
       {%- endfor %}
     </div>
 
     <h2 class="titre-m autres-titre">{{ p.autres.titre }}</h2>
-    <ul class="vignettes">
-      {%- for a in p.autres.liste %}
-      <li data-cat="{{ a.categorie | cle }}">
-        {%- if a.galerie and a.galerie.length %}
-        <button type="button" class="vignettes__lien" data-galerie="autre-{{ loop.index }}" aria-label="Voir les photos : {{ a.titre }}">
-          {% photo a.photo, a.titre, "", "(min-width: 900px) 25vw, 50vw", false, [400, 700] %}
-          <span>{{ a.titre }}</span>
-        </button>
-        <template id="galerie-autre-{{ loop.index }}">
-          {%- for g in a.galerie %}{% photo g, a.titre, "", "(min-width: 700px) 45vw, 90vw", false, [700, 1400] %}{% endfor %}
-        </template>
-        {%- else %}
-        {% photo a.photo, a.titre, "", "(min-width: 900px) 25vw, 50vw", false, [400, 700] %}
-        <span>{{ a.titre }}</span>
-        {%- endif %}
-      </li>
-      {%- endfor %}
-    </ul>
+    {%- set vignettes = p.autres.liste %}{% set prefixe = "autre" %}
+    {% include "vignettes.njk" %}
+
+    {%- if p.lien_prives and p.lien_prives.texte %}
+    <p class="lien-discret"><a href="{{ p.lien_prives.lien }}">{{ p.lien_prives.texte }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a></p>
+    {%- endif %}
   </div>
 </section>
-
-<dialog class="visionneuse" aria-label="Photos du projet">
-  <button type="button" class="visionneuse__fermer" aria-label="Fermer">×</button>
-  <div class="visionneuse__photos"></div>
-</dialog>
 
 {%- set cta = p.cta %}{% set devisParams = "" %}
 {% include "cta.njk" %}

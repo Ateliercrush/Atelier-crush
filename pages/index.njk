@@ -86,14 +86,12 @@ permalink: /
     <h2 class="titre-m">{{ p.realisations.titre | inline | safe }}</h2>
     <div class="cartes cartes--3">
       {%- for r in c.realisations.projets %}{% if r.accueil %}
-      <a class="carte" href="/realisations/#{{ r.client | cle }}">
+      <a class="carte" href="/realisations/{{ r.client | cle }}/">
         <div class="carte__media">{% photo r.photo, r.client + ", " + r.type, "", "(min-width: 900px) 33vw, 100vw" %}</div>
         <p class="carte__client">{{ r.client }}</p>
         <p class="carte__type">{{ r.type }}</p>
         <p class="carte__resume">{{ r.resume }}</p>
-        {%- if r.galerie and r.galerie.length %}
         <span class="lien">{{ c.realisations.bouton_projet }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></span>
-        {%- endif %}
       </a>
       {%- endif %}{% endfor %}
     </div>

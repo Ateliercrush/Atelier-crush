@@ -75,6 +75,12 @@ content:
           - name: lien_instagram
             label: Lien Instagram
             type: string
+          - name: whatsapp
+            label: Numéro WhatsApp affiché
+            type: string
+          - name: lien_whatsapp
+            label: Lien WhatsApp (https://wa.me/33…)
+            type: string
           - name: cta_texte
             label: Phrase de l'encart rose
             type: string
@@ -1006,6 +1012,35 @@ content:
               - name: texte
                 label: Texte
                 type: string
+      - name: realisations
+        label: Nos événements privés (vignettes)
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: liste
+            label: Vignettes
+            type: object
+            list: true
+            fields:
+              - name: titre
+                label: Nom
+                type: string
+              - name: description
+                label: Une ligne de description (facultatif)
+                type: string
+              - name: photo
+                label: Photo
+                type: image
+              - name: galerie
+                label: Galerie (photos affichées au clic)
+                type: image
+                list: true
       - name: cta
         label: Bandeau final
         type: object
@@ -1051,7 +1086,7 @@ content:
         label: Texte du filtre « Tout »
         type: string
       - name: projets
-        label: Projets
+        label: Projets (chacun a sa fiche détaillée)
         type: object
         list: true
         fields:
@@ -1072,9 +1107,8 @@ content:
                 - Lancements produit
                 - Événements de marque
                 - Collaborateurs
-                - Événements privés
           - name: resume
-            label: Résumé court (accueil)
+            label: Résumé court (accueil et haut de fiche)
             type: text
           - name: description
             label: Description (page Réalisations)
@@ -1084,12 +1118,44 @@ content:
             label: Photo principale
             type: image
           - name: galerie
-            label: Galerie (affiche le bouton « Voir le projet »)
+            label: Galerie (photos de la fiche)
             type: image
             list: true
           - name: accueil
             label: Afficher sur l'accueil
             type: boolean
+          - name: contexte
+            label: Fiche · Le contexte
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: dispositif
+            label: Fiche · Notre dispositif
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: invites
+            label: Fiche · Nombre d'invités
+            type: string
+          - name: lieu
+            label: Fiche · Lieu
+            type: string
+          - name: duree
+            label: Fiche · Durée
+            type: string
+          - name: resultat
+            label: Fiche · Le résultat
+            type: text
+            description: Laissez une ligne vide pour créer un nouveau paragraphe.
+          - name: citation
+            label: Fiche · Citation client
+            type: object
+            fields:
+              - name: texte
+                label: Citation
+                type: text
+              - name: auteur
+                label: Auteur (nom, fonction)
+                type: string
+        description: Sur la fiche, un champ vide ou qui commence par [À COMPLÉTER] n'est pas affiché.
       - name: autres
         label: Autres réalisations
         type: object
@@ -1105,6 +1171,9 @@ content:
               - name: titre
                 label: Nom
                 type: string
+              - name: description
+                label: Une ligne de description (facultatif)
+                type: string
               - name: categorie
                 label: Catégorie (facultatif)
                 type: select
@@ -1113,7 +1182,6 @@ content:
                     - Lancements produit
                     - Événements de marque
                     - Collaborateurs
-                    - Événements privés
               - name: photo
                 label: Photo
                 type: image
@@ -1121,9 +1189,56 @@ content:
                 label: Galerie (photos affichées au clic)
                 type: image
                 list: true
+      - name: lien_prives
+        label: Lien discret vers les événements privés
+        type: object
+        fields:
+          - name: texte
+            label: Texte
+            type: string
+          - name: lien
+            label: Lien
+            type: string
       - name: bouton_projet
         label: Texte du bouton « Voir le projet »
         type: string
+      - name: fiche
+        label: Fiche projet · intitulés
+        type: object
+        fields:
+          - name: retour
+            label: Lien retour
+            type: string
+          - name: infos_titre
+            label: Titre de l'encadré infos
+            type: string
+          - name: invites
+            label: Intitulé invités
+            type: string
+          - name: lieu
+            label: Intitulé lieu
+            type: string
+          - name: duree
+            label: Intitulé durée
+            type: string
+          - name: contexte
+            label: Intitulé contexte
+            type: string
+          - name: dispositif
+            label: Intitulé dispositif
+            type: string
+          - name: resultat
+            label: Intitulé résultat
+            type: string
+          - name: galerie
+            label: Intitulé galerie
+            type: string
+          - name: cta_titre
+            label: Bandeau final · titre
+            type: string
+          - name: cta_bouton
+            label: Bandeau final · bouton
+            type: string
       - name: cta
         label: Bandeau final
         type: object
@@ -1288,6 +1403,16 @@ content:
           - name: exemple
             label: Texte d'exemple
             type: string
+      - name: telephone
+        label: Champ téléphone
+        type: object
+        fields:
+          - name: label
+            label: Question
+            type: string
+          - name: exemple
+            label: Texte d'exemple
+            type: string
       - name: evenement
         label: Champ type d'événement
         type: object
@@ -1331,6 +1456,9 @@ content:
             type: string
       - name: bouton
         label: Bouton d'envoi
+        type: string
+      - name: whatsapp_texte
+        label: Texte du lien WhatsApp sous le bouton
         type: string
       - name: erreur
         label: Message si l'envoi échoue

@@ -51,6 +51,12 @@ function photo(src, alt = "", cls = "", sizes = "100vw", eager = false, widths =
   }
 }
 
+// un champ vide ou encore marqué « [À COMPLÉTER] » n'est pas affiché sur le site
+function rempli(v) {
+  const t = String(v ?? "").trim();
+  return t !== "" && !/^\[À COMPLÉTER/i.test(t);
+}
+
 export default function (cfg) {
   cfg.on("eleventy.directories", (d) => { OUT = d.output; });
   cfg.addGlobalData("c", () => {
@@ -82,6 +88,8 @@ export default function (cfg) {
       .replace(/^-|-$/g, "")
   );
   cfg.addFilter("json", (v) => JSON.stringify(v));
+  cfg.addFilter("rempli", rempli);
+  cfg.addFilter("infosFiche", (r, f) => ["lieu", "invites", "duree"].filter((k) => rempli(r[k])).map((k) => [f[k], r[k]]));
   cfg.addFilter("noms", (refs) => (refs || []).map((r) => r.nom));
   cfg.addFilter("logoDe", (nom, refs) => (refs || []).find((r) => r.nom === nom) || { nom });
 

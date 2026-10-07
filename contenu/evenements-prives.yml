@@ -1,37 +1,28 @@
 seo:
   titre: Animation mariage, Bar et Bat Mitzvah | Atelier Crush
-  description: "Un moment à partager, un cadeau qu'on garde : un atelier bijoux
-    pendant votre mariage, Bar ou Bat Mitzvah, et chaque invité repart avec sa
-    propre création."
+  description: "Un moment à partager, un cadeau qu'on garde : un atelier bijoux pendant votre mariage, Bar ou Bat Mitzvah, et chaque invité repart avec sa propre création."
 hero:
   surtitre: Événements privés
   titre: Un moment à partager, un cadeau qu'on garde.
-  texte: "Mariage, Bar ou Bat Mitzvah : Atelier Crush installe une animation
-    créative pendant votre fête et chaque invité repart avec sa propre
-    création."
+  texte: "Mariage, Bar ou Bat Mitzvah : Atelier Crush installe une animation créative pendant votre fête et chaque invité repart avec sa propre création."
   bouton: Demander un devis
   photo: /photos/evenements-prives/sans-titre-981.jpg
 occasions:
   - titre: Mariages
-    texte: >
-      Pendant le cocktail ou la soirée, vos invités composent leur création et
-      repartent avec un cadeau qu'ils ont réellement choisi.
-
+    texte: |
+      Pendant le cocktail ou la soirée, vos invités composent leur création et repartent avec un cadeau qu'ils ont réellement choisi.
 
       L'atelier peut reprendre les couleurs et l'univers de votre mariage.
     bouton: Découvrir
-    lien: /realisations/#evenements-prives
+    lien: "#nos-fetes"
     photo: /photos/bracelets-colliers/colliers-presentoirs-jardin.jpg
   - titre: Bar & Bat Mitzvah
-    texte: >
-      Bracelets, colliers ou bijoux de sac : une animation qui plaît aux jeunes
-      comme aux adultes.
+    texte: |
+      Bracelets, colliers ou bijoux de sac : une animation qui plaît aux jeunes comme aux adultes.
 
-
-      Chaque invité choisit son propre bijou, le personnalise et repart avec un
-      souvenir de la fête.
+      Chaque invité choisit son propre bijou, le personnalise et repart avec un souvenir de la fête.
     bouton: Découvrir
-    lien: /realisations/#evenements-prives
+    lien: "#nos-fetes"
     photo: /photos/a-trier/20260226_111149-2.jpg
 autres:
   titre: Et aussi…
@@ -58,3 +49,91 @@ sur_mesure:
 cta:
   titre: Votre fête. Leurs créations. Un souvenir pour chacun.
   bouton: Parlez-nous de votre événement
+realisations:
+  surtitre: Nos événements privés
+  titre: Ils ont fêté avec nous.
+  liste:
+    - titre: Bat Mitzvah d'Elsa
+      description: ""
+      photo: /photos/bm-elsa/img-4193.jpg
+      galerie:
+        - /photos/bm-elsa/img-4190.jpg
+        - /photos/bm-elsa/img-4191.jpg
+        - /photos/bm-elsa/img-4193.jpg
+        - /photos/bm-elsa/img-4197.jpg
+        - /photos/bm-elsa/img-4198.jpg
+    - titre: Bar Mitzvah de Josh
+      description: ""
+      photo: /photos/bm-josh/img-7237.jpg
+      galerie:
+        - /photos/bm-josh/img-20260607-wa0002.jpg
+        - /photos/bm-josh/img-7234.jpg
+        - /photos/bm-josh/img-7236.jpg
+        - /photos/bm-josh/img-7237.jpg
+        - /photos/bm-josh/img-7239.jpg
+        - /photos/bm-josh/img-7240.jpg
+        - /photos/bm-josh/img-7242.jpg
+        - /photos/bm-josh/img-7247.jpg
+        - /photos/bm-josh/img-7248.jpg
+        - /photos/bm-josh/img-7252.jpg
+    - titre: Bat Mitzvah de Liberty
+      description: ""
+      photo: /photos/bm-liberty/349c517e-9e27-490b-8627-396a5e872f97.jpg
+      galerie:
+        - /photos/bm-liberty/1631ecb2-517f-4c8c-9261-50d7dc4477a8.jpg
+        - /photos/bm-liberty/20250907_111832.jpg
+        - /photos/bm-liberty/20250907_111913.jpg
+        - /photos/bm-liberty/20250907_111918.jpg
+        - /photos/bm-liberty/20250907_111920.jpg
+        - /photos/bm-liberty/20250907_111925.jpg
+        - /photos/bm-liberty/20250907_111927.jpg
+        - /photos/bm-liberty/20250907_111934.jpg
+        - /photos/bm-liberty/20250907_111937.jpg
+        - /photos/bm-liberty/20250907_111943.jpg
+        - /photos/bm-liberty/20250907_111953.jpg
+        - /photos/bm-liberty/20250907_161537.jpg
+        - /photos/bm-liberty/20250907_161539.jpg
+        - /photos/bm-liberty/20250907_172714.jpg
+        - /photos/bm-liberty/349c517e-9e27-490b-8627-396a5e872f97.jpg
+        - /photos/bm-liberty/58ad5657-4f6b-4ac0-9609-48986b7d91f1.jpg
+        - /photos/bm-liberty/5d1de28e-6440-47de-a3b9-e120a47ad464.jpg
+        - /photos/bm-liberty/76242e52-18da-4845-be79-4d499db6af6a.jpg
+        - /photos/bm-liberty/7935b406-9f80-4e60-8205-440cfbd2bc76.jpg
+        - /photos/bm-liberty/e02f34c0-0d57-4149-b423-7ad7d7f56cfc.jpg
+    - titre: Bat Mitzvah de Nina
+      description: ""
+      photo: /photos/bm-nina/img-2328.jpg
+      galerie:
+        - /photos/bm-nina/20251207_130553.jpg
+        - /photos/bm-nina/20251207_133207.jpg
+        - /photos/bm-nina/20251207_153142.jpg
+        - /photos/bm-nina/fete-privee-table.jpg
+        - /photos/bm-nina/fete-privee.jpg
+        - /photos/bm-nina/img-2324.jpg
+        - /photos/bm-nina/img-2326.jpg
+        - /photos/bm-nina/img-2328.jpg
+        - /photos/bm-nina/img-2329.jpg
+        - /photos/bm-nina/img-2355.jpg
+        - /photos/bm-nina/img-2370.jpg
+    - titre: Bar Mitzvah de Noah
+      description: ""
+      photo: /photos/bm-noah/063eb351-05a5-4dae-a83a-ad50b3459890.jpg
+      galerie:
+        - /photos/bm-noah/063eb351-05a5-4dae-a83a-ad50b3459890.jpg
+        - /photos/bm-noah/68fcd309-dc42-4e51-a1c7-c2c3c515b9f0.jpg
+        - /photos/bm-noah/e56c61af-2460-4622-af83-338a0213b5c1.jpg
+    - titre: Anniversaire d'Ethel
+      description: ""
+      photo: /photos/20250801_114118.jpg
+      galerie:
+        - /photos/anniv-ethel/095376c6-7cd5-4946-8926-32b72d53945e.jpg
+        - /photos/anniv-ethel/0c005105-3541-441e-ae5a-85c84d7cd37d.jpg
+        - /photos/anniv-ethel/20250801_114118.jpg
+        - /photos/anniv-ethel/20250801_114122.jpg
+        - /photos/anniv-ethel/20250801_114142.jpg
+        - /photos/anniv-ethel/20250801_114201.jpg
+        - /photos/anniv-ethel/4fb8a6ab-c8bc-43dd-a597-d622212cb7d3.jpg
+    - titre: Mariages
+      description: ""
+      photo: /photos/bracelets-colliers/colliers-presentoirs-jardin.jpg
+      galerie: []

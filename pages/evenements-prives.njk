@@ -39,6 +39,17 @@ permalink: /evenements-prives/
   </div>
 </section>
 
+{%- if p.realisations and p.realisations.liste and p.realisations.liste.length %}
+<section class="section section--serree" id="nos-fetes">
+  <div class="wrap">
+    <p class="surtitre">{{ p.realisations.surtitre }}</p>
+    <h2 class="titre-m autres-titre">{{ p.realisations.titre | inline | safe }}</h2>
+    {%- set vignettes = p.realisations.liste %}{% set prefixe = "fete" %}
+    {% include "vignettes.njk" %}
+  </div>
+</section>
+{%- endif %}
+
 <section class="section section--creme">
   <div class="wrap">
     <p class="surtitre surtitre--centre">{{ p.sur_mesure.surtitre }}</p>

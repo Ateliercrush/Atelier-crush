@@ -1,0 +1,18 @@
+<ul class="vignettes">
+  {%- for a in vignettes %}
+  <li{% if a.categorie %} data-cat="{{ a.categorie | cle }}"{% endif %}>
+    {%- if a.galerie and a.galerie.length %}
+    <button type="button" class="vignettes__lien" data-galerie="{{ prefixe }}-{{ loop.index }}" aria-label="Voir les photos : {{ a.titre }}">
+      {% photo a.photo, a.titre, "", "(min-width: 900px) 25vw, 50vw", false, [400, 700] %}
+      <span class="vignettes__legende"><strong>{{ a.titre }}</strong>{% if a.description | rempli %}<small>{{ a.description }}</small>{% endif %}</span>
+    </button>
+    <template id="galerie-{{ prefixe }}-{{ loop.index }}">
+      {%- for g in a.galerie %}{% photo g, a.titre, "", "(min-width: 700px) 45vw, 90vw", false, [700, 1400] %}{% endfor %}
+    </template>
+    {%- else %}
+    {% photo a.photo, a.titre, "", "(min-width: 900px) 25vw, 50vw", false, [400, 700] %}
+    <span class="vignettes__legende"><strong>{{ a.titre }}</strong>{% if a.description | rempli %}<small>{{ a.description }}</small>{% endif %}</span>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>

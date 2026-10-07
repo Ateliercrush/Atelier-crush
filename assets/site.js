@@ -54,11 +54,23 @@
     const ouvrir = (id) => {
       const t = document.getElementById("galerie-" + id);
       if (!t) return false;
+      vis.classList.remove("visionneuse--seule");
       cible.replaceChildren(t.content.cloneNode(true));
       cible.querySelectorAll("img").forEach((i) => { i.loading = "eager"; });
       vis.showModal();
       return true;
     };
+    document.querySelectorAll(".agrandir").forEach((b) => b.addEventListener("click", () => {
+      const img = b.querySelector("img");
+      if (!img) return;
+      const grande = img.cloneNode(true);
+      grande.removeAttribute("class");
+      grande.sizes = "90vw";
+      grande.loading = "eager";
+      vis.classList.add("visionneuse--seule");
+      cible.replaceChildren(grande);
+      vis.showModal();
+    }));
     document.querySelectorAll("[data-galerie]").forEach((b) => b.addEventListener("click", () => ouvrir(b.dataset.galerie)));
     const depuisAncre = () => {
       const id = decodeURIComponent(location.hash.slice(1));

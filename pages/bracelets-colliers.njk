@@ -7,7 +7,7 @@ permalink: /bracelets-colliers/
 {%- set devisParams = "?atelier=bracelets-colliers" -%}
 <section class="hero hero--inverse">
   <div class="wrap hero__grid">
-    <div class="hero__media">{% photo p.hero.photo, "Atelier bracelets et colliers Atelier Crush", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</div>
+    <div class="hero__media"><button type="button" class="agrandir" aria-label="Agrandir la photo">{% photo p.hero.photo, "Atelier bracelets et colliers Atelier Crush", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</button></div>
     <div class="hero__texte">
       <p class="surtitre">{{ p.hero.surtitre }}</p>
       <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
@@ -20,7 +20,7 @@ permalink: /bracelets-colliers/
 <section class="section section--serree">
   <div class="wrap">
     <div class="galerie3">
-      {%- for g in p.galerie %}<div>{% photo g, "Bracelets et colliers créés en atelier", "", "(min-width: 900px) 33vw, 100vw" %}</div>{% endfor %}
+      {%- for g in p.galerie %}<button type="button" class="agrandir" aria-label="Agrandir la photo">{% photo g, "Bracelets et colliers créés en atelier", "", "(min-width: 900px) 33vw, 100vw" %}</button>{% endfor %}
     </div>
     <div class="concept">
       <h2 class="titre-l">{{ p.concept.titre | inline | safe }}</h2>

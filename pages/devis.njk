@@ -16,6 +16,7 @@ permalink: /devis/
       <div class="ligne2">
         <div class="champ"><label for="f-nom">{{ p.nom.label }} <span class="req" aria-hidden="true">*</span></label><input id="f-nom" type="text" name="name" autocomplete="name" placeholder="{{ p.nom.exemple }}" required></div>
         <div class="champ"><label for="f-email">{{ p.email.label }} <span class="req" aria-hidden="true">*</span></label><input id="f-email" type="email" name="email" autocomplete="email" placeholder="{{ p.email.exemple }}" required></div>
+        <div class="champ"><label for="f-tel">{{ p.telephone.label }}</label><input id="f-tel" type="tel" name="telephone" autocomplete="tel" placeholder="{{ p.telephone.exemple }}"></div>
         <div class="champ">
           <label for="f-evenement">{{ p.evenement.label }}</label>
           <select id="f-evenement" name="event_type">
@@ -24,11 +25,15 @@ permalink: /devis/
           </select>
         </div>
         <div class="champ"><label for="f-date">{{ p.date.label }}</label><input id="f-date" type="date" name="date"></div>
+        <div class="champ"><label for="f-participants">{{ p.participants.label }}</label><input id="f-participants" type="number" name="participants" min="1" placeholder="{{ p.participants.exemple }}"></div>
       </div>
-      <div class="champ"><label for="f-participants">{{ p.participants.label }}</label><input id="f-participants" type="number" name="participants" min="1" placeholder="{{ p.participants.exemple }}"></div>
       <div class="champ"><label for="f-message">{{ p.message.label }} <span class="req" aria-hidden="true">*</span></label><textarea id="f-message" name="message" rows="5" required placeholder="{{ p.message.exemple }}"></textarea></div>
       <p class="form__erreur" role="alert" hidden>{{ p.erreur }}</p>
-      <div><button class="btn btn--l" type="submit">{{ p.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></button></div>
+      <div class="form__envoi"><button class="btn btn--l" type="submit">{{ p.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></button>
+        {%- if c.general.footer.lien_whatsapp %}
+        <a class="lien-whatsapp" href="{{ c.general.footer.lien_whatsapp }}" target="_blank" rel="noopener"><svg class="ic ic--sm"><use href="#i-whatsapp"/></svg>{{ p.whatsapp_texte }}</a>
+        {%- endif %}
+      </div>
     </form>
 
     <div class="merci" id="merci" hidden tabindex="-1">

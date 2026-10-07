@@ -1,13 +1,10 @@
 seo:
   titre: Nos réalisations | Atelier Crush
-  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez
-    les ateliers imaginés par Atelier Crush pour les marques, les entreprises et
-    les événements privés."
+  description: "Benefit, American Vintage, Redken, Eden Gallery, C&A : découvrez les ateliers imaginés par Atelier Crush pour les marques, les entreprises et les événements privés."
 hero:
   surtitre: Nos réalisations
   titre: Chaque événement donne naissance à un atelier différent.
-  texte: "Marques, entreprises, agences et événements privés : découvrez quelques
-    projets imaginés par Atelier Crush."
+  texte: "Marques, entreprises, agences et événements privés : découvrez quelques projets imaginés par Atelier Crush."
 filtre_tout: Tout
 projets:
   - client: Benefit
@@ -15,13 +12,10 @@ projets:
     type: Lancement produit · Bad Gal Bounce
     categorie: Lancements produit
     resume: Un atelier bijoux de sac imaginé autour de l'univers du nouveau mascara.
-    description: >
-      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara
-      Bad Gal Bounce.
+    description: |
+      Un atelier bijoux de sac imaginé pour la soirée de lancement du mascara Bad Gal Bounce.
 
-
-      Sélection de pièces en cohérence avec l'univers Benefit et possibilité
-      d'intégrer directement le produit dans la création.
+      Sélection de pièces en cohérence avec l'univers Benefit et possibilité d'intégrer directement le produit dans la création.
     photo: /photos/benefit/benefit-stand-bad-gal-bounce.jpg
     galerie:
       - /photos/benefit/benefit-bac-bad-gal-bounce.jpg
@@ -33,12 +27,21 @@ projets:
       - /photos/benefit/benefit-plateaux.jpg
       - /photos/benefit/choix-des-charms-mains.jpg
     accueil: true
+    contexte: Soirée de lancement du mascara Bad Gal Bounce.
+    dispositif: "Un atelier bijoux de sac imaginé autour de l'univers Benefit : sélection de pièces en cohérence avec la marque et possibilité d'intégrer directement le produit dans la création."
+    invites: "[À COMPLÉTER]"
+    lieu: "[À COMPLÉTER]"
+    duree: "[À COMPLÉTER]"
+    resultat: "[À COMPLÉTER]"
+    citation:
+      texte: "[À COMPLÉTER]"
+      auteur: "[À COMPLÉTER]"
   - client: American Vintage
     logo: /photos/logos/american-vintage.png
     type: Activation retail · Fête des mères
     categorie: Collaborateurs
-    resume: Une activation dans plus de 10 boutiques autour du monde
-    description: Atelier Crush a accompagné American Vintage pour son évènement de rentrée
+    resume: Activation retail dans 10 boutiques American Vintage dans le monde, le jour de la fête des mères.
+    description: Activation retail dans 10 boutiques American Vintage dans le monde pour les clients de la marque, le jour de la fête des mères.
     photo: /photos/american-vintage/bb825bad-ac9f-4580-923b-66e080778f6d.jpg
     galerie:
       - /photos/american-vintage/a86199d1-62fc-470b-8b50-3613fa0269f1.jpg
@@ -47,13 +50,21 @@ projets:
       - /photos/american-vintage/97d71ff0-7663-4fa8-a012-f20afc87594d.jpg
       - /photos/american-vintage/a1bbe551-93e1-4722-9915-82f194e2df89.jpg
     accueil: true
-  - client: L'oréal
+    contexte: La fête des mères, pour les clients de la marque.
+    dispositif: Activation retail dans 10 boutiques American Vintage dans le monde.
+    invites: "[À COMPLÉTER]"
+    lieu: 10 boutiques American Vintage dans le monde
+    duree: "[À COMPLÉTER]"
+    resultat: "[À COMPLÉTER]"
+    citation:
+      texte: "[À COMPLÉTER]"
+      auteur: "[À COMPLÉTER]"
+  - client: L'Oréal
     logo: /photos/logos/loreal.png
-    type: Événement de marque
+    type: Redken · Concert de Sabrina Carpenter
     categorie: Événements de marque
-    resume: Un atelier bijoux intégré à l'événement de la marque.
-    description: Un atelier bijoux intégré à l'événement de la marque Redken lors du
-      concert de Sabrina Carpenter à l'ACCOR Arena de Bercy
+    resume: Un atelier bijoux pour Redken (groupe L'Oréal), au concert de Sabrina Carpenter.
+    description: Un atelier bijoux intégré à l'événement de la marque Redken (groupe L'Oréal) lors du concert de Sabrina Carpenter à l'Accor Arena de Bercy.
     photo: /photos/sabrina-carpenter/redken-atelier.jpg
     galerie:
       - /photos/sabrina-carpenter/redken-creation-2.jpg
@@ -65,13 +76,21 @@ projets:
       - /photos/sabrina-carpenter/redken-creation.jpg
       - /photos/sabrina-carpenter/redken-invites-creation.jpg
     accueil: true
+    contexte: Événement Redken (groupe L'Oréal) lors du concert de Sabrina Carpenter.
+    dispositif: Un atelier bijoux intégré à l'événement de la marque.
+    invites: "[À COMPLÉTER]"
+    lieu: Accor Arena, Paris
+    duree: "[À COMPLÉTER]"
+    resultat: "[À COMPLÉTER]"
+    citation:
+      texte: "[À COMPLÉTER]"
+      auteur: "[À COMPLÉTER]"
   - client: Fuze Tea
     logo: /photos/logos/fuze-tea.png
     type: Lancement d'une nouvelle gamme
     categorie: Événements de marque
     resume: Une animation pour enchanter les invités au coeur de Paris
-    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la
-      nouvelle gamme Fuze Tea, avec journalistes et influenceurs
+    description: Atelier Crush a eu le plaisir d'animer la soirée de lancement de la nouvelle gamme Fuze Tea, avec journalistes et influenceurs
     photo: /photos/fuze-tea/20260630_185726.jpg
     galerie:
       - /photos/fuze-tea/20260630_192855-0.jpg
@@ -81,13 +100,20 @@ projets:
       - /photos/fuze-tea/20260630_193223.jpg
       - /photos/fuze-tea/20260630_191250-0.jpg
     accueil: true
+    contexte: Soirée de lancement de la nouvelle gamme Fuze Tea, avec journalistes et influenceurs.
+    dispositif: "[À COMPLÉTER]"
+    invites: "[À COMPLÉTER]"
+    lieu: Paris
+    duree: "[À COMPLÉTER]"
+    resultat: "[À COMPLÉTER]"
+    citation:
+      texte: "[À COMPLÉTER]"
+      auteur: "[À COMPLÉTER]"
   - client: Moroccanoil
     type: Présentation nouvelle gamme
     categorie: Événements de marque
-    resume: Une expérience bijoux pour la présentation de la nouvelle gamme à la
-      presse.
-    description: Une expérience bijoux pensée pour la présentation de la nouvelle
-      collection à la presse
+    resume: Une expérience bijoux pour la présentation de la nouvelle gamme à la presse.
+    description: Une expérience bijoux pensée pour la présentation de la nouvelle collection à la presse
     photo: /photos/moroccan-oil/img-2205.jpg
     galerie:
       - /photos/moroccan-oil/20251203_191345.jpg
@@ -118,6 +144,15 @@ projets:
       - /photos/moroccan-oil/img-2235.jpg
       - /photos/moroccan-oil/img-2247.jpg
     accueil: true
+    contexte: Présentation de la nouvelle gamme à la presse.
+    dispositif: Une expérience bijoux pensée pour la présentation de la nouvelle collection.
+    invites: "[À COMPLÉTER]"
+    lieu: "[À COMPLÉTER]"
+    duree: "[À COMPLÉTER]"
+    resultat: "[À COMPLÉTER]"
+    citation:
+      texte: "[À COMPLÉTER]"
+      auteur: "[À COMPLÉTER]"
   - client: Eden Gallery Londres
     logo: /photos/Eden gallery.png
     type: Evènement Londres
@@ -133,6 +168,15 @@ projets:
       - /photos/eden-londres/img-0151.jpg
       - /photos/eden-londres/img-0235.jpg
     accueil: true
+    contexte: Eden Gallery a réuni ses clients fidèles pour deux dîners d'exception.
+    dispositif: "[À COMPLÉTER]"
+    invites: "[À COMPLÉTER]"
+    lieu: Londres
+    duree: "[À COMPLÉTER]"
+    resultat: "[À COMPLÉTER]"
+    citation:
+      texte: "[À COMPLÉTER]"
+      auteur: "[À COMPLÉTER]"
 autres:
   titre: Autres réalisations
   liste:
@@ -153,6 +197,7 @@ autres:
         - /photos/dior/20260316_160955.jpg
         - /photos/dior/e2523f92-3d24-43f2-a2e6-ebca14b83cb4.jpg
         - /photos/dior/ee408368-0b74-4b52-ba7b-3b73ea469955.jpg
+      description: Un atelier bijoux de sac pour un événement Dior.
     - titre: SodaStream
       categorie: Événements de marque
       photo: /photos/soda-stream/img-6616.jpg
@@ -162,6 +207,7 @@ autres:
         - /photos/soda-stream/img-6616.jpg
         - /photos/soda-stream/img-6620.jpg
         - /photos/soda-stream/img-6622.jpg
+      description: Des charms pour personnaliser sa gourde SodaStream, en plein air face à la tour Eiffel.
     - titre: Peggy Sage
       categorie: Événements de marque
       photo: /photos/peggy-sage/img-0345.jpg
@@ -207,6 +253,7 @@ autres:
         - /photos/alpro/fc43625b-5e2d-46cc-acdf-57600b8d8ab8.jpg
         - /photos/alpro/img-8606.jpg
         - /photos/alpro/img-8607.jpg
+      description: Des charms pour personnaliser son mug Alpro.
     - titre: Bonobo · Cache Cache · Bréal
       categorie: Événements de marque
       photo: /photos/bonobo-cache-cache-breal/img-1167.jpg
@@ -269,6 +316,7 @@ autres:
         - /photos/sloggy/ce5e2e62-7ccc-4b2e-bf8d-03d48ab3a77a.jpg
         - /photos/sloggy/eddb533f-bb47-4f85-9f1e-3b85f1005c98.jpg
         - /photos/sloggy/img-2222.jpg
+      description: Un atelier bijoux de sac pour un événement Sloggi.
     - titre: Étrier
       categorie: Événements de marque
       photo: /photos/etrier/5bab901f-6406-4ffc-a74a-0958edbb9ff4.jpg
@@ -276,93 +324,27 @@ autres:
         - /photos/etrier/21531310-7030-482a-af67-c846de4f3ad6.jpg
         - /photos/etrier/5bab901f-6406-4ffc-a74a-0958edbb9ff4.jpg
         - /photos/etrier/7db73c18-f29c-4fdc-9220-6be54a551c12.jpg
+      description: Des bijoux de sac assortis aux paniers Étrier.
     - titre: C&A
       categorie: Collaborateurs
       photo: /photos/c-and-a/c-and-a.jpg
-    - titre: Bat Mitzvah d'Elsa
-      categorie: Événements privés
-      photo: /photos/bm-elsa/img-4193.jpg
-      galerie:
-        - /photos/bm-elsa/img-4190.jpg
-        - /photos/bm-elsa/img-4191.jpg
-        - /photos/bm-elsa/img-4193.jpg
-        - /photos/bm-elsa/img-4197.jpg
-        - /photos/bm-elsa/img-4198.jpg
-    - titre: Bar Mitzvah de Josh
-      categorie: Événements privés
-      photo: /photos/bm-josh/img-7237.jpg
-      galerie:
-        - /photos/bm-josh/img-20260607-wa0002.jpg
-        - /photos/bm-josh/img-7234.jpg
-        - /photos/bm-josh/img-7236.jpg
-        - /photos/bm-josh/img-7237.jpg
-        - /photos/bm-josh/img-7239.jpg
-        - /photos/bm-josh/img-7240.jpg
-        - /photos/bm-josh/img-7242.jpg
-        - /photos/bm-josh/img-7247.jpg
-        - /photos/bm-josh/img-7248.jpg
-        - /photos/bm-josh/img-7252.jpg
-    - titre: Bat Mitzvah de Liberty
-      categorie: Événements privés
-      photo: /photos/bm-liberty/349c517e-9e27-490b-8627-396a5e872f97.jpg
-      galerie:
-        - /photos/bm-liberty/1631ecb2-517f-4c8c-9261-50d7dc4477a8.jpg
-        - /photos/bm-liberty/20250907_111832.jpg
-        - /photos/bm-liberty/20250907_111913.jpg
-        - /photos/bm-liberty/20250907_111918.jpg
-        - /photos/bm-liberty/20250907_111920.jpg
-        - /photos/bm-liberty/20250907_111925.jpg
-        - /photos/bm-liberty/20250907_111927.jpg
-        - /photos/bm-liberty/20250907_111934.jpg
-        - /photos/bm-liberty/20250907_111937.jpg
-        - /photos/bm-liberty/20250907_111943.jpg
-        - /photos/bm-liberty/20250907_111953.jpg
-        - /photos/bm-liberty/20250907_161537.jpg
-        - /photos/bm-liberty/20250907_161539.jpg
-        - /photos/bm-liberty/20250907_172714.jpg
-        - /photos/bm-liberty/349c517e-9e27-490b-8627-396a5e872f97.jpg
-        - /photos/bm-liberty/58ad5657-4f6b-4ac0-9609-48986b7d91f1.jpg
-        - /photos/bm-liberty/5d1de28e-6440-47de-a3b9-e120a47ad464.jpg
-        - /photos/bm-liberty/76242e52-18da-4845-be79-4d499db6af6a.jpg
-        - /photos/bm-liberty/7935b406-9f80-4e60-8205-440cfbd2bc76.jpg
-        - /photos/bm-liberty/e02f34c0-0d57-4149-b423-7ad7d7f56cfc.jpg
-    - titre: Bat Mitzvah de Nina
-      categorie: Événements privés
-      photo: /photos/bm-nina/img-2328.jpg
-      galerie:
-        - /photos/bm-nina/20251207_130553.jpg
-        - /photos/bm-nina/20251207_133207.jpg
-        - /photos/bm-nina/20251207_153142.jpg
-        - /photos/bm-nina/fete-privee-table.jpg
-        - /photos/bm-nina/fete-privee.jpg
-        - /photos/bm-nina/img-2324.jpg
-        - /photos/bm-nina/img-2326.jpg
-        - /photos/bm-nina/img-2328.jpg
-        - /photos/bm-nina/img-2329.jpg
-        - /photos/bm-nina/img-2355.jpg
-        - /photos/bm-nina/img-2370.jpg
-    - titre: Bar Mitzvah de Noah
-      categorie: Événements privés
-      photo: /photos/bm-noah/063eb351-05a5-4dae-a83a-ad50b3459890.jpg
-      galerie:
-        - /photos/bm-noah/063eb351-05a5-4dae-a83a-ad50b3459890.jpg
-        - /photos/bm-noah/68fcd309-dc42-4e51-a1c7-c2c3c515b9f0.jpg
-        - /photos/bm-noah/e56c61af-2460-4622-af83-338a0213b5c1.jpg
-    - titre: Anniversaire d'Ethel
-      categorie: Événements privés
-      photo: /photos/20250801_114118.jpg
-      galerie:
-        - /photos/anniv-ethel/095376c6-7cd5-4946-8926-32b72d53945e.jpg
-        - /photos/anniv-ethel/0c005105-3541-441e-ae5a-85c84d7cd37d.jpg
-        - /photos/anniv-ethel/20250801_114118.jpg
-        - /photos/anniv-ethel/20250801_114122.jpg
-        - /photos/anniv-ethel/20250801_114142.jpg
-        - /photos/anniv-ethel/20250801_114201.jpg
-        - /photos/anniv-ethel/4fb8a6ab-c8bc-43dd-a597-d622212cb7d3.jpg
-    - titre: Mariages
-      categorie: Événements privés
-      photo: /photos/bracelets-colliers/colliers-presentoirs-jardin.jpg
+      description: Une expérience bijoux pensée pour les collaborateurs de la marque.
 bouton_projet: Voir le projet
 cta:
   titre: Et pour votre prochain événement ?
   bouton: Parlez-nous de votre projet
+lien_prives:
+  texte: "Mariages, Bar et Bat Mitzvah, anniversaires : voir nos événements privés"
+  lien: /evenements-prives/#nos-fetes
+fiche:
+  retour: Toutes nos réalisations
+  infos_titre: En bref
+  invites: Invités
+  lieu: Lieu
+  duree: Durée
+  contexte: Le contexte
+  dispositif: Notre dispositif
+  resultat: Le résultat
+  galerie: En images
+  cta_titre: Un projet similaire ?
+  cta_bouton: Parlez-nous de votre événement

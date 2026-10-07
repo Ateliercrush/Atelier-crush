@@ -10,6 +10,9 @@ nom:
 email:
   label: E-mail
   exemple: votre@email.com
+telephone:
+  label: Téléphone
+  exemple: 06 12 34 56 78
 evenement:
   label: Type d'événement
   choisir: Choisir...
@@ -30,6 +33,7 @@ message:
   label: Message
   exemple: Décrivez votre projet, vos envies, le contexte de l'événement...
 bouton: Envoyer
+whatsapp_texte: Vous préférez WhatsApp ? Écrivez-nous directement
 erreur: L'envoi n'a pas fonctionné. Réessayez ou écrivez-nous à
   contact@atelier-crush.com.
 merci:
