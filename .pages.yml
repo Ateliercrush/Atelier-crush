@@ -361,6 +361,21 @@ content:
               - name: photo
                 label: Photo
                 type: image
+      - name: sacs
+        label: Galerie de sacs (Ils sont repartis avec)
+        type: object
+        fields:
+          - name: surtitre
+            label: Petit titre rose
+            type: string
+          - name: titre
+            label: Titre
+            type: string
+            description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: liste
+            label: Photos de sacs avec leur bijou
+            type: image
+            list: true
       - name: infos
         label: Informations pratiques
         type: object

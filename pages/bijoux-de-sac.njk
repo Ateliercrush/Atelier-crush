@@ -40,6 +40,18 @@ permalink: /bijoux-de-sac/
   </div>
 </section>
 
+{%- if p.sacs and p.sacs.liste and p.sacs.liste.length %}
+<section class="section section--serree">
+  <div class="wrap">
+    <p class="surtitre surtitre--centre">{{ p.sacs.surtitre }}</p>
+    <h2 class="titre-l centre autres-titre">{{ p.sacs.titre | inline | safe }}</h2>
+    <ul class="vignettes vignettes--fiche">
+      {%- for g in p.sacs.liste %}<li><button type="button" class="agrandir" aria-label="Agrandir la photo">{% photo g, "Bijou de sac créé pendant un atelier Atelier Crush", "", "(min-width: 1000px) 25vw, (min-width: 700px) 33vw, 50vw", false, [500, 900, 1600] %}</button></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
+
 <section class="section section--creme">
   <div class="wrap">
     <p class="surtitre surtitre--centre">{{ p.personnalisation.surtitre }}</p>
