@@ -19,12 +19,15 @@ menu:
 bouton_devis: Demander un devis
 references:
   - nom: Dior
+    logo: /photos/dior.png
   - nom: L'Oréal
     logo: /photos/logos/loreal.png
   - nom: Benefit
     logo: /photos/logos/benefit.png
   - nom: Redken
+    logo: /photos/Redken.png
   - nom: Moroccanoil
+    logo: /photos/Moroccanoil.png
   - nom: American Vintage
     logo: /photos/logos/american-vintage.png
   - nom: C&A
@@ -34,7 +37,9 @@ references:
   - nom: Fuze Tea
     logo: /photos/logos/fuze-tea.png
   - nom: SodaStream
+    logo: /photos/sodastream.png
   - nom: Alpro
+    logo: /photos/alpro.jpeg
   - nom: Sloggi
     logo: /photos/logos/sloggi.png
   - nom: Frédérique Constant
@@ -43,11 +48,12 @@ references:
     logo: /photos/logos/eden-gallery.png
   - nom: Peggy Sage
     logo: /photos/logos/peggy.png
-  - nom: Spartoo
-    logo: /photos/logos/spartoo.png
   - nom: Bonobo
+    logo: /photos/bonobo.png
   - nom: Cache Cache
+    logo: /photos/cachecache.jpeg
   - nom: Bréal
+    logo: /photos/breal.png
   - nom: Étrier
     logo: /photos/logos/etrier.jpg
   - nom: Publicis Conseil
