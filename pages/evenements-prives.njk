@@ -44,8 +44,19 @@ permalink: /evenements-prives/
   <div class="wrap">
     <p class="surtitre">{{ p.realisations.surtitre }}</p>
     <h2 class="titre-m autres-titre">{{ p.realisations.titre | inline | safe }}</h2>
-    {%- set vignettes = p.realisations.liste %}{% set prefixe = "fete" %}
-    {% include "vignettes.njk" %}
+    <div class="cartes cartes--3">
+      {%- for f in p.realisations.liste %}
+      {%- set aGalerie = f.galerie and f.galerie.length %}
+      <article class="carte">
+        {%- if aGalerie %}<a class="carte__media" href="/evenements-prives/{{ f.titre | cle }}/" tabindex="-1" aria-hidden="true">{% else %}<div class="carte__media">{% endif %}
+          {% photo f.photo, f.titre, "", "(min-width: 900px) 33vw, 100vw" %}
+        {%- if aGalerie %}</a>{% else %}</div>{% endif %}
+        <h3 class="carte__client">{{ f.titre }}</h3>
+        {%- if f.description | rempli %}<p class="carte__resume">{{ f.description }}</p>{% endif %}
+        {%- if aGalerie %}<a class="lien" href="/evenements-prives/{{ f.titre | cle }}/">{{ p.realisations.bouton }} ({{ f.galerie.length }}) <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>{% endif %}
+      </article>
+      {%- endfor %}
+    </div>
   </div>
 </section>
 {%- endif %}

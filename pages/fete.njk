@@ -1,0 +1,34 @@
+---
+layout: base.njk
+cle: evenementsPrives
+pagination:
+  data: c.evenementsPrives.fetes
+  size: 1
+  alias: f
+  addAllPagesToCollections: true
+permalink: "/evenements-prives/{{ f.titre | cle }}/"
+eleventyComputed:
+  seoPage:
+    titre: "{{ f.titre | safe }} | Atelier Crush"
+    description: "{{ f.description | safe }}"
+---
+{%- set t = c.evenementsPrives.fiche -%}
+<section class="fiche">
+  <div class="wrap">
+    <p class="fiche__retour"><a href="/evenements-prives/#nos-fetes"><svg class="ic ic--sm fiche__retour-ic"><use href="#i-fleche"/></svg> {{ t.retour }}</a></p>
+    <div class="fiche__tete">
+      <div class="fiche__titre">
+        <p class="surtitre">{{ c.evenementsPrives.hero.surtitre }}</p>
+        <h1 class="titre-xl">{{ f.titre }}</h1>
+        {%- if f.description | rempli %}<p class="intro fiche__resume">{{ f.description }}</p>{% endif %}
+      </div>
+    </div>
+    <h2 class="titre-m fiche__galerie-titre">{{ t.galerie }}</h2>
+    <ul class="vignettes vignettes--fiche">
+      {%- for g in f.galerie %}<li><button type="button" class="agrandir" aria-label="Agrandir la photo">{% photo g, f.titre, "", "(min-width: 1000px) 33vw, (min-width: 700px) 50vw, 100vw", false, [500, 900, 1600] %}</button></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+{%- set cta = { titre: t.cta_titre, bouton: t.cta_bouton } %}{% set devisParams = "?profil=particulier" %}
+{% include "cta.njk" %}

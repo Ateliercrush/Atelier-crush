@@ -67,6 +67,8 @@ export default function (cfg) {
       const key = f.replace(/\.ya?ml$/, "").replace(/-([a-z])/g, (_, l) => l.toUpperCase());
       data[key] = yaml.load(fs.readFileSync(path.join("contenu", f), "utf8")) || {};
     }
+    const ep = data.evenementsPrives;
+    if (ep) ep.fetes = ((ep.realisations && ep.realisations.liste) || []).filter((v) => v.galerie && v.galerie.length);
     return data;
   });
 

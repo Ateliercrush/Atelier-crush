@@ -141,6 +141,16 @@ content:
           - name: destinations
             label: Destinations
             type: string
+      - name: bandeau
+        label: Grande photo sous les logos
+        type: object
+        fields:
+          - name: photo
+            label: Photo (horizontale)
+            type: image
+          - name: legende
+            label: Légende (facultatif)
+            type: string
       - name: references_titre
         label: Titre au-dessus des logos
         type: string
@@ -1028,7 +1038,7 @@ content:
                 label: Texte
                 type: string
       - name: realisations
-        label: Nos événements privés (vignettes)
+        label: Nos événements privés (une carte et une page par fête)
         type: object
         fields:
           - name: surtitre
@@ -1038,8 +1048,11 @@ content:
             label: Titre
             type: string
             description: 'Astuce : mettez un mot entre *étoiles* pour l''afficher en italique rose.'
+          - name: bouton
+            label: Texte du lien vers les photos
+            type: string
           - name: liste
-            label: Vignettes
+            label: Fêtes
             type: object
             list: true
             fields:
@@ -1047,15 +1060,31 @@ content:
                 label: Nom
                 type: string
               - name: description
-                label: Une ligne de description (facultatif)
+                label: Une ligne de description
                 type: string
               - name: photo
-                label: Photo
+                label: Photo de couverture
                 type: image
               - name: galerie
-                label: Galerie (photos affichées au clic)
+                label: Photos de la fête (une page est créée dès qu'il y en a une)
                 type: image
                 list: true
+      - name: fiche
+        label: Page d'une fête · intitulés
+        type: object
+        fields:
+          - name: retour
+            label: Lien retour
+            type: string
+          - name: galerie
+            label: Titre de la galerie
+            type: string
+          - name: cta_titre
+            label: Bandeau final · titre
+            type: string
+          - name: cta_bouton
+            label: Bandeau final · bouton
+            type: string
       - name: cta
         label: Bandeau final
         type: object

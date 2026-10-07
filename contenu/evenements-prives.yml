@@ -54,7 +54,7 @@ realisations:
   titre: Ils ont fêté avec nous.
   liste:
     - titre: Bat Mitzvah d'Elsa
-      description: ""
+      description: "Un atelier sur le thème de l'hiver : nuages de coton, flocons, boules à facettes et charms argentés."
       photo: /photos/bm-elsa/img-4193.jpg
       galerie:
         - /photos/bm-elsa/img-4190.jpg
@@ -63,7 +63,7 @@ realisations:
         - /photos/bm-elsa/img-4197.jpg
         - /photos/bm-elsa/img-4198.jpg
     - titre: Bar Mitzvah de Josh
-      description: ""
+      description: "Un atelier en plein air aux couleurs de Josh : motos, foot, mangas et porte-clés à composer."
       photo: /photos/bm-josh/img-7237.jpg
       galerie:
         - /photos/bm-josh/img-20260607-wa0002.jpg
@@ -77,7 +77,7 @@ realisations:
         - /photos/bm-josh/img-7248.jpg
         - /photos/bm-josh/img-7252.jpg
     - titre: Bat Mitzvah de Liberty
-      description: ""
+      description: Bijoux de sac, porte-clés et stylos à personnaliser, dans des tons Liberty fleuris.
       photo: /photos/bm-liberty/349c517e-9e27-490b-8627-396a5e872f97.jpg
       galerie:
         - /photos/bm-liberty/1631ecb2-517f-4c8c-9261-50d7dc4477a8.jpg
@@ -91,7 +91,6 @@ realisations:
         - /photos/bm-liberty/20250907_111937.jpg
         - /photos/bm-liberty/20250907_111943.jpg
         - /photos/bm-liberty/20250907_111953.jpg
-        - /photos/bm-liberty/20250907_161537.jpg
         - /photos/bm-liberty/20250907_161539.jpg
         - /photos/bm-liberty/20250907_172714.jpg
         - /photos/bm-liberty/349c517e-9e27-490b-8627-396a5e872f97.jpg
@@ -101,10 +100,9 @@ realisations:
         - /photos/bm-liberty/7935b406-9f80-4e60-8205-440cfbd2bc76.jpg
         - /photos/bm-liberty/e02f34c0-0d57-4149-b423-7ad7d7f56cfc.jpg
     - titre: Bat Mitzvah de Nina
-      description: ""
+      description: Des corbeilles roses à son nom, des peluches, des pompons et des perles colorées.
       photo: /photos/bm-nina/img-2328.jpg
       galerie:
-        - /photos/bm-nina/20251207_130553.jpg
         - /photos/bm-nina/20251207_133207.jpg
         - /photos/bm-nina/20251207_153142.jpg
         - /photos/bm-nina/fete-privee-table.jpg
@@ -114,16 +112,34 @@ realisations:
         - /photos/bm-nina/img-2328.jpg
         - /photos/bm-nina/img-2329.jpg
         - /photos/bm-nina/img-2355.jpg
-        - /photos/bm-nina/img-2370.jpg
+        - /photos/bm-nina/f60241dc-43d0-458f-b8ce-0967858b8c3b.jpg
     - titre: Bar Mitzvah de Noah
-      description: ""
+      description: Des charms personnalisés à l'effigie de Noah, pour un souvenir unique.
       photo: /photos/bm-noah/063eb351-05a5-4dae-a83a-ad50b3459890.jpg
       galerie:
         - /photos/bm-noah/063eb351-05a5-4dae-a83a-ad50b3459890.jpg
         - /photos/bm-noah/68fcd309-dc42-4e51-a1c7-c2c3c515b9f0.jpg
         - /photos/bm-noah/e56c61af-2460-4622-af83-338a0213b5c1.jpg
+    - titre: Bar Mitzvah de Sam
+      photo: /photos/bm-sam/img-20260925-wa0035.jpg
+      galerie:
+        - /photos/bm-sam/bracelets-presentoirs.jpg
+        - /photos/bm-sam/charms-pierres.jpg
+        - /photos/bm-sam/colliers-presentoirs-2.jpg
+        - /photos/bm-sam/colliers-presentoirs-exterieur.jpg
+        - /photos/bm-sam/img-0515.jpg
+        - /photos/bm-sam/img-0516.jpg
+        - /photos/bm-sam/img-0521.jpg
+        - /photos/bm-sam/img-0522.jpg
+        - /photos/bm-sam/img-0526.jpg
+        - /photos/bm-sam/img-0527.jpg
+        - /photos/bm-sam/img-20260925-wa0035.jpg
+        - /photos/bm-sam/img-20260925-wa0038.jpg
+        - /photos/bm-sam/img-20260925-wa0039.jpg
+        - /photos/bm-sam/img-20260925-wa0041.jpg
+      description: "Un atelier colliers et bracelets en plein air, face aux champs : pierres, perles et charms argentés."
     - titre: Anniversaire d'Ethel
-      description: ""
+      description: Un anniversaire entre amies autour des bijoux de sac et des porte-clés.
       photo: /photos/20250801_114118.jpg
       galerie:
         - /photos/anniv-ethel/095376c6-7cd5-4946-8926-32b72d53945e.jpg
@@ -137,3 +153,9 @@ realisations:
       description: ""
       photo: /photos/bracelets-colliers/colliers-presentoirs-jardin.jpg
       galerie: []
+  bouton: Voir les photos
+fiche:
+  retour: Tous nos événements privés
+  galerie: En images
+  cta_titre: Une fête à préparer ?
+  cta_bouton: Parlez-nous de votre événement
