@@ -4,15 +4,13 @@ cle: accueil
 permalink: /
 ---
 {%- set p = c.accueil -%}
-<section class="hero hero--accueil">
-  <div class="wrap hero__grid">
-    <div class="hero__texte">
-      <p class="surtitre">{{ p.hero.surtitre }}</p>
-      <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
-      <div class="hero__intro">{{ p.hero.texte | paras | safe }}</div>
-      <a class="btn" href="/devis/">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
-    </div>
-    <div class="hero__media">{% photo p.hero.photo, "Invités en pleine création autour d'un stand Atelier Crush", "hero__img", "(min-width: 900px) 50vw, 100vw", true %}</div>
+<section class="banniere-accueil">
+  <div class="banniere-accueil__media">{% photo p.hero.photo, "Invitées en pleine création autour d'un stand Atelier Crush", "banniere-accueil__img", "100vw", true, [800, 1200, 1600, 2000] %}</div>
+  <div class="wrap banniere-accueil__texte">
+    <p class="surtitre">{{ p.hero.surtitre }}</p>
+    <h1 class="titre-xl">{{ p.hero.titre | inline | safe }}</h1>
+    <div class="banniere-accueil__intro">{{ p.hero.texte | paras | safe }}</div>
+    <a class="btn" href="/devis/">{{ p.hero.bouton }} <svg class="ic ic--sm"><use href="#i-fleche"/></svg></a>
   </div>
 </section>
 

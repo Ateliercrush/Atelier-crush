@@ -503,3 +503,22 @@ a.carte:hover .carte__media img { transform: scale(1.03); }
   .defile__piste > div[aria-hidden] { display: none; }
   .defile .logos { flex-wrap: wrap; justify-content: center; padding: 0 var(--gouttiere); }
 }
+
+/* Accueil : bannière photo pleine largeur */
+.banniere-accueil { position: relative; background: var(--blanc); }
+.banniere-accueil__img, .banniere-accueil__media .ph { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 55% 40%; display: block; }
+.banniere-accueil__texte { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding-top: 28px; padding-bottom: 40px; }
+.banniere-accueil__texte .surtitre { margin: 0; }
+.banniere-accueil__intro { font-size: 1.05rem; max-width: 520px; }
+@media (min-width: 900px) {
+  .banniere-accueil { color: #fff; }
+  .banniere-accueil__img, .banniere-accueil__media .ph { aspect-ratio: 2000 / 711; min-height: 460px; object-position: center top; }
+  .banniere-accueil__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20, 16, 18, 0.78) 0%, rgba(20, 16, 18, 0.5) 32%, rgba(20, 16, 18, 0) 58%); pointer-events: none; }
+  .banniere-accueil__texte { position: absolute; inset: 0; left: 0; right: 0; justify-content: center; padding-top: 0; padding-bottom: 0; }
+  .banniere-accueil__texte .surtitre { color: #fff; opacity: .9; }
+  .banniere-accueil__texte .titre-xl { color: #fff; max-width: 560px; font-size: clamp(2.4rem, 4vw, 3.6rem); }
+  .banniere-accueil__texte .titre-xl em { color: #F7A8D6; }
+  .banniere-accueil__intro { max-width: 440px; }
+  .banniere-accueil .btn { background: #fff; color: var(--rose-fonce); border-color: #fff; }
+  .banniere-accueil .btn:hover { background: var(--rose-fonce); color: #fff; border-color: var(--rose-fonce); }
+}
